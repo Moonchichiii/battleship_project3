@@ -1,15 +1,15 @@
 """ The retry of a new version of battleship game. """
 
-# rules of the game (logic) # legend. 
-# 1. single player game
+# rules of the game (logic) # legend
+# # 1. single player game
 # 2. user inputs username (display name)
 # 3. user inputs for the size of the board 5x5 or 8x8 rows/cols
-# 4. user inputs number of ships 
+# 4. user inputs number of ships
 # 5. user inputs number of turns
 # 6. computer sets out the random ships
 # 7. user inputs what row then coloum.
 # 8. verify the user input
-# 9. 
+# 9.
 
 
 # importing randint,os and time libraries
@@ -45,6 +45,7 @@ welcome()
 
 
 name = input("Please enter your name: ")
+"""username input while loop"""
 while not name:
     print("Every sailor has a name? try again.!")
     name = input("Please enter your name: ")
@@ -55,12 +56,13 @@ while not name:
 time.sleep(5)
 clear_screen()
 
+"""user inputs for the size of the board 5x5 or 8x8 rows/cols"""
 
 def game_settings():
     pass
 
 
+"""verify input of the board size?"""
+
 def game_board_size():
     pass
-
-    
