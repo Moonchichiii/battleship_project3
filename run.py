@@ -32,9 +32,10 @@ welcome()
 
 
 name = input("Please enter your name: ")
-if not name:
-    print("Every sailor has a name?")
-else:
+while not name:
+    print("Every sailor has a name? try again.!")
+    name = input("Please enter your name: ")
+
     print(f"Welcome aboard {name}! Ready to sink some ships?")
 
 time.sleep(5)
