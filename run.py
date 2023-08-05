@@ -1,7 +1,6 @@
 """ The retry of a new version of battleship game. """
 # importing randint,os and time libraries
 
-# from random import randint
 import os
 import time
 
@@ -25,10 +24,18 @@ def logo():
 def welcome():
     """Welcome greeting"""
     print("Welcome to my simple version of battleship!\n")
+
+
 #  calling the logo first and the greeting text.
 logo()
 welcome()
 
 
-#time.sleep(5)
-#clear_screen()
+name = input("Please enter your name: ")
+if not name:
+    print("Every sailor has a name?")
+else:
+    print(f"Welcome aboard {name}! Ready to sink some ships?")
+
+time.sleep(5)
+clear_screen()
