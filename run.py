@@ -59,22 +59,17 @@ time.sleep(3)
 clear_screen()
 
 
-
-"""
-
-user inputs for the size of the board 5x5 or 8x8 rows/cols
-user inputs amount of ships 2-6
-"""
+#  user inputs for the size of the board 5x5 or 8x8 rows/cols
+#  user inputs amount of ships 2-6
 
 
 def game_settings():
     size = game_board_size()
     ships = number_of_ships()
 
-#  verify inputs of the board size 5x5 or 8x8?
-
 
 def game_board_size():
+    """  verify inputs of the board size 5x5 or 8x8? """
     size = 0
     while size < 5 or size > 8:
         try:
