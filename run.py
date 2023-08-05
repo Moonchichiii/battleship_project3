@@ -59,9 +59,12 @@ time.sleep(3)
 clear_screen()
 
 
+
 """
+
 user inputs for the size of the board 5x5 or 8x8 rows/cols
-user inputs amount of ships 2-6"""
+user inputs amount of ships 2-6
+"""
 
 
 def game_settings():
@@ -92,7 +95,7 @@ clear_screen()
 
 def number_of_ships():
     ships = 0
-    while ships < 2 or size > 6:
+    while ships < 2 or ships > 6:
         try:
             ships = int(input("How many ships would you like on the board?: "))
             if ships < 2 or ships > 6:
