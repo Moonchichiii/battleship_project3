@@ -12,8 +12,9 @@
 # 9. display name?
 # 10. hits and misses
 
-
 # importing randint,os and time libraries
+
+
 from random import randint
 import os
 import time
@@ -58,16 +59,39 @@ time.sleep(3)
 clear_screen()
 
 
-"""user inputs for the size of the board 5x5 or 8x8 rows/cols"""
+"""
+user inputs for the size of the board 5x5 or 8x8 rows/cols
+user inputs amount of ships 2-6"""
 
 
 def game_settings():
     size = game_board_size()
+    ships = number_of_ships()
 
 
-"""verify input of the board size?"""
+def number_of_ships():
+    ships = 0
+    size = 0
+    while size < 5 or size > 8:
+        try:
+            size = int(input("Choose the number of rows/cols (5-8): "))
+            if size < 5 or size > 8:
+                print("invalid size. Please choose between 5 or 8?")
+        except ValueError:
+            print("Please enter a valid number between 5 and 8")
+    return size
 
 
+
+
+
+
+
+
+
+
+
+#  verify inputs of the board size 5x5 or 8x8?
 def game_board_size():
     size = 0
     while size < 5 or size > 8:
@@ -82,3 +106,6 @@ def game_board_size():
 
 board_size = game_board_size()
 print(f"test {board_size}")
+
+
+
