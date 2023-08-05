@@ -1,7 +1,7 @@
 """ The retry of a new version of battleship game. """
 
 # rules of the game (logic) # legend
-# # 1. single player game
+# 1. single player game
 # 2. user inputs username (display name)
 # 3. user inputs for the size of the board 5x5 or 8x8 rows/cols
 # 4. user inputs number of ships
@@ -9,11 +9,12 @@
 # 6. computer sets out the random ships
 # 7. user inputs what row then coloum.
 # 8. verify the user input
-# 9.
+# 9. display name?
+# 10. hits and misses
 
 
 # importing randint,os and time libraries
-
+from random import randint
 import os
 import time
 
@@ -47,10 +48,11 @@ welcome()
 name = input("Please enter your name: ")
 """username input while loop"""
 while not name:
-    print("Every sailor has a name? try again.!")
+    print("Every sailor has a name? try again!")
     name = input("Please enter your name: ")
-
-    print(f"Welcome aboard {name}! Ready to sink some ships?")
+else:
+    print(f"\nWelcome aboard {name}! Ready to sink some ships?")
+    
 
 
 time.sleep(5)
@@ -58,11 +60,17 @@ clear_screen()
 
 """user inputs for the size of the board 5x5 or 8x8 rows/cols"""
 
+
 def game_settings():
-    pass
+    size = game_board_size()
 
 
 """verify input of the board size?"""
 
+
 def game_board_size():
-    pass
+    size = 0
+    while size < 5 or size > 8:
+        size = int(input("Choose the number of rows/cols (5-8): "))
+        if size < 5 or size > 8:
+            print("invalid size. Please choose between 5 or 8?")
