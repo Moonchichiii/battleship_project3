@@ -52,11 +52,11 @@ while not name:
     name = input("Please enter your name: ")
 else:
     print(f"\nWelcome aboard {name}! Ready to sink some ships?")
-    
 
 
-time.sleep(5)
+time.sleep(3)
 clear_screen()
+
 
 """user inputs for the size of the board 5x5 or 8x8 rows/cols"""
 
@@ -71,6 +71,14 @@ def game_settings():
 def game_board_size():
     size = 0
     while size < 5 or size > 8:
-        size = int(input("Choose the number of rows/cols (5-8): "))
-        if size < 5 or size > 8:
-            print("invalid size. Please choose between 5 or 8?")
+        try:
+            size = int(input("Choose the number of rows/cols (5-8): "))
+            if size < 5 or size > 8:
+                print("invalid size. Please choose between 5 or 8?")
+        except ValueError:
+            print("Please enter a valid number between 5 and 8")
+    return size
+
+
+board_size = game_board_size()
+print(f"test {board_size}")
