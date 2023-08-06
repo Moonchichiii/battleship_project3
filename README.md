@@ -8,6 +8,11 @@
 
 * Your dependencies must be placed in the `requirements.txt` file
 
+
+## Flow chart
+![This is the flowchart of the game project.](<assets/images/flow_chart_screenshot .png>)]
+
+
 ## User Experience
 
  
