@@ -12,7 +12,7 @@
 
 <details><summary>This is the flowchart of the game project</summary>
 
-![Flowchart!] (<assets/images/flow_chart_screenshot.png>)
+![Flowchart!](assets/images/flowchart_dark.png)
 
 </details>
 
