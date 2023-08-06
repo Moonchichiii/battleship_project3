@@ -1,26 +1,34 @@
 # Battleship Game | Ahoooooy Sailors! Ready to navigate some rough waters? 
 
-
-## Visit the live project below.
+### Visit the live project below.
 
 * Your dependencies must be placed in the `requirements.txt` file
 
 
+
+
+
 ## Flow chart
-<details><summary>Flow chart Drop down :</summary>
-![This is the flowchart of the game project.](<assets/images/flow_chart_screenshot .png>)
+
+<details><summary>This is the flowchart of the game project</summary>
+
+![Flowchart!] (<assets/images/flow_chart_screenshot.png>)
 
 </details>
 
+
 ## User Experience
 
- 
+
+
+
+
 ## Game Features
 
  - ***Welcome scene:*** Greeted with the logo and a welcome message.
  - ***Username:*** Quickly set up by entering your username.
 
-![Alt text](<assets/welcome prompt.png>)
+   ![Welcome sign.](assets/images/signprompt.png)
 
 ### Game settings
 
@@ -36,7 +44,12 @@
 - **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
 
 
+
+
+
 ## Technologies Used
+
+
 
 ## Testing
 
@@ -59,8 +72,14 @@
 
 ## Bugs
 
+
+
 ## Deployment
 
+
+
 ## Credits
+
+
 
 ## Acknowledgments
