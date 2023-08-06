@@ -130,5 +130,6 @@ def number_of_turns():
     return turns
 
 
-turns_of_play = number_of_turns()
-print(f"number of turns {number_of_turns}")
+turns_of_play = number_of_turns()  
+print(f"number of turns {turns_of_play}")  # wrong referenching corrected
+

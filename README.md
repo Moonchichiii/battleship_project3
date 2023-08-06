@@ -24,7 +24,17 @@
 ## Technologies Used
 
 ## Testing
+
+### Wrong referenching in the 
+#### turns_of_play = number_of_turns()  
+#### print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
+
 ![Alt text](testing/numbers_of_turns.png)
+
+### Corrected
+
+![Alt text](testing/turns_of_play_fixed.png)
+
 
 ## Bugs
 
