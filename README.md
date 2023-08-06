@@ -49,8 +49,11 @@
 
 ## Technologies Used
 
-
-
+[Python](https://www.python.org/)  -  The primary programming language for game development.
+[Python](https://www.python.org/)  -  The primary programming language for game development.
+[Python](https://www.python.org/)  -  The primary programming language for game development.
+[Python](https://www.python.org/)  -  The primary programming language for game development.
+[Python](https://www.python.org/)  -  The primary programming language for game development.
 ## Testing
 
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
