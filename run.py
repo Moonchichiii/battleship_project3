@@ -1,16 +1,26 @@
 """ The retry of a new version of battleship game. """
 
-# rules of the game (logic) # legend
-# 1. single player game
-# 2. user inputs username (display name)
-# 3. user inputs for the size of the board 5x5 or 8x8 rows/cols
-# 4. user inputs number of ships
-# 5. user inputs number of turns
-# 6. computer sets out the random ships
-# 7. user inputs what row then coloum.
-# 8. verify the user input
-# 9. display name?
-# 10. hits and misses
+""" flowchart of the game
+------------------------------------------------
+1. Show logo & welcome
+2. Enter username
+3. Set game settings
+4. Choose board & ships
+5. Generate user board
+6. Place random ships
+
+Start game
+
+Gameplay loop
+
+7.  Mark 'X' for hit
+8.  Mark 'O' for miss
+9.  Show turns & hits left
+10. Continue till turns end or all ships sunk
+11. Display game over & score
+12. Restart or exit choice
+------------------------------------------------
+"""
 
 # importing randint,os and time libraries
 
