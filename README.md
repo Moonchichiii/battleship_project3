@@ -1,8 +1,5 @@
-# Welcome to my version of the Battleship game.
+# Battleship Game | Ahoooooy Sailors! Ready to navigate some rough waters? 
 
-### Ahoooooy Sailors! Ready to navigate some rough waters? 
-
-####
 
 ## Visit the live project below.
 
@@ -20,12 +17,24 @@
  
 ## Game Features
 
-* _Welcome scene:_ Greeted with the logo and a welcome message.
-- _Username:_ Quickly set up by entering your username.
--
+ - ***Welcome scene:*** Greeted with the logo and a welcome message.
+ - ***Username:*** Quickly set up by entering your username.
+
+![Alt text](<assets/welcome prompt.png>)
+
+### Game settings
+
+1. **Choose between a 5x5 or an 8x8 board** 
+2. **Decide on having between 2 to 6 ships**
+3. **Determine how many turns to play**
+
 
 
 ## Design
+
+- **Simplicity:** The design is straightforward,very simple and user-friendly.
+- **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
+
 
 ## Technologies Used
 
@@ -54,4 +63,4 @@
 
 ## Credits
 
-# Acknowledgments
+## Acknowledgments
