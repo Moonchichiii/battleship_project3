@@ -1,33 +1,11 @@
 """ The retry of a new version of battleship game. """
 
-""" flowchart of the game
-------------------------------------------------
-1. Show logo & welcome
-2. Enter username
-3. Set game settings
-4. Choose board & ships
-5. Generate user board
-6. Place random ships
-
-Start game
-
-Gameplay loop
-
-7.  Mark 'X' for hit
-8.  Mark 'O' for miss
-9.  Show turns & hits left
-10. Continue till turns end or all ships sunk
-11. Display game over & score
-12. Restart or exit choice
-------------------------------------------------
-"""
-
-# importing randint,os and time libraries
-
-
 from random import randint
 import os
 import time
+
+
+# importing randint,os and time libraries
 
 
 def clear_screen():
@@ -65,7 +43,7 @@ else:
     print(f"\nWelcome aboard {name}! Ready to sink some ships?")
 
 
-time.sleep(3)
+time.sleep(2)
 clear_screen()
 
 
@@ -74,9 +52,14 @@ clear_screen()
 
 
 def game_settings():
-    size = game_board_size()
-    ships = number_of_ships()
-    turns = number_of_turns()
+
+    # return to these once the BOARD LOOP is ready to
+    # take these inputs! TEMPORARY INPUT REMOVE ONCE DONE!
+
+    """ Set game settings """
+    #size = game_board_size()
+    #ships = number_of_ships()
+    #turns = number_of_turns()
 
 
 def game_board_size():
@@ -92,14 +75,15 @@ def game_board_size():
     return size
 
 
-board_size = game_board_size()
-print(f"test {board_size}")
+BOARD_SIZE = game_board_size()
+print(f"test {BOARD_SIZE}")
 
 time.sleep(1)
 clear_screen()
 
 
 def number_of_ships():
+    """  verify inputs number of ships on the board """
     ships = 0
     while ships < 2 or ships > 6:
         try:
@@ -111,25 +95,33 @@ def number_of_ships():
     return ships
 
 
-ships_on_the_board = number_of_ships()
-print(f"number of ships {ships_on_the_board}")
+SHIPS_ON_THE_BOARD = number_of_ships()
+print(f"number of ships {SHIPS_ON_THE_BOARD}")
 
 time.sleep(1)
 clear_screen()
 
 
 def number_of_turns():
+    """  verify inputs number of turns to play """
     turns = 0
     while turns < 5 or turns > 10:
         try:
             turns = int(input("How many turns? (5-10): "))
             if turns < 5 or turns > 10:
-                print("invalid number of turns! Please choose between 5 or 10?")
+                print("invalid number of turns! Choose between 5 or 10?")
         except ValueError:
             print("Please enter a valid number between 5 and 10")
     return turns
 
 
-turns_of_play = number_of_turns()  
-print(f"number of turns {turns_of_play}")  # wrong referenching corrected
+TURNS_OF_PLAY = number_of_turns()
+print(f"number of turns {TURNS_OF_PLAY}")
 
+time.sleep(1)
+clear_screen()
+
+
+print(f"rows/cols {BOARD_SIZE} \n")
+print(f"ships     {SHIPS_ON_THE_BOARD} \n")
+print(f"turns     {TURNS_OF_PLAY} \n")
