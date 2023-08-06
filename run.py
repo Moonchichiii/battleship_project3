@@ -118,15 +118,15 @@ print(f"number of ships {ships_on_the_board}")
 
 def number_of_turns():
     turns = 0
-    while ships < 2 or ships > 6:
+    while turns < 2 or turns > 6:
         try:
-            ships = int(input("How many ships on the board? (2-6): "))
-            if ships < 2 or ships > 6:
+            turns = int(input("How many ships on the board? (2-6): "))
+            if turns < 2 or turns > 6:
                 print("invalid number of ships! Please choose between 2 or 6?")
         except ValueError:
             print("Please enter a valid number between 2 and 6")
-    return ships
+    return turns
 
 
-ships_on_the_board = number_of_ships()
-print(f"number of ships {ships_on_the_board}")
+turns = number_of_turns()
+print(f"number of turns {number_of_turns}")
