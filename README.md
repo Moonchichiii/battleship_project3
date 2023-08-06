@@ -10,13 +10,19 @@
 
 
 ## Flow chart
-![This is the flowchart of the game project.](<assets/images/flow_chart_screenshot .png>)]
+<details><summary>Flow chart Drop down :</summary>
+![This is the flowchart of the game project.](<assets/images/flow_chart_screenshot .png>)
 
+</details>
 
 ## User Experience
 
  
 ## Game Features
+
+* _Welcome scene:_ Greeted with the logo and a welcome message.
+- _Username:_ Quickly set up by entering your username.
+-
 
 
 ## Design
@@ -25,15 +31,21 @@
 
 ## Testing
 
-### Wrong referenching in the 
-#### turns_of_play = number_of_turns()  
-#### print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
+<details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
 ![Alt text](testing/numbers_of_turns.png)
+- Wrong referenching in the turns_of_play = number_of_turns()  
+- print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
-### Corrected
+</details>
 
-![Alt text](testing/turns_of_play_fixed.png)
+<details><summary>Corrected Wrong referenching in the turns_of_play</summary>
+
+![Alt text](testing/numbers_of_turns.png)
+- Wrong referenching in the turns_of_play = number_of_turns()  
+- print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
+
+</details>
 
 
 ## Bugs
