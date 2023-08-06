@@ -122,7 +122,9 @@ print(f"number of turns {TURNS_OF_PLAY}")
 time.sleep(1)
 clear_screen()
 
+#print(f"rows/cols {BOARD_SIZE} \n")
+#print(f"ships     {SHIPS_ON_THE_BOARD} \n")
+#print(f"turns     {TURNS_OF_PLAY} \n")
 
-print(f"rows/cols {BOARD_SIZE} \n")
-print(f"ships     {SHIPS_ON_THE_BOARD} \n")
-print(f"turns     {TURNS_OF_PLAY} \n")
+
+
