@@ -24,6 +24,7 @@
 ## Technologies Used
 
 ## Testing
+![Alt text](testing/numbers_of_turns.png)
 
 ## Bugs
 
