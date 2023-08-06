@@ -40,7 +40,7 @@ while not name:
     print("Every sailor has a name? try again!")
     name = input("Please enter your name: ")
 else:
-    print(f"\nWelcome aboard {name}! Ready to sink some ships?")
+    print(f"\nWelcome aboard Sailor {name}! Ready to sink some ships! Or sink to depths!")
 
 
 time.sleep(2)
