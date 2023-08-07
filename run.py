@@ -102,16 +102,14 @@ def build_board(size):
 
 def print_board(board):
     """ Display the game board in the terminal """
-    for row in range(len(board)):
+    for i, row in enumerate(board):
         print_row = []
-        for col in range(len(board[row])):
-            cell = board[row][col]
+        for j, cell in enumerate(row):
             if cell == 'S':
                 print_row.append('*')
             else:
                 print_row.append(cell)
         print(" ".join(print_row))
-
 
 
 def main():
