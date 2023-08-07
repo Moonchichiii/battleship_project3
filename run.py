@@ -91,6 +91,24 @@ def number_of_turns():
     return turns
 
 
+def player_turn(board, turns):
+    max_number_index = len(board)
+    while True:
+        row = input(f"Choose a row (0-{max_number_index}): ")
+        col = input(f"Choose a row (0-{max_number_index}): ")
+        try:
+            row, col = int(row), int(col)
+            if 1 <= row <= max_number_index and 1 <= col <= max_number_index:
+                break
+            else:
+                print(f"Please pick a valid number (1-{max_number_index})")
+        except ValueError:
+            print("Please enter a valid number")
+
+    return row -1, col - 1
+
+
+
 def build_board(size):
     """
     Builds the game board and filled with '*'
@@ -138,13 +156,14 @@ def main():
 
     time.sleep(1)
     clear_screen()
-
+    print(f"Number of Ships: {total_ships}")
+    print(f"Number of hits: {turns_of_play}")
     print(f"Number of turns left: {turns_of_play}\n")
-    print(f"Number of hits: {turns_of_play}\n")
 
     board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
 
-
+    row , col = player_turn(board_with_ships, turns_of_play)
+    
 if __name__ == '__main__':
     main()
