@@ -112,10 +112,10 @@ def print_board(board):
         print(" ".join(print_row))
 
 
-def ships_placement(board, number_of_ships):
+def ships_placement(board, total_ships):
     """Placing the ships on the board taking the number entered by user """
     placed_ships = 0
-    while placed_ships < number_of_ships:
+    while placed_ships < total_ships:
         row, col = randint(0, len(board) - 1), randint(0, len(board[0]) - 1)
         if board[row][col] != 'S':
             board[row][col] = 'S'
@@ -130,18 +130,19 @@ def main():
 
     time.sleep(1)
     clear_screen()
-    SHIPS_ON_THE_BOARD = number_of_ships()
+    total_ships = number_of_ships()
 
     time.sleep(1)
     clear_screen()
-    TURNS_OF_PLAY = number_of_turns()
+    turns_of_play = number_of_turns()
 
     time.sleep(1)
     clear_screen()
 
-    """print(f"Number of turns left: {TURNS_OF_PLAY}\n") remove!!!"""
+    print(f"Number of turns left: {turns_of_play}\n")
+    print(f"Number of hits: {turns_of_play}\n")
 
-    board_with_ships = ships_placement(board, SHIPS_ON_THE_BOARD)
+    board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
 
 
