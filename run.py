@@ -1,11 +1,9 @@
 """ The retry of a new version of battleship game. """
-
-from random import randint
 import os
 import time
 
-
 # importing randint,os and time libraries
+"""from random import randint REMOVE LATER !!!!! """
 
 
 def clear_screen():
@@ -41,46 +39,60 @@ while not name:
     print("Every sailor has a name? try again!")
     name = input("Please enter your name: ")
 else:
-    print(f"\nWelcome aboard Sailor {name}! Ready to sink some ships! Or sink to depths!")
+    print(f"\nWelcome aboard Sailor {name}! Ready to sink some ships!")
 
 
 time.sleep(2)
 clear_screen()
 
 
-#  user inputs for the size of the board 5x5 or 8x8 rows/cols
-#  user inputs amount of ships 2-6
+def main():
+    """ Validate and check the value input to build the board 5x5 or 8x8 """
+    board_size = game_board_size()
+    board = build_board(board_size)
+    time.sleep(2)
+    clear_screen()
+    print_board(board)
 
 
 def game_settings():
-
-    # return to these once the BOARD LOOP is ready to
-    # take these inputs! TEMPORARY INPUT REMOVE ONCE DONE!
-
     """ Set game settings """
-    #size = game_board_size()
-    #ships = number_of_ships()
-    #turns = number_of_turns()
+    size = game_board_size()
+    return size
+
+
+"""user inputs for the size of the board 5x5 or 8x8 rows/cols"""
+"""user inputs amount of ships 2-6"""
+"""ships = number_of_ships() !!!! remove later !!!!!! """
+"""turns = number_of_turns() !!!! remove later !!!!!! """
 
 
 def game_board_size():
     """  verify inputs of the board size 5x5 or 8x8? """
     size = 0
-    while size < 5 or size > 8:
+    while size != 5 and size != 8:
         try:
             size = int(input("Choose the number of rows/cols (5-8): "))
-            if size < 5 or size > 8:
+            if size != 5 and size != 8:
                 print("invalid size. Please choose between 5 or 8?")
         except ValueError:
             print("Please enter a valid number between 5 and 8")
     return size
 
 
-BOARD_SIZE = game_board_size()
-print(f"test {BOARD_SIZE}")
+def build_board(size):
+    """
+    Builds the game board and filled with '*'
 
-time.sleep(1)
-clear_screen()
+    Size int the number of rows and columns from user input size.
+    """
+    return [['*' for _ in range(size)] for _ in range(size)]
+
+
+def print_board(board):
+    """ Display the game board in the terminal """
+    for row in board:
+        print(" ".join(row))
 
 
 def number_of_ships():
@@ -122,9 +134,10 @@ print(f"number of turns {TURNS_OF_PLAY}")
 time.sleep(1)
 clear_screen()
 
-#print(f"rows/cols {BOARD_SIZE} \n")
-#print(f"ships     {SHIPS_ON_THE_BOARD} \n")
-#print(f"turns     {TURNS_OF_PLAY} \n")
+"""print(f"rows/cols {BOARD_SIZE} \n") !!! REMOVE LATER !!! """
+"""print(f"ships     {SHIPS_ON_THE_BOARD} \n)!!! REMOVE LATER !!! """
+"""print(f"turns     {TURNS_OF_PLAY} \n")"""
 
 
-
+if __name__ == '__main__':
+    main()
