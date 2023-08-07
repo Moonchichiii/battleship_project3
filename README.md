@@ -1,4 +1,4 @@
-<h1 style="text-decoration: none; border-bottom: none;">Battleship Game</h1>
+<h1 style="text-decoration: none; border-bottom: none;">Battleship Game ⚓️</h1>
 <h3>Ahoooooy Sailors! Ready to navigate some rough waters?</h3>
 
 ### Visit the live project below.
@@ -86,12 +86,38 @@
 
 </details>
 
+<details><summary>Printing the board and checking the cells for hit or miss.</summary>
+
+
+![Alt text](testing/print_rows_col_board.png)
+
+
+```python
+def print_board(board):
+    """ Display the game board in the terminal """
+    for i, row in enumerate(board):
+        print_row = []
+        for j, cell in enumerate(row):
+            if cell == 'S':
+                print_row.append('*')
+            else:
+                print_row.append(cell)
+        print(" ".join(print_row))
+
+```
+</details>
+
+
 
 ## Bugs
 
 
 ## Credits
+  ***Helped to build out the board***
 
+- https://www.programcreek.com/python/?CodeExample=print+board
+
+- https://stackoverflow.com/questions/63318514/how-output-of-printprint-boardboard-is-printed-like-a-matrix-but-not-like-a
 
 
 ## Acknowledgments
