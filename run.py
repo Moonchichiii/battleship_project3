@@ -44,25 +44,6 @@ time.sleep(2)
 clear_screen()
 
 
-def main():
-    """ Validate and check the value input to build the board 5x5 or 8x8 """
-    board_size = game_board_size()
-    board = build_board(board_size)
-
-    time.sleep(2)
-    clear_screen()
-    SHIPS_ON_THE_BOARD = number_of_ships()
-
-    time.sleep(2)
-    clear_screen()
-    TURNS_OF_PLAY = number_of_turns()
-
-    time.sleep(2)
-    clear_screen()
-
-    print_board(board)
-
-
 def game_settings():
     """ Set game settings """
     size = game_board_size()
@@ -84,21 +65,6 @@ def game_board_size():
     return size
 
 
-def build_board(size):
-    """
-    Builds the game board and filled with '*'
-
-    Size int the number of rows and columns from user input size.
-    """
-    return [['*' for _ in range(size)] for _ in range(size)]
-
-
-def print_board(board):
-    """ Display the game board in the terminal """
-    for row in board:
-        print(" ".join(row))
-
-
 def number_of_ships():
     """  verify inputs number of ships on the board """
     ships = 0
@@ -110,10 +76,6 @@ def number_of_ships():
         except ValueError:
             print("Please enter a valid number between 2 and 6")
     return ships
-
-
-time.sleep(1)
-clear_screen()
 
 
 def number_of_turns():
@@ -129,8 +91,46 @@ def number_of_turns():
     return turns
 
 
-time.sleep(1)
-clear_screen()
+def build_board(size):
+    """
+    Builds the game board and filled with '*'
+
+    Size int the number of rows and columns from user input size.
+    """
+    return [['*' for _ in range(size)] for _ in range(size)]
+
+
+def print_board(board):
+    """ Display the game board in the terminal """
+    for row in range(len(board)):
+        print_row = []
+        for col in range(len(board[row])):
+            cell = board[row][col]
+            if cell == 'S':
+                print_row.append('*')
+            else:
+                print_row.append(cell)
+        print(" ".join(print_row))
+
+
+
+def main():
+    """ Validate and check the value input to build the board 5x5 or 8x8 """
+    board_size = game_board_size()
+    board = build_board(board_size)
+
+    time.sleep(2)
+    clear_screen()
+    SHIPS_ON_THE_BOARD = number_of_ships()
+
+    time.sleep(2)
+    clear_screen()
+    TURNS_OF_PLAY = number_of_turns()
+
+    time.sleep(2)
+    clear_screen()
+
+    print_board(board)
 
 
 if __name__ == '__main__':
