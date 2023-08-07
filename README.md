@@ -29,7 +29,7 @@
  - ***Welcome scene:*** Greeted with the logo and a welcome message.
  - ***Username:*** Quickly set up by entering your username.
 
-   ![Welcome sign.](assets/images/signprompt.png)
+   ![Sign in prompt.](assets/images/signinpromtdarker.png)
 
 ### Game settings
 
