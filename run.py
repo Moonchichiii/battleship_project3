@@ -117,15 +117,15 @@ def main():
     board_size = game_board_size()
     board = build_board(board_size)
 
-    time.sleep(2)
+    time.sleep(1)
     clear_screen()
     SHIPS_ON_THE_BOARD = number_of_ships()
 
-    time.sleep(2)
+    time.sleep(1)
     clear_screen()
     TURNS_OF_PLAY = number_of_turns()
 
-    time.sleep(2)
+    time.sleep(1)
     clear_screen()
 
     print_board(board)
