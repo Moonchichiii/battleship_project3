@@ -1,3 +1,22 @@
+""" import """
+import os
+import time
+
+
+def clear_screen():
+    """Clear and refresh the terminal display during the game """
+    os.system('clear')
+
+
+def main():
+    """ Validate and check the value input to build the board 5x5 or 8x8 """
+    board_size = game_board_size()
+    board = build_board(board_size)
+    """Clear and refresh the terminal display during the game """
+    time.sleep(2)
+    clear_screen()
+    print_board(board)
+
 
 def game_settings():
     """ Set game settings """
@@ -28,12 +47,10 @@ def build_board(size):
 
 
 def print_board(board):
+    """ Display the game board in the terminal """
     for row in board:
-        print(" ".join (row))
+        print(" ".join(row))
 
 
-
-print(game_board_size())
-
-#BOARD_SIZE = game_board_size()
-#print(BOARD_SIZE)
+if __name__ == '__main__':
+    main()
