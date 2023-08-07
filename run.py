@@ -49,7 +49,7 @@ def game_settings():
     size = game_board_size()
     ships = number_of_ships()
     turns = number_of_turns()
-    return size
+    return size, ships, turns
 
 
 def game_board_size():
@@ -112,6 +112,17 @@ def print_board(board):
         print(" ".join(print_row))
 
 
+def ships_placement(board, number_of_ships):
+    """Placing the ships on the board taking the number entered by user """
+    placed_ships = 0
+    while placed_ships < number_of_ships:
+        row, col = randint(0, len(board) - 1), randint(0, len(board[0]) - 1)
+        if board[row][col] != 'S':
+            board[row][col] = 'S'
+            placed_ships += 1
+    return board
+
+
 def main():
     """ Validate and check the value input to build the board 5x5 or 8x8 """
     board_size = game_board_size()
@@ -128,7 +139,10 @@ def main():
     time.sleep(1)
     clear_screen()
 
-    print_board(board)
+    """print(f"Number of turns left: {TURNS_OF_PLAY}\n") remove!!!"""
+
+    board_with_ships = ships_placement(board, SHIPS_ON_THE_BOARD)
+    print_board(board_with_ships)
 
 
 if __name__ == '__main__':
