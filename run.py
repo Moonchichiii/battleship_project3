@@ -95,7 +95,7 @@ def player_turn(board, turns):
     max_number_index = len(board)
     while True:
         row = input(f"Choose a row (0-{max_number_index}): ")
-        col = input(f"Choose a row (0-{max_number_index}): ")
+        col = input(f"Choose a col (0-{max_number_index}): ")
         try:
             row, col = int(row), int(col)
             if 1 <= row <= max_number_index and 1 <= col <= max_number_index:
@@ -163,7 +163,7 @@ def main():
     board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
 
-    row , col = player_turn(board_with_ships, turns_of_play)
+    row, col = player_turn(board_with_ships, turns_of_play)
     
 if __name__ == '__main__':
     main()
