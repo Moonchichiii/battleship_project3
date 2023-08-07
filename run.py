@@ -1,9 +1,7 @@
 """ The retry of a new version of battleship game. """
+from random import randint
 import os
 import time
-
-# importing randint,os and time libraries
-"""from random import randint REMOVE LATER !!!!! """
 
 
 def clear_screen():
@@ -50,21 +48,27 @@ def main():
     """ Validate and check the value input to build the board 5x5 or 8x8 """
     board_size = game_board_size()
     board = build_board(board_size)
+
     time.sleep(2)
     clear_screen()
+    SHIPS_ON_THE_BOARD = number_of_ships()
+
+    time.sleep(2)
+    clear_screen()
+    TURNS_OF_PLAY = number_of_turns()
+
+    time.sleep(2)
+    clear_screen()
+
     print_board(board)
 
 
 def game_settings():
     """ Set game settings """
     size = game_board_size()
+    ships = number_of_ships()
+    turns = number_of_turns()
     return size
-
-
-"""user inputs for the size of the board 5x5 or 8x8 rows/cols"""
-"""user inputs amount of ships 2-6"""
-"""ships = number_of_ships() !!!! remove later !!!!!! """
-"""turns = number_of_turns() !!!! remove later !!!!!! """
 
 
 def game_board_size():
@@ -108,9 +112,6 @@ def number_of_ships():
     return ships
 
 
-SHIPS_ON_THE_BOARD = number_of_ships()
-print(f"number of ships {SHIPS_ON_THE_BOARD}")
-
 time.sleep(1)
 clear_screen()
 
@@ -128,15 +129,8 @@ def number_of_turns():
     return turns
 
 
-TURNS_OF_PLAY = number_of_turns()
-print(f"number of turns {TURNS_OF_PLAY}")
-
 time.sleep(1)
 clear_screen()
-
-"""print(f"rows/cols {BOARD_SIZE} \n") !!! REMOVE LATER !!! """
-"""print(f"ships     {SHIPS_ON_THE_BOARD} \n)!!! REMOVE LATER !!! """
-"""print(f"turns     {TURNS_OF_PLAY} \n")"""
 
 
 if __name__ == '__main__':
