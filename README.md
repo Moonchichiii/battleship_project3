@@ -20,6 +20,32 @@
 
 ## User Experience
 
+ **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
+
+ 1. Kick things off with a simple **username prompt** directly on the welcome screen
+    i've kept it straightforward so you can dive right in.
+
+
+ 2. Once the **username prompt** has greeted you and you're all set,
+    decide on your game's layout. For a quick and compact game, the 5x5 board 
+    is your go-to choice. 
+
+
+ 3. With the **board prompt** out of the way, it's time to decide how many ships you'd like 
+    to hide on **game board?** more ships on a smaller board means sinkings in abundance.
+
+
+ 4. Next, determine how many turns (or tries) you want to hunt down those elusive ships. 
+    from anywhere between 5-10 turns per game. 
+    **Here's a hint:**
+    If you have chosen the 5x5 board with 6 ships and go for 10 turns, 
+    prepare for a sinking bonanza and a large ship graveyard.
+
+
+ 5. Finally, after completing your game, the outcomes of your successful sinkings and misses 
+    will be shown the result. 
+    Following this, we will pose the big question? Ready to go another round?
+
 
 
 
