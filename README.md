@@ -119,5 +119,9 @@ def print_board(board):
 
 - https://stackoverflow.com/questions/63318514/how-output-of-printprint-boardboard-is-printed-like-a-matrix-but-not-like-a
 
+#### The turns 
+
+https://trinket.io/python/051179b6d3
+
 
 ## Acknowledgments
