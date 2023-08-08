@@ -154,6 +154,7 @@ if test_hit:
     board_with_ships[row][col] = 'X'
 else:
     board_with_ships[row][col] = 'X'
+print_board(board_with_ships)
 
 
 def main():
@@ -176,7 +177,7 @@ def main():
     print(f"Number of turns left: {turns_of_play}\n")
 
     board_with_ships = ships_placement(board, total_ships)
-    print_board(board_with_ships)
+    #print_board(board_with_ships)
 
     row, col = player_turn(board_with_ships, turns_of_play)
 

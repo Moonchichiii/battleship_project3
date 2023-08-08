@@ -86,7 +86,7 @@
 
 </details>
 
-<details><summary>Printing the board and checking the cells for hit or miss.</summary>
+<details><summary>Printing the board and and hiding the ships.</summary>
 
 
 ![Alt text](testing/print_rows_col_board.png)
@@ -108,6 +108,43 @@ def print_board(board):
 </details>
 
 
+<details><summary>Tested function using pythonTutor for step-by-step validation 
+checking the cells for hit or miss.</summary>
+
+```python
+
+board_size = 5
+total_ships = 10
+name = "john"
+
+
+board = build_board(board_size)
+board_with_ships = ships_placement(board, total_ships)
+
+
+def hit_or_miss(board, row, col):
+    if board[row][col] == 'S':
+        print(f"Great job Sailor {name}! That's a HIT..")
+        return True
+    return False
+
+
+row, col = randint(0, board_size - 1), randint(0, board_size - 1)
+test_hit = hit_or_miss(board_with_ships, row, col)
+
+
+if test_hit:
+    board_with_ships[row][col] = 'X'
+else:
+    board_with_ships[row][col] = 'M'
+print_board(board_with_ships)
+
+
+```
+</details>
+
+
+  
 
 ## Bugs
 
