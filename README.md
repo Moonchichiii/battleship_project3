@@ -11,7 +11,7 @@
 
 ## Flow chart
 
-<details><summary>This is the flowchart of the game project</summary>
+<details><summary>A graphical representation of the game process</summary>
 
 ![Flowchart!](assets/images/flowchart_dark.png)
 
