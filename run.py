@@ -27,18 +27,13 @@ def welcome():
 
 
 def username_prompt():
-    """username input while loop"""    
+    """username input while loop"""
     name = input("Please enter your name: ")
 
     while not name:
-    print("Every sailor has a name? try again!")
-    name = input("Please enter your name: ")
-    else:
-    print(f"\nWelcome aboard Sailor {name}! Ready to sink some ships!")
-
-
-time.sleep(2)
-clear_screen()
+        print("Every sailor has a name? try again!")
+        name = input("Please enter your name: ")
+    return name
 
 
 def game_settings():
@@ -140,12 +135,14 @@ def player_turn(board, turns):
 
 def main():
     """ Main game loop. """
-    
     logo()
     welcome()
-    username_prompt()
-    
-        
+    sailors_name = username_prompt()
+    print(f"\nWelcome aboard Sailor {sailors_name}! Ready to sink some ships!")
+
+    time.sleep(2)
+    clear_screen()
+
     board_size = game_board_size()
     board = build_board(board_size)
 
@@ -163,12 +160,11 @@ def main():
     print(f"Number of hits: {turns_of_play}")
     print(f"Number of turns left: {turns_of_play}\n")
 
-    ##board_with_ships = ships_placement(board, total_ships)
-    ##print_board(board_with_ships)
+    board_with_ships = ships_placement(board, total_ships)
+    print_board(board_with_ships)
 
     row, col = player_turn(board_with_ships, turns_of_play)
 
 
 if __name__ == '__main__':
     main()
-
