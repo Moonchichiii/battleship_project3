@@ -1,7 +1,7 @@
 """ The retry of a new version of battleship game. """
-from random import randint
 import os
 import time
+from random import randint
 
 
 def clear_screen():
@@ -10,7 +10,7 @@ def clear_screen():
 
 
 def logo():
-    """Welcome game logo"""
+    """Welcome screen with the logo"""
     print(r"""
    ___       __  __  __        __   _
   / _ )___ _/ /_/ /_/ ___ ___ / /  (____
@@ -26,17 +26,14 @@ def welcome():
     print("           Ready to conquer the seas?\n")
 
 
-#  calling the logo first and the greeting text.
-logo()
-welcome()
+def username_prompt():
+    """username input while loop"""    
+    name = input("Please enter your name: ")
 
-
-name = input("Please enter your name: ")
-"""username input while loop"""
-while not name:
+    while not name:
     print("Every sailor has a name? try again!")
     name = input("Please enter your name: ")
-else:
+    else:
     print(f"\nWelcome aboard Sailor {name}! Ready to sink some ships!")
 
 
@@ -91,7 +88,6 @@ def number_of_turns():
     return turns
 
 
-
 def build_board(size):
     """
     Builds the game board and filled with '*'
@@ -124,7 +120,6 @@ def ships_placement(board, total_ships):
     return board
 
 
-
 def player_turn(board, turns):
     """ the user picks a row and column for their turn """
     max_number_index = len(board)
@@ -143,22 +138,14 @@ def player_turn(board, turns):
     return row - 1, col - 1
 
 
-def hit_or_miss(board, row, col):
-    if board[row][col] == 'S':
-        print(f"Great job Sailor {name}! That's a HIT..")
-        return True
-    return False
-
-test_hit = hit_or_miss(board_with_ships, row, col)
-if test_hit:
-    board_with_ships[row][col] = 'X'
-else:
-    board_with_ships[row][col] = 'X'
-print_board(board_with_ships)
-
-
 def main():
-    """ Validate and check the value input to build the board 5x5 or 8x8 """
+    """ Main game loop. """
+    
+    logo()
+    welcome()
+    username_prompt()
+    
+        
     board_size = game_board_size()
     board = build_board(board_size)
 
@@ -176,8 +163,8 @@ def main():
     print(f"Number of hits: {turns_of_play}")
     print(f"Number of turns left: {turns_of_play}\n")
 
-    board_with_ships = ships_placement(board, total_ships)
-    #print_board(board_with_ships)
+    ##board_with_ships = ships_placement(board, total_ships)
+    ##print_board(board_with_ships)
 
     row, col = player_turn(board_with_ships, turns_of_play)
 
@@ -185,10 +172,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-
-""" problems to attend: 
-   1. the turn function: check for hits and misses. 
-   2. the turn function: number of turns left, so decrease after each loop.
-
-   3. return the numbers to number of hits , turns left and decrease number of ships if one is hit. """
