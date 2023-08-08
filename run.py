@@ -1,16 +1,26 @@
-""" The retry of a new version of battleship game. """
+""" 
+Import os for 'clear' clean and tidy program. 
+Import time for time.delay. 
+Import random randint for random numbers 
+"""
 import os
 import time
 from random import randint
 
 
 def clear_screen():
-    """Clear the terminal after sign in."""
+    """
+    Clear the terminal after sign in.
+
+    """
     os.system('clear')
 
 
 def logo():
-    """Welcome screen with the logo"""
+    """
+    Welcome screen with the logo
+
+    """
     print(r"""
      ___       __  __  __        __   _
     / _ )___ _/ /_/ /_/ ___ ___ / /  (____
@@ -21,13 +31,20 @@ def logo():
 
 
 def welcome():
-    """Welcome greeting"""
+    """
+    Welcome greeting
+
+    """
     print("Ahoy, sailor! to my simple version of battleship!\n")
     print("           Ready to conquer the seas?\n")
 
 
 def username_prompt():
-    """username input while loop"""
+    """
+    username prompt - ask the user to
+    provide a valid name
+
+    """
     name = input("Please enter your name: ")
 
     while not name:
@@ -37,7 +54,10 @@ def username_prompt():
 
 
 def game_settings():
-    """ Set game settings """
+    """
+     Game settings
+
+    """
     size = game_board_size()
     ships = number_of_ships()
     turns = number_of_turns()
@@ -45,7 +65,10 @@ def game_settings():
 
 
 def game_board_size():
-    """  verify inputs of the board size 5x5 or 8x8? """
+    """
+    verify inputs of the board size 5x5 or 8x8?
+
+    """
     size = 0
     while size != 5 and size != 8:
         try:
@@ -58,7 +81,10 @@ def game_board_size():
 
 
 def number_of_ships():
-    """  verify inputs number of ships on the board """
+    """
+    verify inputs number of ships on the board
+
+    """
     ships = 0
     while ships < 2 or ships > 6:
         try:
@@ -71,7 +97,10 @@ def number_of_ships():
 
 
 def number_of_turns():
-    """  verify inputs number of turns to play """
+    """
+    verify inputs number of turns to play
+
+    """
     turns = 0
     while turns < 5 or turns > 10:
         try:
@@ -88,12 +117,16 @@ def build_board(size):
     Builds the game board and filled with '*'
 
     Size int the number of rows and columns from user input size.
+
     """
     return [['*' for _ in range(size)] for _ in range(size)]
 
 
 def print_board(board):
-    """ Display the game board in the terminal """
+    """
+    Display the game board in the terminal
+
+    """
     for i, row in enumerate(board):
         print_row = []
         for j, cell in enumerate(row):
@@ -105,7 +138,10 @@ def print_board(board):
 
 
 def ships_placement(board, total_ships):
-    """Placing the ships on the board taking the number entered by user """
+    """
+    Placing the ships on the board randomly
+
+    """
     placed_ships = 0
     while placed_ships < total_ships:
         row, col = randint(0, len(board) - 1), randint(0, len(board[0]) - 1)
@@ -116,7 +152,10 @@ def ships_placement(board, total_ships):
 
 
 def player_turn(board, turns):
-    """ the user picks a row and column for their turn """
+    """
+    the user picks a row and column for their turn
+
+    """
     max_number_index = len(board)
     while True:
         row = input(f"Choose a row (0-{max_number_index}): ")
@@ -134,7 +173,9 @@ def player_turn(board, turns):
 
 
 def hit_or_miss(board_with_ships, row, col, sailors_name):
-    """ to check if the row/col cell contains a 'S' ship, or no ship."""
+    """
+    Checks if the row/col cell contains a 'S'hip, or no ship.
+    """
     if board_with_ships[row][col] == 'S':
         board_with_ships[row][col] = 'X'
         print(f"Great job Sailor {sailors_name}! That's a HIT..")
@@ -169,7 +210,7 @@ def main():
 
     time.sleep(1)
     clear_screen()
-    print(f"Ships left: {total_ships}") 
+    print(f"Ships left: {total_ships}")
     #print(f"Number of hits: {hits}")
     #print(f"Number of turns left: {turns_of_play}\n")
 
