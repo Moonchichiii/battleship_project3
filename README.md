@@ -11,7 +11,7 @@
 
 ## Flow chart
 
-<details><summary>A graphical representation of the game process</summary>
+CLICK HERE 👉<details><summary>A graphical representation of the game process</summary> 
 
 ![Flowchart!](assets/images/flowchart_dark.png)
 
