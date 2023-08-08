@@ -91,23 +91,6 @@ def number_of_turns():
     return turns
 
 
-def player_turn(board, turns):
-    max_number_index = len(board)
-    while True:
-        row = input(f"Choose a row (0-{max_number_index}): ")
-        col = input(f"Choose a col (0-{max_number_index}): ")
-        try:
-            row, col = int(row), int(col)
-            if 1 <= row <= max_number_index and 1 <= col <= max_number_index:
-                break
-            else:
-                print(f"Please pick a valid number (1-{max_number_index})")
-        except ValueError:
-            print("Please enter a valid number")
-
-    return row -1, col - 1
-
-
 
 def build_board(size):
     """
@@ -141,6 +124,38 @@ def ships_placement(board, total_ships):
     return board
 
 
+
+def player_turn(board, turns):
+    """ the user picks a row and column for their turn """
+    max_number_index = len(board)
+    while True:
+        row = input(f"Choose a row (0-{max_number_index}): ")
+        col = input(f"Choose a col (0-{max_number_index}): ")
+        try:
+            row, col = int(row), int(col)
+            if 1 <= row <= max_number_index and 1 <= col <= max_number_index:
+                break
+            else:
+                print(f"Please pick a valid number (1-{max_number_index})")
+        except ValueError:
+            print("Please enter a valid number")
+
+    return row - 1, col - 1
+
+
+def hit_or_miss(board, row, col):
+    if board[row][col] == 'S':
+        print(f"Great job Sailor {name}! That's a HIT..")
+        return True
+    return False
+
+test_hit = hit_or_miss(board_with_ships, row, col)
+if test_hit:
+    board_with_ships[row][col] = 'X'
+else:
+    board_with_ships[row][col] = 'X'
+
+
 def main():
     """ Validate and check the value input to build the board 5x5 or 8x8 """
     board_size = game_board_size()
@@ -164,6 +179,15 @@ def main():
     print_board(board_with_ships)
 
     row, col = player_turn(board_with_ships, turns_of_play)
-    
+
+
 if __name__ == '__main__':
     main()
+
+
+
+""" problems to attend: 
+   1. the turn function: check for hits and misses. 
+   2. the turn function: number of turns left, so decrease after each loop.
+
+   3. return the numbers to number of hits , turns left and decrease number of ships if one is hit. """
