@@ -12,10 +12,10 @@ def clear_screen():
 def logo():
     """Welcome screen with the logo"""
     print(r"""
-   ___       __  __  __        __   _
-  / _ )___ _/ /_/ /_/ ___ ___ / /  (____
- / _  / _ `/ __/ __/ / -_(_-</ _ \/ / _ \
-/____/\_,_/\__/\__/_/\__/___/_//_/_/ .__/
+     ___       __  __  __        __   _
+    / _ )___ _/ /_/ /_/ ___ ___ / /  (____
+   / _  / _ `/ __/ __/ / -_(_-</ _ \/ / _ \
+  /____/\_,_/\__/\__/_/\__/___/_//_/_/ .__/
                                   /_/
 """)
 
@@ -133,6 +133,19 @@ def player_turn(board, turns):
     return row - 1, col - 1
 
 
+def hit_or_miss(board_with_ships, row, col, sailors_name):
+    """ to check if the row/col cell contains a 'S' ship, or no ship."""
+    if board_with_ships[row][col] == 'S':
+        board_with_ships[row][col] = 'X'
+        print(f"Great job Sailor {sailors_name}! That's a HIT..")
+        hits += 1
+        return True
+    else:
+        board_with_ships[row][col] = 'M'
+        print(f"Sorry Sailor {sailors_name}! That's a MISS!..")
+        return False, hits
+
+
 def main():
     """ Main game loop. """
     logo()
@@ -156,14 +169,15 @@ def main():
 
     time.sleep(1)
     clear_screen()
-    print(f"Number of Ships: {total_ships}")
-    print(f"Number of hits: {turns_of_play}")
-    print(f"Number of turns left: {turns_of_play}\n")
+    print(f"Ships left: {total_ships}") 
+    #print(f"Number of hits: {hits}")
+    #print(f"Number of turns left: {turns_of_play}\n")
 
     board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
 
     row, col = player_turn(board_with_ships, turns_of_play)
+    hit_or_miss(board_with_ships, row, col, sailors_name)
 
 
 if __name__ == '__main__':
