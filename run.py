@@ -109,7 +109,7 @@ def number_of_turns():
         try:
             turns = int(input("How many turns? (5-10): "))
             if turns < 5 or turns > 10:
-                print("invalid number of turns! Select a number from! 5 to 10?")
+                print("invalid turns! Select a number from 5 to 10?")
         except ValueError:
             print("Please enter a valid number between 5 and 10")
     return turns
@@ -181,12 +181,12 @@ def hit_or_miss(board_with_ships, row, col, sailors_name, hits):
     """
     if board_with_ships[row][col] == 'S':
         board_with_ships[row][col] = 'X'
-        print(f"\nGreat job Sailor {sailors_name}! That's a HIT..")
+        print(f"\nGreat job Sailor {sailors_name}! That's a HIT..\n")
         hits += 1
         return True, hits
     else:
         board_with_ships[row][col] = 'O'
-        print(f"\nSorry Sailor {sailors_name}! That's a MISS!..")
+        print(f"\nSorry Sailor {sailors_name}! That's a MISS!..\n")
         return False, hits
 
 
@@ -201,7 +201,6 @@ def main():
 
     time.sleep(2)
     clear_screen()
-    
 
     board_size = game_board_size()
     board = build_board(board_size)
@@ -234,17 +233,16 @@ def main():
     if turns_of_play == 0:
         print("Out of Turns! Game over!")
 
-turns_of_play -= 1
+    if hits == total_ships:
+        print(f"Ahoy! {sailors_name}! Out of ships! victorious!")
 
-    if turns_of_play == 0:
-        print("Out of Turns! Game over!")
 
 if __name__ == '__main__':
     main()
     while True:
         main()
 
-        restart = input("Ahoy! {sailors_name}! try again? (y/n): ").upper()
+        restart = input(f"Ahoy! {sailors_name}! try again? (y/n): ").upper()
         if restart == 'n':
             break
         elif restart == 'y':
