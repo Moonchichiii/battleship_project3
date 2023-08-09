@@ -39,7 +39,6 @@ def welcome():
     print("           Ready to conquer the seas?\n")
 
 
-
 def username_prompt():
     """
     username prompt - ask the user to
@@ -176,7 +175,7 @@ def player_turn(board, turns):
     return row - 1, col - 1
 
 
-def hit_or_miss(board_with_ships, row, col, sailors_name,hits):
+def hit_or_miss(board_with_ships, row, col, sailors_name, hits):
     """
     Checks if the row/col cell contains a 'S'hip, or no ship.
     """
@@ -196,9 +195,9 @@ def main():
 
     logo()
     welcome()
-    
+
     sailors_name = username_prompt()
-    print(f"\nWelcome aboard Sailor {sailors_name.upper()}! Ready to sink some ships!")
+    print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")
 
     time.sleep(2)
     clear_screen()
@@ -217,21 +216,14 @@ def main():
     time.sleep(1)
     clear_screen()
 
-
     print(f"Ships left: {total_ships}\n")
-    
     hits = 0
-
     print(f"Number of hits: {hits}\n")
-
-    
     board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
-
-    
     row, col = player_turn(board_with_ships, turns_of_play)
     hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
 
-    
+
 if __name__ == '__main__':
     main()
