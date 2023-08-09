@@ -282,6 +282,8 @@ print_board(board_with_ships)
 
 ## Credits
 
+***Restart the game***
+https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
 
 https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
   
