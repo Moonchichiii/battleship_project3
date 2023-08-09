@@ -185,6 +185,36 @@ def print_board(board):
         print(" ".join(print_row))
 
 ```
+![Alt text](<testing/Screenshot 2023-08-09 143103.png>)
+
+### Linter error message with the code above. 
+''' 
+	"code": "unused-variable",
+	"severity": 4,
+	"message": "Unused variable 'i'",
+	"source": "pylint",
+			
+	"code": "unused-variable",
+	"severity": 4,
+	"message": "Unused variable 'j'",
+	"source": "pylint",
+	"startLineNumber": 135,
+	'''
+### Linter error message resolved. 
+ '''
+ for row in (board):
+        print_row = []
+        for cell in (row):
+            if cell == 'S':
+                print_row.append('*')
+            else:
+                print_row.append(cell)
+        print(" ".join(print_row))
+        '''
+
+![Alt text](<testing/Screenshot 2023-08-09 143410.png>)
+
+
 </details>
 
 

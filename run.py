@@ -130,9 +130,9 @@ def print_board(board):
     Display the game board in the terminal
 
     """
-    for i, row in enumerate(board):
+    for row in (board):
         print_row = []
-        for j, cell in enumerate(row):
+        for cell in (row):
             if cell == 'S':
                 print_row.append('*')
             else:
