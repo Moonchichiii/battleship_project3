@@ -220,6 +220,23 @@ def main():
     hits = 0
     print(f"Number of hits: {hits}\n")
     board_with_ships = ships_placement(board, total_ships)
+    
+
+
+    while turns < 5 or turns > 10:
+        try:
+            turns = int(input("How many turns? (5-10): "))
+            if turns < 5 or turns > 10:
+                print("invalid number of turns! Choose between 5 or 10?")
+        except ValueError:
+            print("Please enter a valid number between 5 and 10")
+    return turns
+
+
+
+
+
+
     print_board(board_with_ships)
     row, col = player_turn(board_with_ships, turns_of_play)
     hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
