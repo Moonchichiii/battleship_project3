@@ -2,13 +2,12 @@
 
 <h1 style="text-decoration: none; border-bottom: none;">Battleship Game ⚓️</h1>
 <h3>Ahoooooy Sailors! Ready to navigate some rough waters?</h3>
+
+
+
 #### ****Visit the live project below.****
+
 * Your dependencies must be placed in the `requirements.txt` file
-
-
-
-
-
 
 
 
@@ -41,6 +40,12 @@ CLICK LINK BELOW 👇<details><summary>A graphical representation of the game pr
 👉![Flowchart!](assets/images/flowchart_dark.png)
 
 </details>
+
+
+
+
+
+
 
 
 ## User Experience
@@ -82,11 +87,25 @@ CLICK LINK BELOW 👇<details><summary>A graphical representation of the game pr
 
    ![Alt text](<assets/images/Screenshot 2023-08-07 193952.png>)
 
+
+
+
+
+
+
+
+
 ### Game settings
 
 1. **Choose between a 5x5 or an 8x8 board** 
 2. **Decide on having between 2 to 6 ships**
 3. **Determine how many turns to play**
+
+
+
+
+
+
 
 
 
@@ -111,6 +130,12 @@ CLICK LINK BELOW 👇<details><summary>A graphical representation of the game pr
 [Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
 
 [Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
+
+
+
+
+
+
 
 
 ## Testing 
@@ -200,8 +225,17 @@ print_board(board_with_ships)
 ## Bugs
 
 
+
+
+
+
+
 ## Credits
-  ***Helped to construct the board ***
+
+
+
+  
+  ***Helped to construct the board***
 
 - https://www.programcreek.com/python/?CodeExample=print+board
 
