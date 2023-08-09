@@ -217,10 +217,11 @@ def main():
     clear_screen()
 
     print(f"Ships left: {total_ships}\n")
-    hits = 0
+ 
     print(f"Number of hits: {hits}\n")
     board_with_ships = ships_placement(board, total_ships)
     
+    hits = 0
 
 
     while turns < 5 or turns > 10:
