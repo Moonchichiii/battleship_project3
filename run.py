@@ -172,7 +172,7 @@ def player_turn(board, turns):
         except ValueError:
             print("Please enter a valid number")
 
-    return row - 1, col - 1
+    return row - 1, col - 1, turns
 
 
 def hit_or_miss(board_with_ships, row, col, sailors_name, hits):
@@ -201,6 +201,7 @@ def main():
 
     time.sleep(2)
     clear_screen()
+    hits = 0
 
     board_size = game_board_size()
     board = build_board(board_size)
@@ -216,27 +217,15 @@ def main():
     time.sleep(1)
     clear_screen()
 
-    print(f"Ships left: {total_ships}\n")
- 
-    print(f"Number of hits: {hits}\n")
     board_with_ships = ships_placement(board, total_ships)
-    
-    hits = 0
 
+    while turns_of_play > 0:
 
-    while turns < 5 or turns > 10:
-        try:
-            turns = int(input("How many turns? (5-10): "))
-            if turns < 5 or turns > 10:
-                print("invalid number of turns! Choose between 5 or 10?")
-        except ValueError:
-            print("Please enter a valid number between 5 and 10")
-    return turns
+        print(f"Ships left: {total_ships}\n")
+    print(f"Number of hits: {hits}\n")
+    print(f"Turn left: {turns_of_play}\n")
 
-
-
-
-
+    turns_of_play -= 1
 
     print_board(board_with_ships)
     row, col = player_turn(board_with_ships, turns_of_play)
