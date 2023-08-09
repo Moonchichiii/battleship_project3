@@ -1,7 +1,7 @@
-""" 
-Import os for 'clear' clean and tidy program. 
-Import time for time.delay. 
-Import random randint for random numbers 
+"""
+Import os for 'clear'
+Import time for time.delay.
+Import random randint for random numbers
 """
 import os
 import time
@@ -172,7 +172,7 @@ def player_turn(board, turns):
     return row - 1, col - 1
 
 
-def hit_or_miss(board_with_ships, row, col, sailors_name):
+def hit_or_miss(board_with_ships, row, col, sailors_name,hits):
     """
     Checks if the row/col cell contains a 'S'hip, or no ship.
     """
@@ -180,15 +180,16 @@ def hit_or_miss(board_with_ships, row, col, sailors_name):
         board_with_ships[row][col] = 'X'
         print(f"Great job Sailor {sailors_name}! That's a HIT..")
         hits += 1
-        return True
+        return True, hits
     else:
-        board_with_ships[row][col] = 'M'
+        board_with_ships[row][col] = 'O'
         print(f"Sorry Sailor {sailors_name}! That's a MISS!..")
         return False, hits
 
 
 def main():
     """ Main game loop. """
+
     logo()
     welcome()
     sailors_name = username_prompt()
@@ -210,16 +211,23 @@ def main():
 
     time.sleep(1)
     clear_screen()
-    print(f"Ships left: {total_ships}")
-    #print(f"Number of hits: {hits}")
+
+
+    print(f"Ships left: {total_ships}\n")
+    
+    hits = 0
+
+    print(f"Number of hits: {hits}\n")
+
     #print(f"Number of turns left: {turns_of_play}\n")
 
     board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
 
+    
     row, col = player_turn(board_with_ships, turns_of_play)
-    hit_or_miss(board_with_ships, row, col, sailors_name)
+    hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
 
-
+    
 if __name__ == '__main__':
     main()
