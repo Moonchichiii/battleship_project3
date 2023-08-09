@@ -39,6 +39,7 @@ def welcome():
     print("           Ready to conquer the seas?\n")
 
 
+
 def username_prompt():
     """
     username prompt - ask the user to
@@ -48,19 +49,12 @@ def username_prompt():
     while True:
         name = input("Please enter your name: ")
         if not name:
-            print("Every sailor has a name? try again!")
-
-            elif:
-                print("Every sailor has a name? try again!")
-        except ValueError:
-            print("")
-
+            print("Every sailor has a name? Try again!")
+        elif name.isnumeric():
+            print("Every sailor has a name? Not a number!")
+        else:
+            break
     return name
-
-sailors_name = username_prompt()
-print(f"\nWelcome aboard Sailor {sailors_name.up}! Ready to sink some ships!")
-
-    
 
 
 def game_settings():
@@ -168,7 +162,7 @@ def player_turn(board, turns):
     """
     max_number_index = len(board)
     while True:
-        row = input(f"Choose a row (0-{max_number_index}): ")
+        row = input(f"\nChoose a row (0-{max_number_index}): ")
         col = input(f"Choose a col (0-{max_number_index}): ")
         try:
             row, col = int(row), int(col)
@@ -202,8 +196,9 @@ def main():
 
     logo()
     welcome()
+    
     sailors_name = username_prompt()
-    print(f"\nWelcome aboard Sailor {sailors_name.up}! Ready to sink some ships!")
+    print(f"\nWelcome aboard Sailor {sailors_name.upper()}! Ready to sink some ships!")
 
     time.sleep(2)
     clear_screen()
