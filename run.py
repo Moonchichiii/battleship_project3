@@ -154,7 +154,7 @@ def ships_placement(board, total_ships):
     return board
 
 
-def player_turn(board, turns):
+def player_turn(board):
     """
     the user picks a row and column for their turn
 
@@ -172,7 +172,7 @@ def player_turn(board, turns):
         except ValueError:
             print("Please enter a valid number")
 
-    return row - 1, col - 1, turns
+    return row - 1, col - 1
 
 
 def hit_or_miss(board_with_ships, row, col, sailors_name, hits):
@@ -220,17 +220,19 @@ def main():
     board_with_ships = ships_placement(board, total_ships)
 
     while turns_of_play > 0:
-
         print(f"Ships left: {total_ships}\n")
-    print(f"Number of hits: {hits}\n")
-    print(f"Turn left: {turns_of_play}\n")
+        print(f"Number of hits: {hits}\n")
+        print(f"Turn left: {turns_of_play}\n")
+        print_board(board_with_ships)
 
-    turns_of_play -= 1
+        row, col = player_turn(board_with_ships, turns_of_play)
+        hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
 
-    print_board(board_with_ships)
-    row, col = player_turn(board_with_ships, turns_of_play)
-    hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
+        turns_of_play -= 1
 
+    if turns_of_play == 0:
+        print("Out of Turns! Game over!")
+    
 
 if __name__ == '__main__':
     main()
