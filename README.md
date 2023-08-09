@@ -23,7 +23,6 @@
 - [Design](#design)
 - [Technologies & Deployment Used](#technologies--deployment-used)
 - [Testing](#testing)
-- [Bugs](#bugs)
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgments)
 
@@ -109,10 +108,23 @@
 
 
 
+
+
+
+
 ## Design
+
+
 
 - **Simplicity:** The design is straightforward,very simple and user-friendly.
 - **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
+
+
+
+
+
+
+
 
 
 
@@ -125,26 +137,22 @@
 
 [Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted within this editor.
 
-[Intermediate Deployment - CodeAnyWhere ](https://codeanywhere.com/solutions/collaborate)  -  Initial deployment and testing took place here.
-
 [Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
 
 [Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
 
 
-
-
-
-
-
-
 ## Testing 
+
 
 [Execution Visualization Tool](https://pythontutor.com/cp/composingprograms.html#mode=edit)
 - Excellent for visually understanding and verifying how your code executes.
 
 [Code Linter](https://pep8ci.herokuapp.com/)
 - keep your Python code neat and PEP 8 friendly.
+
+
+
 
 
 ### User Story testing - manual testing
