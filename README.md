@@ -146,6 +146,10 @@
 [Code Linter](https://pep8ci.herokuapp.com/)
 - keep your Python code neat and PEP 8 friendly.
 
+
+
+
+
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
 ![Alt text](testing/numbers_of_turns.png)
@@ -219,8 +223,19 @@ print_board(board_with_ships)
 ```
 </details>
 
+<details><summary>New usersname prompt with validation!</summary>
 
-  
+
+- More about isnumeric.
+- https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
+
+![Number test](<testing/checking_for_ numbers.png>)
+
+
+![blank name and number](testing/numnber_blank_name.png)  
+
+</details>
+
 
 ## Bugs
 
@@ -233,7 +248,7 @@ print_board(board_with_ships)
 ## Credits
 
 
-
+https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
   
   ***Helped to construct the board***
 

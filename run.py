@@ -40,33 +40,27 @@ def welcome():
 
 
 def username_prompt():
-    while True:
-            if 
-                break
-            else:
-                print(f"")
-        except ValueError:
-            print("")
-
-    return row - 1, col - 1
-
-
-
-
-
-
-
     """
     username prompt - ask the user to
     provide a valid name
 
     """
-    name = input("Please enter your name: ")
-
-    while not name:
-        print("Every sailor has a name? try again!")
+    while True:
         name = input("Please enter your name: ")
+        if not name:
+            print("Every sailor has a name? try again!")
+
+            elif:
+                print("Every sailor has a name? try again!")
+        except ValueError:
+            print("")
+
     return name
+
+sailors_name = username_prompt()
+print(f"\nWelcome aboard Sailor {sailors_name.up}! Ready to sink some ships!")
+
+    
 
 
 def game_settings():
