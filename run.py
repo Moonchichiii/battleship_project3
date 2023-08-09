@@ -201,7 +201,7 @@ def main():
 
     time.sleep(2)
     clear_screen()
-    hits = 0
+    
 
     board_size = game_board_size()
     board = build_board(board_size)
@@ -218,8 +218,9 @@ def main():
     clear_screen()
 
     board_with_ships = ships_placement(board, total_ships)
+    hits = 0
 
-    while turns_of_play > 0:
+    while turns_of_play > 0 and hits < total_ships:
         print(f"Ships left: {total_ships}\n")
         print(f"Number of hits: {hits}\n")
         print(f"Turns left: {turns_of_play}\n")
@@ -233,6 +234,10 @@ def main():
     if turns_of_play == 0:
         print("Out of Turns! Game over!")
 
+turns_of_play -= 1
+
+    if turns_of_play == 0:
+        print("Out of Turns! Game over!")
 
 if __name__ == '__main__':
     main()
