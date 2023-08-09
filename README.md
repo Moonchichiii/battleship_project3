@@ -35,9 +35,9 @@
 
 ## Flow chart
 
-CLICK TO EXPAND BELOW 👇<details><summary>A graphical representation of the game process</summary> 
+👇 CLICK TO EXPAND BELOW 👇<details><summary>A graphical representation of the game process</summary> 
 
-👉![Flowchart!](assets/images/flowchart_dark.png)
+![Flowchart!](assets/images/flowchart_dark.png)
 
 </details>
 
