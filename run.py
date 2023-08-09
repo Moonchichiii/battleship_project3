@@ -225,14 +225,14 @@ def main():
         print(f"Turn left: {turns_of_play}\n")
         print_board(board_with_ships)
 
-        row, col = player_turn(board_with_ships, turns_of_play)
+        row, col = player_turn(board_with_ships)
         hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
 
         turns_of_play -= 1
 
     if turns_of_play == 0:
         print("Out of Turns! Game over!")
-    
+
 
 if __name__ == '__main__':
     main()
