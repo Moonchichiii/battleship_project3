@@ -40,6 +40,22 @@ def welcome():
 
 
 def username_prompt():
+    while True:
+            if 
+                break
+            else:
+                print(f"")
+        except ValueError:
+            print("")
+
+    return row - 1, col - 1
+
+
+
+
+
+
+
     """
     username prompt - ask the user to
     provide a valid name
@@ -193,7 +209,7 @@ def main():
     logo()
     welcome()
     sailors_name = username_prompt()
-    print(f"\nWelcome aboard Sailor {sailors_name}! Ready to sink some ships!")
+    print(f"\nWelcome aboard Sailor {sailors_name.up}! Ready to sink some ships!")
 
     time.sleep(2)
     clear_screen()
@@ -219,8 +235,7 @@ def main():
 
     print(f"Number of hits: {hits}\n")
 
-    #print(f"Number of turns left: {turns_of_play}\n")
-
+    
     board_with_ships = ships_placement(board, total_ships)
     print_board(board_with_ships)
 
