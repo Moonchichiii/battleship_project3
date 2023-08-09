@@ -147,6 +147,11 @@
 - keep your Python code neat and PEP 8 friendly.
 
 
+### User Story testing - manual testing
+
+
+
+
 
 
 
@@ -267,14 +272,6 @@ print_board(board_with_ships)
 </details>
 
 
-## Bugs
-
-
-
-
-
-
-
 ## Credits
 
 
@@ -289,6 +286,8 @@ https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username
 #### The turns 
 
 https://trinket.io/python/051179b6d3
+
+https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
 
 
 ## Acknowledgments
