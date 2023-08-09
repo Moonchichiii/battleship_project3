@@ -1,9 +1,34 @@
+
+
 <h1 style="text-decoration: none; border-bottom: none;">Battleship Game ⚓️</h1>
 <h3>Ahoooooy Sailors! Ready to navigate some rough waters?</h3>
-
-### Visit the live project below.
-
+#### ****Visit the live project below.****
 * Your dependencies must be placed in the `requirements.txt` file
+
+
+
+
+
+
+
+
+
+## Content
+
+
+
+- [Flow Chart](#flow-chart)
+- [User Experience](#user-experience)
+- [Game Features](#game-features)
+- [Game Settings](#game-settings)
+- [Design](#design)
+- [Technologies & Deployment Used](#technologies--deployment-used)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
+
+
 
 
 
@@ -11,9 +36,9 @@
 
 ## Flow chart
 
-CLICK HERE 👉<details><summary>A graphical representation of the game process</summary> 
+CLICK LINK BELOW 👇<details><summary>A graphical representation of the game process</summary> 
 
-![Flowchart!](assets/images/flowchart_dark.png)
+👉![Flowchart!](assets/images/flowchart_dark.png)
 
 </details>
 
@@ -176,7 +201,7 @@ print_board(board_with_ships)
 
 
 ## Credits
-  ***Helped to build out the board***
+  ***Helped to construct the board ***
 
 - https://www.programcreek.com/python/?CodeExample=print+board
 
