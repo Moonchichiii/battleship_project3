@@ -225,13 +225,11 @@ if __name__ == '__main__':
 
         if not restart:
             print("\nPlease confirm with (y/n) ? Try again!")
-            continue
-        
+
         elif restart == 'N':
             print("\nThank you for playing!")
             break
 
-        
         elif restart == 'Y':
             continue
         elif restart.isnumeric():
