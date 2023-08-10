@@ -178,10 +178,48 @@
 |              | Select board size (5x5 or 8x8): | Empty input           | Please select a valid! board size (5x5 or 8x8)     | Works as intended   |
 |              |                              | 1111              | invalid size. Please choose between (5x5 or 8x8)?  | Works as intended   | 
 
-
+![Alt text](assets/readme_images/select_board_size.png)
 
 
 </details>
+
+<details><summary>Number of ships</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Number of ships | Choose the number of ships? (2-6):| "2","3","4" "6"      |  Returns correct number (5 or 10)       | Works as intended   |
+|              |                              | Empty input              |  Please enter a valid number between 2 and 6   | Works as intended   |
+|              |                              | 1111                     |  Invalid number! Please choose between 2 and 6 ships? | Works as intended   | 
+
+![Alt text](assets/readme_images/select_ships.png)
+
+
+</details>
+
+
+
+<details><summary>Prompt</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Number of ships |                           | "5" or "8"               | Returns correct size                    | Works as intended   |
+|              |                              | Empty input              |                                         | Works as intended   |
+|              |                              | 1111                     |                                         | Works as intended   | 
+
+<img>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
 
 
 
