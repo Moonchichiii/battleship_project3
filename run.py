@@ -51,7 +51,7 @@ def game_settings():
      board size (5x5 or 8x8),
      number of ships (2 or 6),
      number of turns (5 to 10),
-     
+
     """
     size = game_board_size()
     ships = number_of_ships()
@@ -60,57 +60,48 @@ def game_settings():
 
 
 def game_board_size():
-    """ Validates the choose either board size (5x5 or 8x8) """
+    """ Validate user chosen board size (5x5 or 8x8) """
 
     size = 0
     while size != 5 and size != 8:
         try:
-            size = int(input("Choose the number of rows/cols (5-8): "))
+            size = int(input("Select board size (5x5 or 8x8): "))
             if size != 5 and size != 8:
-                print("invalid size. Please choose between 5 or 8?")
+                print("invalid size. Please choose between (5x5 or 8x8)?")
         except ValueError:
-            print("Please enter a valid number between 5 and 8")
+            print("Please select a valid! board size (5x5 or 8x8)")
     return size
 
 
 def number_of_ships():
-    """    verify inputs number of ships on the board
-
-    """
+    """ Validate users selected number of ships. """
     ships = 0
     while ships < 2 or ships > 6:
         try:
-            ships = int(input("How many ships on the board? (2-6): "))
+            ships = int(input("Choose the number of ships? (2-6): "))
             if ships < 2 or ships > 6:
-                print("invalid number of ships! Please choose between 2 or 6?")
+                print("invalid number! Please choose between 2 and 6 ships?")
         except ValueError:
             print("Please enter a valid number between 2 and 6")
     return ships
 
 
 def number_of_turns():
-    """
-    verify inputs number of turns to play
-
-    """
+    """ Validate users selected number of game turns """
     turns = 0
     while turns < 5 or turns > 10:
         try:
-            turns = int(input("How many turns? (5-10): "))
+            turns = int(input("How many turns ? (5-10): "))
             if turns < 5 or turns > 10:
-                print("invalid turns! Select a number from 5 to 10?")
+                print("invalid turns! Select a number from (5 to 10)?")
         except ValueError:
-            print("Please enter a valid number between 5 and 10")
+            print("Please enter a valid number between (5 and 10)")
     return turns
 
 
 def build_board(size):
-    """
-    Builds the game board and filled with '*'
+    """ Creates game board after chosen size (5x5 or 8x8). """
 
-    Size int the number of rows and columns from user input size.
-
-    """
     return [['*' for _ in range(size)] for _ in range(size)]
 
 
@@ -130,10 +121,9 @@ def print_board(board):
 
 
 def ships_placement(board, total_ships):
-    """
-    Placing the ships on the board randomly
+    """ Randomly placing ships on the board,
+    total_ships selected number of ships. """
 
-    """
     placed_ships = 0
     while placed_ships < total_ships:
         row, col = randint(0, len(board) - 1), randint(0, len(board[0]) - 1)
@@ -144,10 +134,9 @@ def ships_placement(board, total_ships):
 
 
 def player_turn(board):
-    """
-    the user picks a row and column for their turn
+    """ User choose a row and column for their turn based on board size.
+        Returns chosen row and column """
 
-    """
     max_number_index = len(board)
     while True:
         row = input(f"\nChoose a row (0-{max_number_index}): ")
@@ -165,9 +154,8 @@ def player_turn(board):
 
 
 def hit_or_miss(board_with_ships, row, col, sailors_name):
-    """
-    Checks if the row/col cell contains a 'S'hip, or no ship.
-    """
+    """ Validate if row/col contains a ship 'S' or not."""
+
     if board_with_ships[row][col] == 'S':
         board_with_ships[row][col] = 'X'
         print(f"\nGreat job Sailor {sailors_name}! That's a HIT..\n")
