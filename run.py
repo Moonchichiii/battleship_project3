@@ -175,19 +175,18 @@ def player_turn(board):
     return row - 1, col - 1
 
 
-def hit_or_miss(board_with_ships, row, col, sailors_name, hits):
+def hit_or_miss(board_with_ships, row, col, sailors_name):
     """
     Checks if the row/col cell contains a 'S'hip, or no ship.
     """
     if board_with_ships[row][col] == 'S':
         board_with_ships[row][col] = 'X'
         print(f"\nGreat job Sailor {sailors_name}! That's a HIT..\n")
-        hits += 1
-        return True, hits
+        return True
     else:
         board_with_ships[row][col] = 'O'
         print(f"\nSorry Sailor {sailors_name}! That's a MISS!..\n")
-        return False, hits
+        return False
 
 
 def main():
@@ -226,7 +225,9 @@ def main():
         print_board(board_with_ships)
 
         row, col = player_turn(board_with_ships)
-        hits = hit_or_miss(board_with_ships, row, col, sailors_name, hits)
+        got_hit = hit_or_miss(board_with_ships, row, col, sailors_name)
+        if got_hit:
+            hits += 1
 
         turns_of_play -= 1
 
@@ -239,11 +240,11 @@ def main():
 
 if __name__ == '__main__':
     main()
-    while True:
-        main()
+while True:
+    restart = input("Ahoooy Sailor! try again? (y/n): ").upper()
 
-        restart = input(f"Ahoy! {sailors_name}! try again? (y/n): ").upper()
-        if restart == 'n':
-            break
-        elif restart == 'y':
-            continue
+    if restart == 'N':
+        print("\nThank you for playing!")
+        break
+    elif restart == 'Y':
+        continue
