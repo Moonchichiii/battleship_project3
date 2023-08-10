@@ -237,7 +237,7 @@
 
 
 - **Issue with ships remaining** 
-- Plan of action: When a ship is hit, decrement the ship count by 1
+- Plan of action: When a ship is hit,remove one ship from count. 
 
 ![Alt text](assets/readme_images/ships_left_hits_turns.png)
 
