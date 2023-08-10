@@ -166,11 +166,23 @@
 |              | Please enter your name:      | Empty input              | Every sailor has a name? Try again!     | Works as intended   |
 |              |                              | 12345678910              | Every sailor has a name? Not a number!  | Works as intended   | 
 
-
+![Alt text](testing/Username_prompt.png)
 
 
 </details>
 
+<details><summary>Select board size (5x5 or 8x8)</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Board size   | Prompts user for 5x5 or 8x8 board| "5" or "8"           | Returns correct size                    | Works as intended   |
+|              | Select board size (5x5 or 8x8): | Empty input           | Please select a valid! board size (5x5 or 8x8)     | Works as intended   |
+|              |                              | 1111              | invalid size. Please choose between (5x5 or 8x8)?  | Works as intended   | 
+
+![Alt text](testing/Username_prompt.png)
+
+
+</details>
 
 
 
