@@ -158,6 +158,8 @@
 ### User Story testing - manual testing
 
 
+<details><summary>Username prompt</summary>
+
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
 | Game name    | Prompts user for name        | "Mats"                   | Returns the name "Mats"                 | Works as intended   |
@@ -167,9 +169,15 @@
 
 
 
+</details>
 
 
 
+
+<br>
+<br>
+<br>
+<br>
 
 - helpful site for the markdown tables and cells.
 - https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.

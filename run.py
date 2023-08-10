@@ -175,7 +175,7 @@ def main():
     sailors_name = username_prompt()
     print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")
 
-    time.sleep(2)
+    time.sleep(6)
     clear_screen()
 
     board_size = game_board_size()
