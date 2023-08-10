@@ -302,9 +302,10 @@ print_board(board_with_ships)
 ## Credits
 
 ***Restart the game***
-https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
 
-https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
+- https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
+
+- https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
   
   ***Helped to construct the board***
 
@@ -314,9 +315,9 @@ https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username
 
 #### The turns 
 
-https://trinket.io/python/051179b6d3
+- https://trinket.io/python/051179b6d3
 
-https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
+- https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
 
 
 ## Acknowledgments
