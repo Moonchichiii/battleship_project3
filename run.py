@@ -24,7 +24,7 @@ def logo():
 def welcome():
     """ Greetings message """
 
-    print("Ahoy, sailor! to my simple version of battleship!\n")
+    print("Ahoy, sailor! Welcome to a simple version of battleship!\n")
     print("           Ready to conquer the seas?\n")
 
 
