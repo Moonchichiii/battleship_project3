@@ -216,9 +216,9 @@
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
 | Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
-| Choose a col   Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
+| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
 |              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
-|              |                              | "9" "10"                 | Please pick a valid number (1-5)        | Works as intended   | 
+|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
 
 ![Alt text](assets/readme_images/row_5_col_4.png)
 ![Alt text](assets/readme_images/empty_row_col.png)
@@ -226,9 +226,37 @@
 </details>
 
 
+<details><summary>Ships left, Hits, Turns left</summary>
+
+| **Feature**  | **Expected Behavior**        | **Actual Result**      |   
+| :---         |    :----:                    |          ---:          |  
+| Ships left: 6|   Ships left: 5              | Not working as intended| 
+| Numbers of Hits: 1  | Numbers of Hits: 1    | Works as intended      | 
+| Turns left: 2|    Turns left: 2             | Works as intended      |
+|              |                              |                        | 
+
+
+- **Issue with ships remaining** 
+- Plan of action: When a ship is hit, decrement the ship count by 1
+
+![Alt text](assets/readme_images/ships_left_hits_turns.png)
+
+
+</details>
+
+<details><summary>Restart.</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
+| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
+|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
+|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
 
 
 
+
+</details>
 
 
 
