@@ -189,7 +189,7 @@
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
 | Number of ships | Choose the number of ships? (2-6):| "2","3","4" "6"      |  Returns correct number (5 or 10)       | Works as intended   |
 |              |                              | Empty input              |  Please enter a valid number between 2 and 6   | Works as intended   |
-|              |                              | 1111                     |  Invalid number! Please choose between 2 and 6 ships? | Works as intended   | 
+|              |                              | "8" "9"                  |  Invalid number! Please choose between 2 and 6 ships? | Works as intended   | 
 
 ![Alt text](assets/readme_images/select_ships.png)
 
@@ -198,16 +198,16 @@
 
 
 
-<details><summary>Prompt</summary>
+<details><summary>Number of turns ? </summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Number of ships |                           | "5" or "8"               | Returns correct size                    | Works as intended   |
-|              |                              | Empty input              |                                         | Works as intended   |
-|              |                              | 1111                     |                                         | Works as intended   | 
+| Number of turns ? | How many turns ? (5-10):| "5" or "10"               | Returns correct size                    | Works as intended   |
+|              |                              | Empty input             | Please enter a valid number between (5 and 10) | Works as intended   |
+|              |                              | 1                     | invalid turns! Select a number from (5 to 10)? | Works as intended   | 
 
-<img>
-
+![Alt text](assets/readme_images/empty_line_turns.png)
+![Alt text](assets/readme_images/Invalid_number_turns.png)
 
 </details>
 
