@@ -22,7 +22,7 @@
 - [Game Settings](#game-settings)
 - [Design](#design)
 - [Technologies & Deployment Used](#technologies--deployment-used)
-- [Testing](#testing)
+- [Testing](#testing) 
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgments)
 
@@ -158,11 +158,21 @@
 ### User Story testing - manual testing
 
 
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Game name    | Prompts user for name        | "Mats"                   | Returns the name "Mats"                 | Works as intended   |
+|              | Please enter your name:      | Empty input              | Every sailor has a name? Try again!     | Works as intended   |
+|              |                              | 12345678910              | Every sailor has a name? Not a number!  | Works as intended   | 
 
 
 
 
 
+
+
+
+- helpful site for the markdown tables and cells.
+- https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
 ![Alt text](testing/numbers_of_turns.png)

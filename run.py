@@ -37,9 +37,9 @@ def username_prompt():
     while True:
         name = input("Please enter your name: ")
         if not name:
-            print("Every sailor has a name? Try again!")
+            print("\nEvery sailor has a name? Try again!")
         elif name.isnumeric():
-            print("Every sailor has a name? Not a number!")
+            print("\nEvery sailor has a name? Not a number!")
         else:
             break
     return name
@@ -210,17 +210,17 @@ def main():
         turns_of_play -= 1
 
     if turns_of_play == 0:
-        print("Out of Turns! Game over!")
+        print("\nOut of Turns! Game over!")
 
     if hits == total_ships:
-        print(f"Ahoy! {sailors_name}! Out of ships! victorious!")
+        print(f"\nAhoy! {sailors_name}! Out of ships! victorious!")
 
 
 if __name__ == '__main__':
     while True:
         main()
 
-        restart = input("Ahoooy Sailor! try again? (y/n): ").upper()
+        restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
         if restart == 'N':
             print("\nThank you for playing!")
