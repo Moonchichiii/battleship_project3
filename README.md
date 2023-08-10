@@ -211,6 +211,19 @@
 
 </details>
 
+<details><summary>Choose Row/Column (board size for test is 5x5)</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
+| Choose a col   Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
+|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
+|              |                              | "9" "10"                 | Please pick a valid number (1-5)        | Works as intended   | 
+
+![Alt text](assets/readme_images/row_5_col_4.png)
+![Alt text](assets/readme_images/empty_row_col.png)
+![Alt text](assets/readme_images/incorrect_number_row_col.png)
+</details>
 
 
 
