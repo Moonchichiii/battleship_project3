@@ -223,22 +223,18 @@ if __name__ == '__main__':
 
         restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
-        if restart == 'N':
-            print("\nThank you for playing!")
-            break
-        elif restart == 'Y':
-            continue
-while True:
-    main()
-    restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
-    if restart == 'N':
-        print("\nThank you for playing!")
         if not restart:
             print("\nPlease confirm with (y/n) ? Try again!")
-        elif name.isnumeric():
-            print("\nPlease confirm with (y/n) ? Not a number!")
-        elif restart == 'Y':
-                return main()
-        else:
+            continue
+        
+        elif restart == 'N':
+            print("\nThank you for playing!")
             break
-    return main()
+
+        
+        elif restart == 'Y':
+            continue
+        elif restart.isnumeric():
+            print("nPlease confirm with (y/n) ? Not a number!")
+        else:
+            print("nInvalid input! Please confirm with (y/n) ?")
