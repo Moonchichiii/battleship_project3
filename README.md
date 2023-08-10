@@ -36,8 +36,7 @@
 
 👇 CLICK TO EXPAND BELOW 👇<details><summary>A graphical representation of the game process</summary> 
 
-![Flowchart!](assets/images/flowchart_dark.png)
-
+![FlowChart!](assets/readme_images/flowchart_dark.png)
 </details>
 
 
@@ -84,7 +83,7 @@
  - ***Welcome scene:*** Greeted with the logo and a welcome message.
  - ***Username:*** Quickly set up by entering your username.
 
-   ![Alt text](<assets/images/Screenshot 2023-08-07 193952.png>)
+   ![Alt text](<assets/readme_images/Screenshot 2023-08-07 193952.png>)
 
 
 
@@ -166,7 +165,7 @@
 |              | Please enter your name:      | Empty input              | Every sailor has a name? Try again!     | Works as intended   |
 |              |                              | 12345678910              | Every sailor has a name? Not a number!  | Works as intended   | 
 
-![Alt text](testing/Username_prompt.png)
+![Alt text](assets/readme_images/Username_prompt.png)
 
 
 </details>
@@ -179,7 +178,7 @@
 |              | Select board size (5x5 or 8x8): | Empty input           | Please select a valid! board size (5x5 or 8x8)     | Works as intended   |
 |              |                              | 1111              | invalid size. Please choose between (5x5 or 8x8)?  | Works as intended   | 
 
-![Alt text](testing/Username_prompt.png)
+
 
 
 </details>
@@ -195,7 +194,7 @@
 - https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
-![Alt text](testing/numbers_of_turns.png)
+![Alt text](assets/readme_images/numbers_of_turns.png)
 - Wrong referenching in the turns_of_play = number_of_turns()  
 - print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
@@ -203,7 +202,7 @@
 
 <details><summary>Corrected Wrong referenching in the turns_of_play</summary>
 
-![Alt text](testing/numbers_of_turns.png)
+![Alt text](assets/readme_images/numbers_of_turns.png)
 - Wrong referenching in the turns_of_play = number_of_turns()  
 - print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
@@ -212,7 +211,7 @@
 <details><summary>Printing the board and and hiding the ships.</summary>
 
 
-![Alt text](testing/print_rows_col_board.png)
+![Alt text](assets/readme_images/print_rows_col_board.png)
 
 
 ```python
@@ -228,7 +227,7 @@ def print_board(board):
         print(" ".join(print_row))
 
 ```
-![Alt text](<testing/Screenshot 2023-08-09 143103.png>)
+![Alt text](<assets/readme_images/Screenshot 2023-08-09 143103.png>)
 
 ### Linter error message with the code above. 
 ''' 
@@ -255,7 +254,7 @@ def print_board(board):
         print(" ".join(print_row))
         '''
 
-![Alt text](<testing/Screenshot 2023-08-09 143410.png>)
+![Alt text](<assets/readme_images/Screenshot 2023-08-09 143410.png>)
 
 
 </details>
@@ -302,10 +301,10 @@ print_board(board_with_ships)
 - More about isnumeric.
 - https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
 
-![Number test](<testing/checking_for_ numbers.png>)
+![Number test](<assets/readme_images/checking_for_ numbers.png>)
 
 
-![blank name and number](testing/numnber_blank_name.png)  
+![blank name and number](assets/readme_images/numnber_blank_name.png)  
 
 </details>
 
@@ -313,18 +312,18 @@ print_board(board_with_ships)
 
 - restart game loop i found. 
 
-![Alt text](testing/restart_copy.png)
+![Alt text](assets/readme_images/restart_copy.png)
  - https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
 
 - was the same as inside of the game at the end, just looping on 'Y'
-![Alt text](testing/restart1.png)
+![Alt text](assets/readme_images/restart1.png)
 
-![Alt text](testing/restart2.png)
+![Alt text](assets/readme_images/restart2.png)
 
 - not looping back to try again jumps back to run main again.
-![Alt text](testing/restart3.png)
+![Alt text](assets/readme_images/restart3.png)
 
-![Alt text](testing/restart4.png)
+![Alt text](assets/readme_images/restart4.png)
 
 </details>
 
