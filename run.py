@@ -228,3 +228,17 @@ if __name__ == '__main__':
             break
         elif restart == 'Y':
             continue
+while True:
+    main()
+    restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
+    if restart == 'N':
+        print("\nThank you for playing!")
+        if not restart:
+            print("\nPlease confirm with (y/n) ? Try again!")
+        elif name.isnumeric():
+            print("\nPlease confirm with (y/n) ? Not a number!")
+        elif restart == 'Y':
+                return main()
+        else:
+            break
+    return main()
