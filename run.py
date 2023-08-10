@@ -1,26 +1,17 @@
-"""
-Import os for 'clear'
-Import time for time.delay.
-Import random randint for random numbers
-"""
+""" Imported libraries """
 import os
 import time
 from random import randint
 
 
 def clear_screen():
-    """
-    Clear the terminal after sign in.
-
-    """
+    """ Clear screen in the terminal """
     os.system('clear')
 
 
 def logo():
-    """
-    Welcome screen with the logo
+    """ Game Logo."""
 
-    """
     print(r"""
      ___       __  __  __        __   _
     / _ )___ _/ /_/ /_/ ___ ___ / /  (____
@@ -31,18 +22,16 @@ def logo():
 
 
 def welcome():
-    """
-    Welcome greeting
+    """ Greetings message """
 
-    """
     print("Ahoy, sailor! to my simple version of battleship!\n")
     print("           Ready to conquer the seas?\n")
 
 
 def username_prompt():
     """
-    username prompt - ask the user to
-    provide a valid name
+    User prompt for game name.
+    Check if the line is empty or contains just numbers.
 
     """
     while True:
@@ -58,8 +47,11 @@ def username_prompt():
 
 def game_settings():
     """
-     Game settings
-
+     User Game settings.
+     board size (5x5 or 8x8),
+     number of ships (2 or 6),
+     number of turns (5 to 10),
+     
     """
     size = game_board_size()
     ships = number_of_ships()
@@ -68,10 +60,8 @@ def game_settings():
 
 
 def game_board_size():
-    """
-    verify inputs of the board size 5x5 or 8x8?
+    """ Validates the choose either board size (5x5 or 8x8) """
 
-    """
     size = 0
     while size != 5 and size != 8:
         try:
@@ -84,8 +74,7 @@ def game_board_size():
 
 
 def number_of_ships():
-    """
-    verify inputs number of ships on the board
+    """    verify inputs number of ships on the board
 
     """
     ships = 0
