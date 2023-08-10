@@ -241,6 +241,10 @@
 
 ![Alt text](assets/readme_images/ships_left_hits_turns.png)
 
+**Issue with ships remaining**
+- Resolved.
+
+![Alt text](assets/readme_images/resolved_ship_issue.png)
 
 </details>
 

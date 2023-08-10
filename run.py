@@ -175,7 +175,7 @@ def main():
     sailors_name = username_prompt()
     print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")
 
-    time.sleep(6)
+    time.sleep(3)
     clear_screen()
 
     board_size = game_board_size()
@@ -205,6 +205,7 @@ def main():
         row, col = player_turn(board_with_ships)
         got_hit = hit_or_miss(board_with_ships, row, col, sailors_name)
         if got_hit:
+            total_ships -= 1
             hits += 1
 
         turns_of_play -= 1
