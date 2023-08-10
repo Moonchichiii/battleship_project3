@@ -67,7 +67,7 @@ def game_board_size():
         try:
             size = int(input("Select board size (5x5 or 8x8): "))
             if size != 5 and size != 8:
-                print("invalid size. Please choose between (5x5 or 8x8)?")
+                print("Invalid size. Please choose between (5x5 or 8x8)?")
         except ValueError:
             print("Please select a valid! board size (5x5 or 8x8)")
     return size
@@ -80,7 +80,7 @@ def number_of_ships():
         try:
             ships = int(input("Choose the number of ships? (2-6): "))
             if ships < 2 or ships > 6:
-                print("invalid number! Please choose between 2 and 6 ships?")
+                print("Invalid number! Please choose between 2 and 6 ships?")
         except ValueError:
             print("Please enter a valid number between 2 and 6")
     return ships
