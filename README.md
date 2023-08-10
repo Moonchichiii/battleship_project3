@@ -279,6 +279,25 @@ print_board(board_with_ships)
 
 </details>
 
+<details><summary>Restart loop</summary>
+
+- restart game loop i found. 
+
+![Alt text](testing/restart_copy.png)
+ - https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
+
+- was the same as inside of the game at the end, just looping on 'Y'
+![Alt text](testing/restart1.png)
+
+![Alt text](testing/restart2.png)
+
+- not looping back to try again jumps back to run main again.
+![Alt text](testing/restart3.png)
+
+![Alt text](testing/restart4.png)
+
+</details>
+
 
 ## Credits
 

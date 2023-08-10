@@ -216,6 +216,7 @@ def main():
     clear_screen()
 
     board_with_ships = ships_placement(board, total_ships)
+
     hits = 0
 
     while turns_of_play > 0 and hits < total_ships:
@@ -239,12 +240,13 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
-while True:
-    restart = input("Ahoooy Sailor! try again? (y/n): ").upper()
+    while True:
+        main()
 
-    if restart == 'N':
-        print("\nThank you for playing!")
-        break
-    elif restart == 'Y':
-        continue
+        restart = input("Ahoooy Sailor! try again? (y/n): ").upper()
+
+        if restart == 'N':
+            print("\nThank you for playing!")
+            break
+        elif restart == 'Y':
+            continue
