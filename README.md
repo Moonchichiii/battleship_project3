@@ -252,11 +252,18 @@
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
-| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
-|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
-|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
+| Restart the game| Ahoooy Sailor! try again? (y/n):| "n"                | Thank you for playing!                  | Works as intended   |
+|              | Ahoooy Sailor! try again? (y/n):| "y"                   |                                         | Works as intended   |
+|              | Ahoooy Sailor! try again? (y/n):| Empty input           | Please confirm with (y/n):           | Not working as intended!|
+|              |                              |               |               | | 
 
+![Alt text](assets/readme_images/restart_no.png)
+
+![Alt text](assets/readme_images/restart_yes.png)
+
+- **Issue with restart prompt on Empty input.** 
+
+![Alt text](assets/readme_images/restart_empty.png)
 
 
 
