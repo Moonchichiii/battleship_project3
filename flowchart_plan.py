@@ -13,7 +13,7 @@
 
 # 7  Mark 'X' for hit
 # 8  Mark 'O' for miss
-# 9  Show turns & hits left
+# 9  Show turns & hits ships left
 # 10 Continue till turns end or all ships sunk
 # 11 Display game over & score
 # 12 Restart or exit choice

@@ -4,6 +4,13 @@ import time
 from random import randint
 
 
+# Constants Game Layout. 
+BOARD_DESIGN = '*'
+HIT_SHIP = 'X'
+MISS = 'M'
+SHIP = 'S'
+
+
 def clear_screen():
     """ Clear screen in the terminal """
     os.system('clear')
@@ -102,19 +109,16 @@ def number_of_turns():
 def build_board(size):
     """ Creates game board after chosen size (5x5 or 8x8). """
 
-    return [['*' for _ in range(size)] for _ in range(size)]
+    return [[BOARD_DESIGN for _ in range(size)] for _ in range(size)]
 
 
 def print_board(board):
-    """
-    Display the game board in the terminal
-
-    """
+    """ Display the game board in the terminal """
     for row in (board):
         print_row = []
         for cell in (row):
-            if cell == 'S':
-                print_row.append('*')
+            if cell == SHIP:
+                print_row.append(BOARD_DESIGN)
             else:
                 print_row.append(cell)
         print(" ".join(print_row))
@@ -127,8 +131,8 @@ def ships_placement(board, total_ships):
     placed_ships = 0
     while placed_ships < total_ships:
         row, col = randint(0, len(board) - 1), randint(0, len(board[0]) - 1)
-        if board[row][col] != 'S':
-            board[row][col] = 'S'
+        if board[row][col] != SHIP:
+            board[row][col] = SHIP
             placed_ships += 1
     return board
 
@@ -156,12 +160,12 @@ def player_turn(board):
 def hit_or_miss(board_with_ships, row, col, sailors_name):
     """ Validate if row/col contains a ship 'S' or not."""
 
-    if board_with_ships[row][col] == 'S':
-        board_with_ships[row][col] = 'X'
+    if board_with_ships[row][col] == SHIP:
+        board_with_ships[row][col] = HIT_SHIP
         print(f"\nGreat job Sailor {sailors_name}! That's a HIT..\n")
         return True
     else:
-        board_with_ships[row][col] = 'O'
+        board_with_ships[row][col] = MISS
         print(f"\nSorry Sailor {sailors_name}! That's a MISS!..\n")
         return False
 
@@ -233,6 +237,6 @@ if __name__ == '__main__':
         elif restart == 'Y':
             continue
         elif restart.isnumeric():
-            print("nPlease confirm with (y/n) ? Not a number!")
+            print("\nPlease confirm with (y/n) ? Not a number!")
         else:
-            print("nInvalid input! Please confirm with (y/n) ?")
+            print("\nInvalid input! Please confirm with (y/n) ?")
