@@ -1,6 +1,6 @@
 
 
-<h1 style="text-decoration: none; border-bottom: none;">Battleship Game ⚓️</h1>
+<h1 style="text-decoration: none; border-bottom: none;">Battleship Game</h1>
 <h3>Ahoooooy Sailors! Ready to navigate some rough waters?</h3>
 
 
@@ -16,15 +16,15 @@
 
 
 
-- [Flow Chart](#flow-chart)
-- [User Experience](#user-experience)
-- [Game Features](#game-features)
-- [Game Settings](#game-settings)
-- [Design](#design)
-- [Technologies & Deployment Used](#technologies--deployment-used)
-- [Testing](#testing) 
-- [Credits](#credits)
-- [Acknowledgments](#acknowledgments)
+* [Flow Chart](#flow-chart)
+* [User Experience](#user-experience)
+* [Game Features](#game-features)
+* [Game Settings](#game-settings)
+* [Design](#design)
+* [Technologies & Deployment Used](#technologies--deployment-used)
+* [Testing](#testing) 
+* [Credits](#credits)
+* [Acknowledgments](#acknowledgments)
 
 
 
@@ -34,7 +34,7 @@
 
 ## Flow chart
 
-👇 CLICK TO EXPAND BELOW 👇<details><summary>A graphical representation of the game process</summary> 
+👇 CLICK TO EXPAND BELOW <details><summary>A graphical representation of the game process</summary> 
 
 ![FlowChart!](assets/readme_images/flowchart_dark.png)
 </details>
@@ -80,8 +80,8 @@
 
 ## Game Features
 
- - ***Welcome scene:*** Greeted with the logo and a welcome message.
- - ***Username:*** Quickly set up by entering your username.
+  * ***Welcome scene:*** Greeted with the logo and a welcome message.
+  * ***Username:*** Quickly set up by entering your username.
 
    ![Alt text](<assets/readme_images/Screenshot 2023-08-07 193952.png>)
 
@@ -168,7 +168,7 @@
 ![Alt text](assets/readme_images/Username_prompt.png)
 
 
-</details>
+</details><br>
 
 <details><summary>Select board size (5x5 or 8x8)</summary>
 
@@ -181,7 +181,7 @@
 ![Alt text](assets/readme_images/select_board_size.png)
 
 
-</details>
+</details><br>
 
 <details><summary>Number of ships</summary>
 
@@ -194,7 +194,7 @@
 ![Alt text](assets/readme_images/select_ships.png)
 
 
-</details>
+</details><br>
 
 
 
@@ -209,7 +209,7 @@
 ![Alt text](assets/readme_images/empty_line_turns.png)
 ![Alt text](assets/readme_images/Invalid_number_turns.png)
 
-</details>
+</details><br>
 
 <details><summary>Choose Row/Column (board size for test is 5x5)</summary>
 
@@ -223,7 +223,7 @@
 ![Alt text](assets/readme_images/row_5_col_4.png)
 ![Alt text](assets/readme_images/empty_row_col.png)
 ![Alt text](assets/readme_images/incorrect_number_row_col.png)
-</details>
+</details><br>
 
 
 <details><summary>Ships left, Hits, Turns left</summary>
@@ -246,7 +246,7 @@
 
 ![Alt text](assets/readme_images/resolved_ship_issue.png)
 
-</details>
+</details><br>
 
 <details><summary>Restart.</summary>
 
@@ -267,7 +267,7 @@
 
 
 
-</details>
+</details><br>
 
 
 
@@ -275,20 +275,17 @@
 
 
 
-<br>
-<br>
-<br>
-<br>
 
 - helpful site for the markdown tables and cells.
-- https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.
+- https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.<br><br>
+
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
 ![Alt text](assets/readme_images/numbers_of_turns.png)
 - Wrong referenching in the turns_of_play = number_of_turns()  
 - print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
-</details>
+</details><br>
 
 <details><summary>Corrected Wrong referenching in the turns_of_play</summary>
 
@@ -296,7 +293,7 @@
 - Wrong referenching in the turns_of_play = number_of_turns()  
 - print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
-</details>
+</details><br>
 
 <details><summary>Printing the board and and hiding the ships.</summary>
 
@@ -347,7 +344,7 @@ def print_board(board):
 ![Alt text](<assets/readme_images/Screenshot 2023-08-09 143410.png>)
 
 
-</details>
+</details><br>
 
 
 <details><summary>Tested function using pythonTutor for step-by-step validation 
@@ -383,7 +380,7 @@ print_board(board_with_ships)
 
 
 ```
-</details>
+</details><br>
 
 <details><summary>New usersname prompt with validation!</summary>
 
@@ -396,7 +393,7 @@ print_board(board_with_ships)
 
 ![blank name and number](assets/readme_images/numnber_blank_name.png)  
 
-</details>
+</details><br>
 
 <details><summary>Restart loop</summary>
 
@@ -415,7 +412,7 @@ print_board(board_with_ships)
 
 ![Alt text](assets/readme_images/restart4.png)
 
-</details>
+</details><br>
 
 
 ## Credits
