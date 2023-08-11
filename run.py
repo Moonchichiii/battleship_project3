@@ -171,7 +171,7 @@ def hit_or_miss(board_with_ships, row, col, sailors_name):
 
 
 def main():
-    """ Main game loop. """
+    """ Game loop """
 
     logo()
     welcome()
