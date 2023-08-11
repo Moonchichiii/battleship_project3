@@ -437,3 +437,5 @@ print_board(board_with_ships)
 
 
 ## Acknowledgments
+
+I would like to acknowledge my mentor Mo Shami, for stearing me in right direction.
