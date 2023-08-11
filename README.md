@@ -70,8 +70,8 @@
     prepare for a sinking bonanza and a large ship graveyard.
 
 
- 5. Finally, after completing your game, the outcomes of your successful sinkings and misses 
-    will be shown the result. 
+ 5. Finally, after completing your game, the outcomes of your successful sinkings  
+    is displayed over the main game board with number of turns and ships left.  
     Following this, we will pose the big question? Ready to go another round?
 
 

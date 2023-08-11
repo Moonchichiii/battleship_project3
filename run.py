@@ -4,7 +4,7 @@ import time
 from random import randint
 
 
-# Constants Game Layout. 
+# Constants Game Layout.
 BOARD_DESIGN = '*'
 HIT_SHIP = 'X'
 MISS = 'M'
@@ -31,8 +31,8 @@ def logo():
 def welcome():
     """ Greetings message """
 
-    print("Ahoy, sailor! Welcome to a simple version of battleship!\n")
-    print("           Ready to conquer the seas?\n")
+    print("Ahoy, sailor! Ready to conquer the seas?\n")
+    print("in this simple version of battleship!\n")
 
 
 def username_prompt():
@@ -224,19 +224,18 @@ def main():
 if __name__ == '__main__':
     while True:
         main()
+        while True:
+            restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
+            if not restart:
+                print("\nPlease confirm with (y/n) ? Try again!")
 
-        restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
+            elif restart == 'N':
+                print("\nThank you for playing!")
+                exit()
 
-        if not restart:
-            print("\nPlease confirm with (y/n) ? Try again!")
-
-        elif restart == 'N':
-            print("\nThank you for playing!")
-            break
-
-        elif restart == 'Y':
-            continue
-        elif restart.isnumeric():
-            print("\nPlease confirm with (y/n) ? Not a number!")
-        else:
-            print("\nInvalid input! Please confirm with (y/n) ?")
+            elif restart == 'Y':
+                break
+            elif restart.isnumeric():
+                print("\nPlease confirm with (y/n) ? Not a number!")
+            else:
+                print("\nInvalid input! Please confirm with (y/n) ?")
