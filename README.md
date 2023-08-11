@@ -7,7 +7,8 @@
 
 #### ****Visit the live project below.****
 
-* https://battleshipv2-80486db18913.herokuapp.com/
+* <a href="https://battleshipv2-80486db18913.herokuapp.com/">Click Here.</a>
+ 
 
 
 ![Alt text](assets/readme_images/crossplatforms.png)
