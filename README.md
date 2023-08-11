@@ -254,25 +254,24 @@
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
 | Restart the game| Ahoooy Sailor! try again? (y/n):| "n"                | Thank you for playing!                  | Works as intended   |
 |              | Ahoooy Sailor! try again? (y/n):| "y"                   |                                         | Works as intended   |
-|              | Ahoooy Sailor! try again? (y/n):| Empty input           | Please confirm with (y/n):           | Not working as intended!|
+|              | Ahoooy Sailor! try again? (y/n):| Empty input           | Please confirm with (y/n):           | Not working as intended! Works as intended |
 |              |                              |               |               | | 
 
-![Alt text](assets/readme_images/restart_no.png)
+- ![Alt text](assets/readme_images/restart_no.png)
 
-![Alt text](assets/readme_images/restart_yes.png)
+- ![Alt text](assets/readme_images/restart_yes.png)
 
 - **Issue with restart prompt on Empty input.** 
 
-![Alt text](assets/readme_images/restart_empty.png)
+ - ![Alt text](assets/readme_images/restart_empty.png)
 
 
+- **Issue with restart prompt on Empty input Resolved!** 
 
+- ![Alt text](assets/readme_images/Restart_working.png)
+
+- ![Alt text](assets/readme_images/restart_linter.png)
 </details><br>
-
-
-
-
-
 
 
 
@@ -281,7 +280,7 @@
 
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
-![Alt text](assets/readme_images/numbers_of_turns.png)
+- ![Alt text](assets/readme_images/numbers_of_turns.png)
 - Wrong referenching in the turns_of_play = number_of_turns()  
 - print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
@@ -289,7 +288,7 @@
 
 <details><summary>Corrected Wrong referenching in the turns_of_play</summary>
 
-![Alt text](assets/readme_images/numbers_of_turns.png)
+- ![Alt text](assets/readme_images/numbers_of_turns.png)
 - Wrong referenching in the turns_of_play = number_of_turns()  
 - print(f"number of turns {turns_of_play}")  # wrong referenching <---- turns_of_play! 
 
@@ -298,7 +297,7 @@
 <details><summary>Printing the board and and hiding the ships.</summary>
 
 
-![Alt text](assets/readme_images/print_rows_col_board.png)
+- ![Alt text](assets/readme_images/print_rows_col_board.png)
 
 
 ```python
@@ -341,7 +340,7 @@ def print_board(board):
         print(" ".join(print_row))
         '''
 
-![Alt text](<assets/readme_images/Screenshot 2023-08-09 143410.png>)
+- ![Alt text](<assets/readme_images/Screenshot 2023-08-09 143410.png>)
 
 
 </details><br>
@@ -388,10 +387,10 @@ print_board(board_with_ships)
 - More about isnumeric.
 - https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
 
-![Number test](<assets/readme_images/checking_for_ numbers.png>)
+- ![Number test](<assets/readme_images/checking_for_ numbers.png>)
 
 
-![blank name and number](assets/readme_images/numnber_blank_name.png)  
+- ![blank name and number](assets/readme_images/numnber_blank_name.png)  
 
 </details><br>
 
@@ -399,18 +398,18 @@ print_board(board_with_ships)
 
 - restart game loop i found. 
 
-![Alt text](assets/readme_images/restart_copy.png)
+- ![Alt text](assets/readme_images/restart_copy.png)
  - https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
 
 - was the same as inside of the game at the end, just looping on 'Y'
-![Alt text](assets/readme_images/restart1.png)
+- ![Alt text](assets/readme_images/restart1.png)
 
-![Alt text](assets/readme_images/restart2.png)
+- ![Alt text](assets/readme_images/restart2.png)
 
 - not looping back to try again jumps back to run main again.
-![Alt text](assets/readme_images/restart3.png)
+- ![Alt text](assets/readme_images/restart3.png)
 
-![Alt text](assets/readme_images/restart4.png)
+- ![Alt text](assets/readme_images/restart4.png)
 
 </details><br>
 
