@@ -15,70 +15,58 @@
 
 ## Content
 
-
- 
 * [Project Goals](#project-goals)
 
-
-* [User Stories](#user-stories)
-* [User Manual](#user-manual)
-
-
 * [User Experience](#user-experience)
+    - [User Stories](#user-stories)
+    - [User Manual](#user-manual)
 
-* [Flow Chart](#flow-chart)
+* [Design](#design)
 
-
+* [Technical Design](#technical-design)
+    - [Flow Chart](#flowchart)
 
 * [Game Features](#game-features)
     - [Game Settings](#game-settings)
-    
 
-
-* [Flow Chart](#flow-chart)
-
-* [Design](#design)
-    - 
-
-* [Technologies used](#technologies--deployment-used)
+* [Technologies Used](#technologies-used)
     - [Language used](#language-used)
     - [Python Libraries used](#python-libraries-used)
-    
-    
 
-* [Testing](#testing) 
+* [Testing](#testing)
     - [Manual Testing](#manual-testing)
     - [Validator Testing](#validator-testing)
 
-
 * [Deployment](#deployment)
-     - [Deploying in Heroku](#deploying-the-website-in-heroku)
-      - [Forking the GitHub Repository](#forking-the-github-repository)
-      - [Cloning of Repository in GitHub](#cloning-the-repository-in-github)
+    - [Deploying in Heroku](#deploying-the-website-in-heroku)
+    - [Forking the GitHub Repository](#forking-the-github-repository)
+    - [Cloning of Repository in GitHub](#cloning-the-repository-in-github)
 
-* [Bugs & fixed bugs](#)
+* [Bugs & Fixed Bugs](#bugs-fixed-bugs)
 
 * [Credits](#credits)
 
 * [Acknowledgments](#acknowledgments)
 
+##
+##
+##
+##
+##
+###
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
 
-
-
-
-
-
-## Flow chart
-
-👇 CLICK TO EXPAND BELOW <details><summary>A graphical representation of the game process</summary> 
-
-![FlowChart!](assets/readme_images/flowchart_dark.png)
-</details>
-
-
-
-
-
+ 
+## Project Goals
 
 
 
@@ -110,7 +98,16 @@
     is displayed over the main game board with number of turns and ships left.  
     Following this, we will pose the big question? Ready to go another round?
 
+## User Manual
 
+
+
+## Flowchart
+
+👇 CLICK TO EXPAND BELOW <details><summary>A graphical representation of the game process</summary> 
+
+![FlowChart!](assets/readme_images/flowchart_dark.png)
+</details>
 
 
 
@@ -120,10 +117,6 @@
   * ***Username:*** Quickly set up by entering your username.
 
    ![Alt text](<assets/readme_images/Screenshot 2023-08-07 193952.png>)
-
-
-
-
 
 
 
