@@ -16,15 +16,50 @@
 ## Content
 
 
+ 
+* [Project Goals](#project-goals)
+
+
+* [User Stories](#user-stories)
+* [User Manual](#user-manual)
+
+
+* [User Experience](#user-experience)
 
 * [Flow Chart](#flow-chart)
-* [User Experience](#user-experience)
+
+
+
 * [Game Features](#game-features)
-* [Game Settings](#game-settings)
+    - [Game Settings](#game-settings)
+    
+
+
+* [Flow Chart](#flow-chart)
+
 * [Design](#design)
-* [Technologies & Deployment Used](#technologies--deployment-used)
+    - 
+
+* [Technologies used](#technologies--deployment-used)
+    - [Language used](#language-used)
+    - [Python Libraries used](#python-libraries-used)
+    
+    
+
 * [Testing](#testing) 
+    - [Manual Testing](#manual-testing)
+    - [Validator Testing](#validator-testing)
+
+
+* [Deployment](#deployment)
+     - [Deploying in Heroku](#deploying-the-website-in-heroku)
+      - [Forking the GitHub Repository](#forking-the-github-repository)
+      - [Cloning of Repository in GitHub](#cloning-the-repository-in-github)
+
+* [Bugs & fixed bugs](#)
+
 * [Credits](#credits)
+
 * [Acknowledgments](#acknowledgments)
 
 
