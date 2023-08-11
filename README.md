@@ -151,7 +151,10 @@
 [Code Linter](https://pep8ci.herokuapp.com/)
 - keep your Python code neat and PEP 8 friendly.
 
+<details><summary>CI Python Linter - Result</summary>
 
+![Alt text](assets/readme_images/Ci_linter_last_check.png)
+</details><br>
 
 
 
