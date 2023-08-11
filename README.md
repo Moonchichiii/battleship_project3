@@ -33,9 +33,9 @@
     - [Manual Testing](#manual-testing)
     - [Validator Testing](#validator-testing)
 
+* [Bugs & Fixed Bugs](#bugs-fixed-bugs)
+
 * [Deployment](#Deployment)
-    - [Cloning of Repository in GitHub](#cloning-the-repository-in-github)
-    - [Deploying in Heroku](#deploying-the-website-in-heroku)
 
 * [Bugs & Fixed Bugs](#bugs-fixed-bugs)
 
@@ -146,10 +146,6 @@
 
 [Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted within this editor.
 
-[Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
-
-[Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
-
 [Back to top](#)
 
 ### Python Libraries used
@@ -160,9 +156,9 @@
 
 ## Testing 
 
+- Pythontutor excellent for visually understanding and verifying how your code executes.
 
 [Execution Visualization Tool](https://pythontutor.com/cp/composingprograms.html#mode=edit)
-- Excellent for visually understanding and verifying how your code executes.
 
 
 ### Manual Testing
@@ -289,8 +285,8 @@
 
 ### Validator Testing
 
+***keep your Python code neat and PEP 8 friendly.***
 [Code Linter](https://pep8ci.herokuapp.com/)
-- keep your Python code neat and PEP 8 friendly.
 
 <details><summary>CI Python Linter - Result</summary>
 
@@ -299,21 +295,6 @@
 [Back to top](#)
 
 </details><br>
-
-## Deployment
-
-### Cloning of Repository in GitHub
--   
-- 
-
-
-### Deploying in Heroku
-- 
-- 
-
-
-[Back to top](#)
-
 
 
 ## Bugs & Fixed Bugs
@@ -457,6 +438,22 @@ print_board(board_with_ships)
 </details><br>
 
 [Back to top](#)
+
+
+
+
+
+## Deployment
+
+[Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
+
+[Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
+
+
+[Back to top](#)
+
+
+
 
 ## Credits
 
