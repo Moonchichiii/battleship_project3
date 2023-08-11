@@ -234,6 +234,7 @@ if __name__ == '__main__':
                 exit()
 
             elif restart == 'Y':
+                clear_screen()
                 break
             elif restart.isnumeric():
                 print("\nPlease confirm with (y/n) ? Not a number!")
