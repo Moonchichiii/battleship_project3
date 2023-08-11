@@ -154,9 +154,9 @@
 
 ### Python Libraries used
 
-    - Import os
-    - Import time
-    - from random import randint
+     Import os
+     Import time
+     from random import randint
 
 ## Testing 
 
