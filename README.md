@@ -7,7 +7,7 @@
 
 #### ****Visit the live project below.****
 
-  <a href="https://battleshipv2-80486db18913.herokuapp.com/">👉 Click Here.</a>
+  <a href="https://battleshipv2-80486db18913.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
  
 
 
