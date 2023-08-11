@@ -299,9 +299,6 @@
 
 ## Bugs & Fixed Bugs
 
-- helpful site for the markdown tables and cells.
-- https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.<br><br>
-
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
 - ![Alt text](assets/readme_images/numbers_of_turns.png)
