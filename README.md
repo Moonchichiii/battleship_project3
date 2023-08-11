@@ -1,5 +1,3 @@
-
-
 <h1 style="text-decoration: none; border-bottom: none;">Battleship Game</h1>
 <h3>Ahoooooy Sailors! Ready to navigate some rough waters?</h3>
 
@@ -23,24 +21,21 @@
 
 * [Design](#design)
 
-* [Technical Design](#technical-design)
-    - [Flow Chart](#flowchart)
+* [Flow Chart](#flowchart)
 
 * [Game Features](#game-features)
     - [Game Settings](#game-settings)
 
 * [Technologies Used](#technologies-used)
-    - [Language used](#language-used)
     - [Python Libraries used](#python-libraries-used)
 
 * [Testing](#testing)
     - [Manual Testing](#manual-testing)
     - [Validator Testing](#validator-testing)
 
-* [Deployment](#deployment)
-    - [Deploying in Heroku](#deploying-the-website-in-heroku)
-    - [Forking the GitHub Repository](#forking-the-github-repository)
+* [Deployment](#Deployment)
     - [Cloning of Repository in GitHub](#cloning-the-repository-in-github)
+    - [Deploying in Heroku](#deploying-the-website-in-heroku)
 
 * [Bugs & Fixed Bugs](#bugs-fixed-bugs)
 
@@ -48,31 +43,35 @@
 
 * [Acknowledgments](#acknowledgments)
 
-##
-##
-##
-##
-##
-###
-##
-##
-##
-##
-##
-##
-##
-##
-##
-##
 
- 
-## Project Goals
+ ## Project Goals
+
+
+
+
+
+[Back to top](#)
+
 
 
 
 ## User Experience
 
- **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
+
+
+
+
+[Back to top](#)
+
+### User Stories
+
+
+
+[Back to top](#)
+
+### User Manual
+
+**If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
 
  1. Kick things off with a simple **username prompt** directly on the welcome screen
     i've kept it straightforward so you can dive right in.
@@ -98,8 +97,13 @@
     is displayed over the main game board with number of turns and ships left.  
     Following this, we will pose the big question? Ready to go another round?
 
-## User Manual
 
+[Back to top](#)
+
+## Design
+
+- **Simplicity:** The design is straightforward,very simple and user-friendly.
+- **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
 
 
 ## Flowchart
@@ -107,6 +111,9 @@
 👇 CLICK TO EXPAND BELOW <details><summary>A graphical representation of the game process</summary> 
 
 ![FlowChart!](assets/readme_images/flowchart_dark.png)
+
+[Back to top](#)
+
 </details>
 
 
@@ -118,7 +125,7 @@
 
    ![Alt text](<assets/readme_images/Screenshot 2023-08-07 193952.png>)
 
-
+[Back to top](#)
 
 
 
@@ -128,38 +135,12 @@
 2. **Decide on having between 2 to 6 ships**
 3. **Determine how many turns to play**
 
+[Back to top](#)
 
 
 
 
-
-
-
-
-
-
-
-
-## Design
-
-
-
-- **Simplicity:** The design is straightforward,very simple and user-friendly.
-- **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
-
-
-
-
-
-
-
-
-
-
-
-
-## Technologies & Deployment Used
-
+## Technologies used
 
 [Python](https://www.python.org/)  -  The primary programming language for game development.
 
@@ -169,6 +150,13 @@
 
 [Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
 
+[Back to top](#)
+
+### Python Libraries used
+
+    - Import os
+    - Import time
+    - from random import randint
 
 ## Testing 
 
@@ -176,17 +164,8 @@
 [Execution Visualization Tool](https://pythontutor.com/cp/composingprograms.html#mode=edit)
 - Excellent for visually understanding and verifying how your code executes.
 
-[Code Linter](https://pep8ci.herokuapp.com/)
-- keep your Python code neat and PEP 8 friendly.
 
-<details><summary>CI Python Linter - Result</summary>
-
-![Alt text](assets/readme_images/Ci_linter_last_check.png)
-</details><br>
-
-
-
-### User Story testing - manual testing
+### Manual Testing
 
 
 <details><summary>Username prompt</summary>
@@ -305,7 +284,39 @@
 - ![Alt text](assets/readme_images/restart_linter.png)
 </details><br>
 
+[Back to top](#)
 
+
+### Validator Testing
+
+[Code Linter](https://pep8ci.herokuapp.com/)
+- keep your Python code neat and PEP 8 friendly.
+
+<details><summary>CI Python Linter - Result</summary>
+
+![Alt text](assets/readme_images/Ci_linter_last_check.png)
+
+[Back to top](#)
+
+</details><br>
+
+## Deployment
+
+### Cloning of Repository in GitHub
+-   
+- 
+
+
+### Deploying in Heroku
+- 
+- 
+
+
+[Back to top](#)
+
+
+
+## Bugs & Fixed Bugs
 
 - helpful site for the markdown tables and cells.
 - https://www.markdownguide.org/extended-syntax/#:~:text=for%20more%20information.-,Tables,either%20end%20of%20the%20row.&text=Cell%20widths%20can%20vary%2C%20as%20shown%20below.<br><br>
@@ -347,7 +358,7 @@ def print_board(board):
 ```
 ![Alt text](<assets/readme_images/Screenshot 2023-08-09 143103.png>)
 
-### Linter error message with the code above. 
+* Linter error message with the code above. 
 ''' 
 	"code": "unused-variable",
 	"severity": 4,
@@ -360,7 +371,7 @@ def print_board(board):
 	"source": "pylint",
 	"startLineNumber": 135,
 	'''
-### Linter error message resolved. 
+* Linter error message resolved. 
  '''
  for row in (board):
         print_row = []
@@ -445,6 +456,7 @@ print_board(board_with_ships)
 
 </details><br>
 
+[Back to top](#)
 
 ## Credits
 
