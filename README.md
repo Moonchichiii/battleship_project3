@@ -7,10 +7,10 @@
 
 #### ****Visit the live project below.****
 
-* Your dependencies must be placed in the `requirements.txt` file
+* https://battleshipv2-80486db18913.herokuapp.com/
 
 
-
+![Alt text](assets/readme_images/crossplatforms.png)
 
 ## Content
 
