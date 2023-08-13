@@ -2,9 +2,12 @@
 import os
 import time
 from random import randint
+import hashlib
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+
+from gsheet import update_login, login, existing_user
 
 
 
