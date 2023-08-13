@@ -1,2 +1,4 @@
 # Your requirements go here
+gspread
+oauth2client
 

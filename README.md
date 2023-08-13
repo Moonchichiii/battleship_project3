@@ -110,7 +110,7 @@
 
 👇 CLICK TO EXPAND BELOW <details><summary>A graphical representation of the game process</summary> 
 
-![FlowChart!](assets/readme_images/flowchart_dark.png)
+![FlowChart](assets/readme_images/new_flowchart.png)
 
 [Back to top](#)
 
