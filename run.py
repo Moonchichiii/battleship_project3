@@ -3,6 +3,11 @@ import os
 import time
 from random import randint
 
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+
+
+
 
 # Constants Game Layout.
 BOARD_DESIGN = '*'
@@ -20,11 +25,14 @@ def logo():
     """ Game Logo."""
 
     print(r"""
-     ___       __  __  __        __   _
-    / _ )___ _/ /_/ /_/ ___ ___ / /  (____
-   / _  / _ `/ __/ __/ / -_(_-</ _ \/ / _ \
-  /____/\_,_/\__/\__/_/\__/___/_//_/_/ .__/
-                                  /_/
+  ____          _    _    _             _      _
+ |  _ \        | |  | |  | |           | |    (_)
+ | |_) |  __ _ | |_ | |_ | |  ___  ___ | |__   _  _ __
+ |  _ <  / _` || __|| __|| | / _ \/ __|| '_ \ | || '_ \
+ | |_) || (_| || |_ | |_ | ||  __/\__ \| | | || || |_) |
+ |____/  \__,_| \__| \__||_| \___||___/|_| |_||_|| .__/
+                                                 | |
+                                                 |_|
 """)
 
 
@@ -35,10 +43,73 @@ def welcome():
     print("in this simple version of battleship!\n")
 
 
+
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+
+credentials = ServiceAccountCredentials.from_json_keyfile_name('Python Test-32b5fbe50b83.json', scope)
+
+gc = gspread.authorize(credentials)
+
+wks = gc.open("Test For Python Integration").sheet1
+
+def validatePass(p1, p2):
+	if p1 == p2:
+		return True
+
+def next_available_row(worksheet):
+    str_list = worksheet.col_values(1)
+    return len(str_list)+1
+
+def createAuth():
+	global wks
+	while True:
+		user = input("Please enter a username ")
+		passW = input("Please enter a password ")
+		passW2 = input("Please enter your password again ")
+		if validatePass(passW, passW2):
+			try:
+				wks.find(user)
+			except:
+				wks.resize(next_available_row(wks))
+				wks.append_row([user, passW])
+				print("Sign up successful.")
+				break
+			print("Username already exists. Please try again with a different username.")
+		else:
+			print("Your passwords didn't match. Please try again.")
+
+def login():
+	global wks
+	while 1:
+		user = input("Please enter your username ")
+		passW = input("Please enter your password ")
+		try:
+			t1 = wks.find(user)
+		except:
+			print("Invalid username. Please try again or create an account.")
+			continue
+		if wks.cell(t1.row, t1.col+1).value == passW:
+			print("Login successful")
+			break
+		else:
+			print("Incorrect password")
+
+choice = int(input("1) Sign Up\n2) Login\n>"))
+if choice == 1:
+	createAuth()
+else:
+	login()
+
+
+
+
+
+"""
 def username_prompt():
     """
-    User prompt for game name.
-    Check if the line is empty or contains just numbers.
+   # User prompt for game name.
+   # Check if the line is empty or contains just numbers.
 
     """
     while True:
@@ -50,7 +121,7 @@ def username_prompt():
         else:
             break
     return name
-
+"""
 
 def game_settings():
     """
