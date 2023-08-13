@@ -117,7 +117,7 @@ Sign in / registration for new Sailors, and simple Login for returning players
   * ***Sign in / registration for new Sailors, and simple Login for returning players.***  
 
   
-  
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add more content hereee !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   ## insert new image here!!!!!! !!!!!!!!!!!!!!!!!!!!!!!
 
@@ -459,7 +459,10 @@ print_board(board_with_ships)
 
 ***Login / Registration prompt***
 
-The idea came from redoing the love sandwich walkthrough. 
+The idea came from redoing the love sandwich walkthrough, the skimmed the internet until i came across this which was fit for what i have been thinking about to add to the project, to make it complete. 
+
+The idea originated from revisiting the 'love sandwich' walkthrough. I serached the internet until I found this, 
+which perfectly fitted with what I had in mind!
 
 https://replit.com/talk/share/A-Simple-Login-System-using-Google-Sheets-API/20950
 
