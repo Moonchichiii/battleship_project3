@@ -72,31 +72,25 @@
 ### User Manual
 
 **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
+Sign in / registration for new Sailors, and simple Login for returning players
 
- 1. Kick things off with a simple **username prompt** directly on the welcome screen
-    i've kept it straightforward so you can dive right in.
+1. Start with a Sailor Sign in / registration for new Sailors, and simple Login for returning players,
+    I've kept it straightforward, ensuring you can dive right in.
 
+2. Once you've been greeted by the sailor prompt and you're all set,
+    it's time to decide on your game's layout. For a quick game, the 5x5 board is a perfect choice.
 
- 2. Once the **username prompt** has greeted you and you're all set,
-    decide on your game's layout. For a quick and compact game, the 5x5 board 
-    is your go-to choice. 
+3. After setting up the board prompt, decide how many ships you'd like
+    to hide on the game board. Remember: more ships on a smaller board means more chances to sink ships.
 
+4. Next, determine the number of turns (or tries) you want for hunting those hidden ships.
+    You can choose anywhere between 5-10 turns per game.
 
- 3. With the **board prompt** out of the way, it's time to decide how many ships you'd like 
-    to hide on **game board?** more ships on a smaller board means sinkings in abundance.
+***Here's a hint:***
+    If you've chosen the 5x5 board with 6 ships and go for 10 turns,
+    get ready for an exciting round filled with sunken ships.
 
-
- 4. Next, determine how many turns (or tries) you want to hunt down those elusive ships. 
-    from anywhere between 5-10 turns per game. 
-    **Here's a hint:**
-    If you have chosen the 5x5 board with 6 ships and go for 10 turns, 
-    prepare for a sinking bonanza and a large ship graveyard.
-
-
- 5. Finally, after completing your game, the outcomes of your successful sinkings  
-    is displayed over the main game board with number of turns and ships left.  
-    Following this, we will pose the big question? Ready to go another round?
-
+    Once your game concludes, the outcomes of your successful sinkings are displayed on the main game board, and ships left. Then, we'll ask: Ready for another round on the seas?
 
 [Back to top](#)
 
@@ -120,10 +114,12 @@
 
 ## Game Features
 
-  * ***Welcome scene:*** Greeted with the logo and a welcome message.
-  * ***Username:*** Quickly set up by entering your username.
+  * ***Sign in / registration for new Sailors, and simple Login for returning players.***  
 
-   ![Alt text](<assets/readme_images/Screenshot 2023-08-07 193952.png>)
+  
+  
+
+  ## insert new image here!!!!!! !!!!!!!!!!!!!!!!!!!!!!!
 
 [Back to top](#)
 
@@ -131,9 +127,15 @@
 
 ### Game settings
 
-1. **Choose between a 5x5 or an 8x8 board** 
-2. **Decide on having between 2 to 6 ships**
-3. **Determine how many turns to play**
+1. **Prompted with the question if you ever sailed with us before?** 
+2. **If you have sailed with us before you will simply login again.**
+3. **If not you will be asked to create your Sail account**
+
+### Then it's of to the internal Game settings you will be asked. 
+
+5. **Choose between a 5x5 or an 8x8 board** 
+6. **Decide on having between 2 to 6 ships**
+7. **Determine how many turns to play**
 
 [Back to top](#)
 
@@ -453,6 +455,13 @@ print_board(board_with_ships)
 
 
 ## Credits
+
+
+***Login / Registration prompt***
+
+The idea came from redoing the love sandwich walkthrough. 
+
+https://replit.com/talk/share/A-Simple-Login-System-using-Google-Sheets-API/20950
 
 ***Restart the game***
 
