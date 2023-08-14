@@ -50,6 +50,24 @@
 
 
 
+## Installtion 
+
+Clone the repository:
+Go to the project folders:
+install the required libraries using this command:
+***"pip install -r requirements.txt"*** in the terminal. 
+
+
+## Dependencies 
+requirements.txt file contains following libraries: 
+
+- gspread
+- oauth2client
+- passlib[argon2]
+
+
+
+
 [Back to top](#)
 
 
@@ -72,7 +90,6 @@
 ### User Manual
 
 **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
-Sign in / registration for new Sailors, and simple Login for returning players
 
 1. Start with a Sailor Sign in / registration for new Sailors, and simple Login for returning players,
     I've kept it straightforward, ensuring you can dive right in.
@@ -444,9 +461,16 @@ print_board(board_with_ships)
 
 ## Deployment
 
+
+
 [Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
 
 [Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
+
+
+
+
+
 
 
 [Back to top](#)
@@ -456,6 +480,9 @@ print_board(board_with_ships)
 
 ## Credits
 
+
+***Password hashing***
+https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-passwords-without-a-secret-and-with-a-random-salt-tha
 
 ***Login / Registration prompt***
 

@@ -1,6 +1,8 @@
 """ imported libaries """
+
 import gspread
 from google.oauth2.service_account import Credentials
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -11,14 +13,22 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+
+
+
+
 SHEET = GSPREAD_CLIENT.open('battleship')
 
-update_login = SHEET.worksheet('update_login')
-login = SHEET.worksheet('login')
+
+
+new_user = login = SHEET.worksheet('new_user')
+
 existing_user = SHEET.worksheet('existing_user')
 
-data = update_login.get_all_values()
-data1 = login.get_all_values()
-data2 = existing_user.get_all_values()
 
-print(data, data1, data2)
+
+
+new_user = update_login.get_all_values()
+
+Look_for_user = existing_user.get_all_values() 
+
