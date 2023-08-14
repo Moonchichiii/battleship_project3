@@ -2,15 +2,6 @@
 import os
 import time
 from random import randint
-import hashlib
-
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-
-from gsheet import update_login, login, existing_user
-
-
-
 
 # Constants Game Layout.
 BOARD_DESIGN = '*'
@@ -45,90 +36,13 @@ def welcome():
     print("Ahoy, sailor! Ready to conquer the seas?\n")
     print("in this simple version of battleship!\n")
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
 
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('love_sandwiches')
-
-sales = SHEET.worksheet('sales')
-
-data = sales.get_all_values()
-
-
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-
-credentials = ServiceAccountCredentials.from_json_keyfile_name('creds.json', scope)
-
-gc = gspread.authorize(credentials)
-
-wks = gc.open("Test For Python Integration").sheet1
-
-def validatePass(p1, p2):
-	if p1 == p2:
-		return True
-
-def next_available_row(worksheet):
-    str_list = worksheet.col_values(1)
-    return len(str_list)+1
-
-def createAuth():
-	global wks
-	while True:
-		user = input("Please enter a username ")
-		passW = input("Please enter a password ")
-		passW2 = input("Please enter your password again ")
-		if validatePass(passW, passW2):
-			try:
-				wks.find(user)
-			except:
-				wks.resize(next_available_row(wks))
-				wks.append_row([user, passW])
-				print("Sign up successful.")
-				break
-			print("Username already exists. Please try again with a different username.")
-		else:
-			print("Your passwords didn't match. Please try again.")
-
-def login():
-	global wks
-	while 1:
-		user = input("Please enter your username ")
-		passW = input("Please enter your password ")
-		try:
-			t1 = wks.find(user)
-		except:
-			print("Invalid username. Please try again or create an account.")
-			continue
-		if wks.cell(t1.row, t1.col+1).value == passW:
-			print("Login successful")
-			break
-		else:
-			print("Incorrect password")
-
-choice = int(input("1) Sign Up\n2) Login\n>"))
-if choice == 1:
-	createAuth()
-else:
-	login()
-
-
-
-
-
-"""
 def username_prompt():
     """
    # User prompt for game name.
    # Check if the line is empty or contains just numbers.
 
-    """
+ """
     while True:
         name = input("Please enter your name: ")
         if not name:
@@ -138,7 +52,7 @@ def username_prompt():
         else:
             break
     return name
-"""
+
 
 def game_settings():
     """
