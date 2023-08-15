@@ -2,8 +2,6 @@
 import os
 import time
 from random import randint
-
-
 import gspread
 from google.oauth2.service_account import Credentials
 from argon2 import PasswordHasher
@@ -18,19 +16,16 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.Client(auth=SCOPED_CREDS)
-
 SHEET = GSPREAD_CLIENT.open('battleship')
 user_sheet = SHEET.worksheet('users')
-
-
-# Constants Game Layout.
+# Using the Argon2 password hasher.
+ph = PasswordHasher()
+# Constants for Game Layout.
 BOARD_DESIGN = '*'
 HIT_SHIP = 'X'
 MISS = 'M'
 SHIP = 'S'
 
-# Using the Argon2 password hasher.
-ph = PasswordHasher()
 
 
 def main_menu():
@@ -75,21 +70,27 @@ def logo():
 def create_auth():
     """create new user in the spreadsheet"""
     while True:
-        username = input("Please enter A username: ")
+        username = input("Please enter A username: ").strip().lower()
         if not username:
             print("\nEvery sailor has a name? Try again!")
             continue
-        elif name.isnumeric():
+        elif username.isnumeric():
             print("\nEvery sailor has a name? Not a number!")
+            continue
  
-
         password = input("Please select A password: ")
-
         password_confirm = input("Please confirm your password: ")
 
-
         if password == password_confirm:
-            if not users_exists(username, user_sheet):
+            if not user_exists(username, user_sheet):
+                hashed_password = ph.hash(password)
+                user_sheet.append_row([username, hashed_password])
+                print("Sign up successful.....Welcome ")
+                break
+            else:
+                print("Username already exists! Try again...")
+        else:
+            print("Passwords do not match! Try again...")
 
 
 
@@ -99,8 +100,7 @@ def create_auth():
 
 
 
-def users_exists():
-    """Check if the user exists in the file already """
+def user_exists(username, worksheet):
     column_values = worksheet.col_values(1)
     if username in column_values:
         print(f"Found username '{username}'.")
@@ -110,6 +110,8 @@ def users_exists():
 
 def login():
     """Login if you have played before."""
+    password = input("Please select A password: ")
+    password_confirm = input("Please confirm your password: ")
 
 
 def welcome():

@@ -481,13 +481,8 @@ print_board(board_with_ships)
 ## Credits
 
 
-***Password hashing***
-
-https://pypi.org/project/argon2-cffi/
-
-https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-passwords-without-a-secret-and-with-a-random-salt-tha
-
 ***Login / Registration prompt***
+
 
 The idea came from redoing the love sandwich walkthrough, the skimmed the internet until i came across this which was fit for what i have been thinking about to add to the project, to make it complete. 
 
@@ -495,6 +490,16 @@ The idea originated from revisiting the 'love sandwich' walkthrough. I serached 
 which perfectly fitted with what I had in mind!
 
 https://replit.com/talk/share/A-Simple-Login-System-using-Google-Sheets-API/20950
+
+https://www.w3schools.com/python/trypython.asp?filename=demo_ref_string_strip
+
+
+***Password hashing***
+
+https://pypi.org/project/argon2-cffi/
+
+https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-passwords-without-a-secret-and-with-a-random-salt-tha
+
 
 ***Restart the game***
 
