@@ -6,6 +6,7 @@ from random import randint
 
 import gspread
 from google.oauth2.service_account import Credentials
+from argon2 import PasswordHasher
 
 
 SCOPE = [
@@ -16,13 +17,11 @@ SCOPE = [
 
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-
+GSPREAD_CLIENT = gspread.Client(auth=SCOPED_CREDS)
 
 SHEET = GSPREAD_CLIENT.open('battleship')
 user_sheet = SHEET.worksheet('users')
 
-records = user_sheet.get_all_values()
 
 # Constants Game Layout.
 BOARD_DESIGN = '*'
@@ -30,35 +29,8 @@ HIT_SHIP = 'X'
 MISS = 'M'
 SHIP = 'S'
 
-
-def clear_screen():
-    """ Clear screen in the terminal """
-    os.system('clear')
-
-
-def logo():
-    """ Game Logo."""
-
-    print(r"""
-  ____          _    _    _             _      _
- |  _ \        | |  | |  | |           | |    (_)
- | |_) |  __ _ | |_ | |_ | |  ___  ___ | |__   _  _ __
- |  _ <  / _` || __|| __|| | / _ \/ __|| '_ \ | || '_ \
- | |_) || (_| || |_ | |_ | ||  __/\__ \| | | || || |_) |
- |____/  \__,_| \__| \__||_| \___||___/|_| |_||_|| .__/
-                                                 | |
-                                                 |_|
-""")
-
-
-def welcome():
-    """ Greetings message """
-
-    print("Ahoy, sailor! Ready to conquer the seas?\n")
-    print("\n \n Instructions....")
-    print("If you have played before, then just put Y and login.")
-    print("New here? then create a user with a simple password to remember")
-    print("Or you want to exit this is your chance, with 'E' to Exit the game")
+# Using the Argon2 password hasher.
+ph = PasswordHasher()
 
 
 def main_menu():
@@ -83,6 +55,26 @@ def main_menu():
 main_menu()
 
 
+def clear_screen():
+    """ Clear screen in the terminal """
+    os.system('clear')
+
+
+def logo():
+    """ Game Logo."""
+
+    print(r"""
+  ____          _    _    _             _      _
+ |  _ \        | |  | |  | |           | |    (_)
+ | |_) |  __ _ | |_ | |_ | |  ___  ___ | |__   _  _ __
+ |  _ <  / _` || __|| __|| | / _ \/ __|| '_ \ | || '_ \
+ | |_) || (_| || |_ | |_ | ||  __/\__ \| | | || || |_) |
+ |____/  \__,_| \__| \__||_| \___||___/|_| |_||_|| .__/
+                                                 | |
+                                                 |_|
+""")
+
+
 def create_auth():
     """create new user in the spreadsheet"""
 
@@ -93,6 +85,16 @@ def users_exists():
 
 def login():
     """Login if you have played before."""
+
+
+def welcome():
+    """ Greetings message """
+
+    print("Ahoy, sailor! Ready to conquer the seas?\n")
+    print("\n \n Instructions....")
+    print("If you have played before, then just put Y and login.")
+    print("New here? then create a user with a simple password to remember")
+    print("Or you want to exit this is your chance, with 'E' to Exit the game")
 
 
 def username_prompt():
@@ -234,7 +236,10 @@ def main():
     """ Game loop """
 
     logo()
+
     welcome()
+
+    main_menu()
 
     sailors_name = username_prompt()
     print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")

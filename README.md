@@ -482,6 +482,9 @@ print_board(board_with_ships)
 
 
 ***Password hashing***
+
+https://pypi.org/project/argon2-cffi/
+
 https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-passwords-without-a-secret-and-with-a-random-salt-tha
 
 ***Login / Registration prompt***
