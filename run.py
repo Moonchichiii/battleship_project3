@@ -52,9 +52,6 @@ def main_menu():
             print("\nEnter a Valid Choice (y/n) or ('Q') to Exit : ")
 
 
-main_menu()
-
-
 def clear_screen():
     """ Clear screen in the terminal """
     os.system('clear')
@@ -90,11 +87,11 @@ def login():
 def welcome():
     """ Greetings message """
 
-    print("Ahoy, sailor! Ready to conquer the seas?\n")
-    print("\n \n Instructions....")
-    print("If you have played before, then just put Y and login.")
-    print("New here? then create a user with a simple password to remember")
-    print("Or you want to exit this is your chance, with 'E' to Exit the game")
+    print("        Ahoy, sailor! Ready to conquer the seas?\n")
+    print("\nInstructions....")
+    print("\nIf you have played before, then just put Y and login.")
+    print("\nNew here? then create a user with a simple password to remember")
+    print("\nOr want to exit this is your chance, with 'E' to Exit the game")
 
 
 def username_prompt():
@@ -236,9 +233,7 @@ def main():
     """ Game loop """
 
     logo()
-
     welcome()
-
     main_menu()
 
     sailors_name = username_prompt()
