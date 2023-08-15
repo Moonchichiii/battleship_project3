@@ -22,5 +22,3 @@ records = user_sheet.get_all_values()
 
 for row in records:
     print(row)
-
-
