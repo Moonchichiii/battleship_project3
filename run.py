@@ -74,7 +74,10 @@ def logo():
 
 def create_auth():
     """create new user in the spreadsheet"""
-
+    while True:
+        username = input("")
+        password = input("")
+        password_confirm = input("")
 
 def users_exists():
     """Check if the user exists in the file already """
@@ -90,8 +93,8 @@ def welcome():
     print("        Ahoy, sailor! Ready to conquer the seas?\n")
     print("\nInstructions....")
     print("\nIf you have played before, then just put Y and login.")
-    print("\nNew here? then create a user with a simple password to remember")
-    print("\nOr want to exit this is your chance, with 'E' to Exit the game")
+    print("New here? then create a user with a simple password to remember")
+    print("Or want to exit this is your chance, with 'E' to Exit the game")
 
 
 def username_prompt():
