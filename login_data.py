@@ -18,4 +18,9 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('battleship')
 user_sheet = SHEET.worksheet('users')
 
-print(user_sheet)
+records = user_sheet.get_all_values()
+
+for row in records:
+    print(row)
+
+

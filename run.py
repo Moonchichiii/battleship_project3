@@ -32,12 +32,12 @@ def logo():
 
 def welcome():
     """ Greetings message """
-print("Ahoy, sailor! Ready to conquer the seas?\n")
-print("in this simple version of battleship!\n")
-Print("\n \n Instructions....")
-Print("If you have played before, then just put Y and login.")
-Print("If Not you have to create a user with a simple password to remeber")
-Print("Or you want to exit this is your chance, with 'E' to Exit the game")
+
+    print("Ahoy, sailor! Ready to conquer the seas?\n")
+    print("\n \n Instructions....")
+    print("If you have played before, then just put Y and login.")
+    print("New here? then create a user with a simple password to remember")
+    print("Or you want to exit this is your chance, with 'E' to Exit the game")
 
 
 def main_menu():
@@ -72,12 +72,6 @@ def users_exists():
 
 def login():
     """Login if you have played before."""
-
-
-
-
-
-
 
 
 def username_prompt():
