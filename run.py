@@ -75,12 +75,37 @@ def logo():
 def create_auth():
     """create new user in the spreadsheet"""
     while True:
-        username = input("")
-        password = input("")
-        password_confirm = input("")
+        username = input("Please enter A username: ")
+        if not username:
+            print("\nEvery sailor has a name? Try again!")
+            continue
+        elif name.isnumeric():
+            print("\nEvery sailor has a name? Not a number!")
+ 
+
+        password = input("Please select A password: ")
+
+        password_confirm = input("Please confirm your password: ")
+
+
+        if password == password_confirm:
+            if not users_exists(username, user_sheet):
+
+
+
+
+ 
+
+
+
 
 def users_exists():
     """Check if the user exists in the file already """
+    column_values = worksheet.col_values(1)
+    if username in column_values:
+        print(f"Found username '{username}'.")
+        return True
+    return False
 
 
 def login():
@@ -97,21 +122,8 @@ def welcome():
     print("Or want to exit this is your chance, with 'E' to Exit the game")
 
 
-def username_prompt():
-    """
-   # User prompt for game name.
-   # Check if the line is empty or contains just numbers.
 
- """
-    while True:
-        name = input("Please enter your name: ")
-        if not name:
-            print("\nEvery sailor has a name? Try again!")
-        elif name.isnumeric():
-            print("\nEvery sailor has a name? Not a number!")
-        else:
-            break
-    return name
+
 
 
 def game_settings():
