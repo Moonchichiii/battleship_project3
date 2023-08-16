@@ -56,7 +56,7 @@ def create_auth():
                 hashed_password = ph.hash(password)
                 user_sheet.append_row([username, hashed_password])
                 print("Sign up successful.....Welcome ")
-                break
+                return username
             else:
                 print("Username already exists! Try again...")
         else:
@@ -75,16 +75,20 @@ def user_exists(username, worksheet):
 
 def login():
     while True:
-        password = input("Please select A password: ").strip().lower()
-        password_confirm = input("Please confirm your password: ")
+        username = input("Enter your username: ").strip().lower()
+        password = input("Enter your password: ").strip().lower()
 
-    if user_exists(username, user_sheet):
-        cell = user_sheet.find(Username)
-        stored_hashed_password = user_sheet.cell(cell.row, cell .col)
-        if ph.verify(stored_hashed_password, password):
-            print(f"Super Welcome {username.upper()}! Login successful....")
-            break
+        if user_exists(username, user_sheet):
+            cell = user_sheet.find(username)
+            stored_hashed_password = user_sheet.cell(cell.row, cell.col + 1)
+            if ph.verify(password, stored_hashed_password):
+                print(f"Super Welcome {username.upper()}! Login successful..")
+                return username
+            else:
+                print("Invalid Password! Try again...")
         else:
-            print("Invalid Password! try again...")
-    else:
-        print("Invalid  usernane, try again, or create a new account....")
+            print("Invalid username, try again, or create a new account....")
+
+        choices = input("Press 'E'xit or any other key,try again. : ").upper()
+        if choices == 'E':
+            break

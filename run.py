@@ -85,7 +85,8 @@ def create_auth():
                 hashed_password = ph.hash(password)
                 user_sheet.append_row([username, hashed_password])
                 print("Sign up successful.....Welcome ")
-                break
+                return username
+                main()
             else:
                 print("Username already exists! Try again...")
         else:
@@ -103,16 +104,17 @@ def user_exists(username, worksheet):
 
 
 def login():
+    """ Checks if the username and password exists in "user_sheet" """
     while True:
         username = input("Enter your username: ").strip().lower()
-        password = input("Please enter your password: ").strip().lower()
-        
+        password = input("Enter your password: ").strip().lower()
+
         if user_exists(username, user_sheet):
             cell = user_sheet.find(username)
             stored_hashed_password = user_sheet.cell(cell.row, cell.col + 1)
-            if ph.verify(stored_hashed_password, password):
+            if ph.verify(password, stored_hashed_password):
                 print(f"Super Welcome {username.upper()}! Login successful..")
-                break
+                return username
             else:
                 print("Invalid Password! Try again...")
         else:
@@ -124,7 +126,7 @@ def welcome():
 
     print("        Ahoy, sailor! Ready to conquer the seas?\n")
     print("\nInstructions....")
-    print("\nIf you have played before, then just put Y and login.")
+    print("\nIf you have played before, then just press Y and login.")
     print("New here? then create a user with a simple password to remember")
     print("Or want to exit this is your chance, with 'E' to Exit the game")
 
