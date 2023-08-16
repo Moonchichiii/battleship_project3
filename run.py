@@ -86,7 +86,8 @@ def create_auth():
                 user_sheet.append_row([username, hashed_password])
                 print("Sign up successful.....Welcome ")
                 return username
-                main()
+                break
+                
             else:
                 print("Username already exists! Try again...")
         else:
