@@ -27,6 +27,23 @@ MISS = 'M'
 SHIP = 'S'
 
 
+def main_menu():
+    """ New sign in prompt."""
+    while True:
+        try:
+            choices = input("\nHave you played before? (y/n)?:  ").upper()
+
+            if choices == 'Y':
+                login()
+            elif choices == 'N':
+                create_auth()
+            elif choices == 'E':
+                print("\nThank you! Exiting.......")
+                break
+            else:
+                print("nInvalid Choice! Try Again...")
+        except ValueError:
+            print("\nEnter a Valid Choice (y/n) or ('E') to Exit : ")
 
 
 def clear_screen():
@@ -49,6 +66,57 @@ def logo():
 """)
 
 
+def create_auth():
+    """create new user in the spreadsheet"""
+    while True:
+        username = input("Please enter A username: ").strip().lower()
+        if not username:
+            print("\nEvery sailor has a name? Try again!")
+            continue
+        elif username.isnumeric():
+            print("\nEvery sailor has a name? Not a number!")
+            continue
+
+        password = input("Please select A password: ")
+        password_confirm = input("Please confirm your password: ")
+
+        if password == password_confirm:
+            if not user_exists(username, user_sheet):
+                hashed_password = ph.hash(password)
+                user_sheet.append_row([username, hashed_password])
+                print("Sign up successful.....Welcome ")
+                break
+            else:
+                print("Username already exists! Try again...")
+        else:
+            print("Passwords do not match! Try again...")
+
+
+def user_exists(username, worksheet):
+    """ Check f the user has already registered """
+
+    column_values = worksheet.col_values(1)
+    if username in column_values:
+        print(f"Found username '{username}'.")
+        return True
+    return False
+
+
+def login():
+    while True:
+        username = input("Enter your username: ").strip().lower()
+        password = input("Please enter your password: ").strip().lower()
+        
+        if user_exists(username, user_sheet):
+            cell = user_sheet.find(username)
+            stored_hashed_password = user_sheet.cell(cell.row, cell.col + 1)
+            if ph.verify(stored_hashed_password, password):
+                print(f"Super Welcome {username.upper()}! Login successful..")
+                break
+            else:
+                print("Invalid Password! Try again...")
+        else:
+            print("Invalid username, try again, or create a new account....")
 
 
 def welcome():
@@ -186,7 +254,7 @@ def main():
     welcome()
     main_menu()
 
-    sailors_name = username_prompt()
+    sailors_name = login()
     print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")
 
     time.sleep(3)
@@ -235,6 +303,7 @@ if __name__ == '__main__':
     while True:
         main()
         while True:
+            main()
             restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
             if not restart:
                 print("\nPlease confirm with (y/n) ? Try again!")
