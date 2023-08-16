@@ -28,24 +28,6 @@ SHIP = 'S'
 
 
 
-def main_menu():
-    """ New sign in prompt."""
-    while True:
-        try:
-            choices = input("\nHave you played before? (y/n)?:  ").upper()
-
-            if choices == 'Y':
-                login()
-            elif choices == 'N':
-                create_auth()
-            elif choices == 'E':
-                print("\nThank you! Exiting.......")
-                break
-            else:
-                print("nInvalid Choice! Try Again...")
-        except ValueError:
-            print("\nEnter a Valid Choice (y/n) or ('Q') to Exit : ")
-
 
 def clear_screen():
     """ Clear screen in the terminal """
@@ -67,51 +49,6 @@ def logo():
 """)
 
 
-def create_auth():
-    """create new user in the spreadsheet"""
-    while True:
-        username = input("Please enter A username: ").strip().lower()
-        if not username:
-            print("\nEvery sailor has a name? Try again!")
-            continue
-        elif username.isnumeric():
-            print("\nEvery sailor has a name? Not a number!")
-            continue
- 
-        password = input("Please select A password: ")
-        password_confirm = input("Please confirm your password: ")
-
-        if password == password_confirm:
-            if not user_exists(username, user_sheet):
-                hashed_password = ph.hash(password)
-                user_sheet.append_row([username, hashed_password])
-                print("Sign up successful.....Welcome ")
-                break
-            else:
-                print("Username already exists! Try again...")
-        else:
-            print("Passwords do not match! Try again...")
-
-
-
-
- 
-
-
-
-
-def user_exists(username, worksheet):
-    column_values = worksheet.col_values(1)
-    if username in column_values:
-        print(f"Found username '{username}'.")
-        return True
-    return False
-
-
-def login():
-    """Login if you have played before."""
-    password = input("Please select A password: ")
-    password_confirm = input("Please confirm your password: ")
 
 
 def welcome():
@@ -122,10 +59,6 @@ def welcome():
     print("\nIf you have played before, then just put Y and login.")
     print("New here? then create a user with a simple password to remember")
     print("Or want to exit this is your chance, with 'E' to Exit the game")
-
-
-
-
 
 
 def game_settings():
