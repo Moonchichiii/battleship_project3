@@ -30,20 +30,20 @@ SHIP = 'S'
 def main_menu():
     """ New sign in prompt."""
     while True:
-        try:
-            choices = input("\nHave you played before? (y/n)?:  ").upper()
-
-            if choices == 'Y':
-                login()
-            elif choices == 'N':
-                create_auth()
-            elif choices == 'E':
-                print("\nThank you! Exiting.......")
-                break
-            else:
-                print("nInvalid Choice! Try Again...")
-        except ValueError:
-            print("\nEnter a Valid Choice (y/n) or ('E') to Exit : ")
+        choices = input("\nHave you played before? (y/n)?:  ").upper()
+        if choices == 'Y':
+            username = login()
+            if username:
+                return username
+        elif choices == 'N':
+            username = create_auth()
+            if username:
+                print(f"Welcome {username}! Let's Play!")
+                return username
+        elif choices == 'E':
+            print("\nThank you for stopping by! Exiting....")
+            exit()
+        print("nInvalid Choice! Try Again...")
 
 
 def clear_screen():
@@ -86,8 +86,7 @@ def create_auth():
                 user_sheet.append_row([username, hashed_password])
                 print("Sign up successful.....Welcome ")
                 return username
-                
-                
+
             else:
                 print("Username already exists! Try again...")
         else:
@@ -100,8 +99,7 @@ def user_exists(username, worksheet):
     column_values = worksheet.col_values(1)
     if username in column_values:
         print(f"Found username '{username}'.")
-        return True
-    return False
+        return username in column_values
 
 
 def login():
@@ -112,8 +110,8 @@ def login():
 
         if user_exists(username, user_sheet):
             cell = user_sheet.find(username)
-            stored_hashed_password = user_sheet.cell(cell.row, cell.col + 1)
-            if ph.verify(password, stored_hashed_password):
+            hashed_password = user_sheet.cell(cell.row, cell.col + 1).value
+            if ph.verify(password, hashed_password):
                 print(f"Super Welcome {username.upper()}! Login successful..")
                 return username
             else:
@@ -255,9 +253,12 @@ def main():
 
     logo()
     welcome()
-    main_menu()
 
-    sailors_name = login()
+    sailors_name = main_menu()
+
+    if not sailors_name:
+        print("Thank for stopping by...")
+        return
     print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")
 
     time.sleep(3)
@@ -305,20 +306,21 @@ def main():
 if __name__ == '__main__':
     while True:
         main()
-        while True:
-            main()
-            restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
-            if not restart:
-                print("\nPlease confirm with (y/n) ? Try again!")
+        restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
-            elif restart == 'N':
-                print("\nThank you for playing!")
-                exit()
+        if not restart:
+            print("\nPlease confirm with (y/n) ? Try again!")
 
-            elif restart == 'Y':
-                clear_screen()
-                break
-            elif restart.isnumeric():
-                print("\nPlease confirm with (y/n) ? Not a number!")
-            else:
-                print("\nInvalid input! Please confirm with (y/n) ?")
+        elif restart == 'N':
+            print("\nThank you for playing!")
+            exit()
+
+        elif restart == 'Y':
+            clear_screen()
+            continue
+
+        elif restart.isnumeric():
+            print("\nPlease confirm with (y/n) ? Not a number!")
+
+        else:
+            print("\nInvalid input! Please confirm with (y/n) ?")
