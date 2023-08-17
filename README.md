@@ -318,6 +318,14 @@ requirements.txt file contains following libraries:
 
 ## Bugs & Fixed Bugs
 
+### Fetching the password. 
+
+https://inquiryum.com/modules/nodejs%20module/Hashing-Passwords-&-Argon2/
+
+
+https://www.youtube.com/watch?v=eCBUuu7BPn4
+
+
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
 - ![Alt text](assets/readme_images/numbers_of_turns.png)

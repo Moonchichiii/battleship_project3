@@ -82,8 +82,8 @@ def create_auth():
 
         if password == password_confirm:
             if not user_exists(username, user_sheet):
-                hashed_password = ph.hash(password)
-                user_sheet.append_row([username, hashed_password])
+                hashed_pswd = ph.hash(password)
+                user_sheet.append_row([username, hashed_pswd])
                 print("Sign up successful.....Welcome ")
                 return username
 
@@ -110,8 +110,10 @@ def login():
 
         if user_exists(username, user_sheet):
             cell = user_sheet.find(username)
-            hashed_password = user_sheet.cell(cell.row, cell.col + 1).value
-            if ph.verify(password, hashed_password):
+            hashed_pswd = user_sheet.cell(cell.row, cell.col + 1).value.strip()
+            hashed_pswd_return = hashed_pswd.decode('utf-8')
+            print(hashed_pswd_return)
+            if ph.verify(password, hashed_pswd_return):
                 print(f"Super Welcome {username.upper()}! Login successful..")
                 return username
             else:
