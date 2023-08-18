@@ -106,14 +106,12 @@ def login():
     """ Checks if the username and password exists in "user_sheet" """
     while True:
         username = input("Enter your username: ").strip().lower()
-        password = input("Enter your password: ").strip().lower()
+        password = input("Enter your password: ").strip()
 
         if user_exists(username, user_sheet):
             cell = user_sheet.find(username)
             hashed_pswd = user_sheet.cell(cell.row, cell.col + 1).value.strip()
-            hashed_pswd_return = hashed_pswd.decode('utf-8')
-            print(hashed_pswd_return)
-            if ph.verify(password, hashed_pswd_return):
+            if ph.verify(password, hashed_pswd):
                 print(f"Super Welcome {username.upper()}! Login successful..")
                 return username
             else:

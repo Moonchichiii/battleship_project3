@@ -1,5 +1,4 @@
-""" Imported libraries """
-import os
+""" Imported libraries import os"""
 import gspread
 from google.oauth2.service_account import Credentials
 from argon2 import PasswordHasher
@@ -37,6 +36,7 @@ def main_menu():
             print("\nThank you for stopping by! Exiting....")
             exit()
         print("nInvalid Choice! Try Again...")
+
 
 def create_auth():
     """create new user in the spreadsheet"""
@@ -78,14 +78,13 @@ def login():
     """ Checks if the username and password exists in "user_sheet" """
     while True:
         username = input("Enter your username: ").strip().lower()
-        password = input("Enter your password: ").strip().lower()
+        password = input("Enter your password: ")
 
         if user_exists(username, user_sheet):
             cell = user_sheet.find(username)
-            hashed_pswd = user_sheet.cell(cell.row, cell.col + 1).value.strip()
-            hashed_pswd_return = hashed_pswd.decode('utf-8')
-            print(hashed_pswd_return)
-            if ph.verify(password, hashed_pswd_return):
+            hashed_pswd = user_sheet.cell(cell.row, cell.col + 1).value
+            print(hashed_pswd)
+            if ph.verify(password, hashed_pswd):
                 print(f"Super Welcome {username.upper()}! Login successful..")
                 return username
             else:
@@ -94,12 +93,8 @@ def login():
             print("Invalid username, try again, or create a new account....")
 
 
-
 def main():
     """ Game loop """
-
-    logo()
-    welcome()
 
     sailors_name = main_menu()
 
@@ -112,4 +107,3 @@ def main():
 if __name__ == '__main__':
     while True:
         main()
-        
