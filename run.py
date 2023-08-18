@@ -130,7 +130,7 @@ def login(worksheet):
                 ha_pw = worksheet.cell(cell.row, cell.col + 1).value.encode()
 
                 if bcrypt.checkpw(password.encode(), ha_pw):
-                    print("Login successful......")
+                    print("\nLogin successful......")
                     return username
                 else:
                     print("\nIncorrect password. Please try again.")
