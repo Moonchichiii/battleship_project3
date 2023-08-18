@@ -60,7 +60,7 @@ def logo():
 def main_menu():
     """ Main sign in prompt."""
     while True:
-        choices = input("\n\nHave you played before? (y/n/e)?: ").upper()
+        choices = input("\n\nHave you played before? (y/n)?: ").upper()
         if choices == 'Y':
             username = login(user_sheet)
             if username:
@@ -73,13 +73,13 @@ def main_menu():
         elif choices == 'E':
             print("\nThank you for stopping by! Exiting....")
             exit()
-        print("nInvalid Choice! Try Again...")
+        print("\nInvalid Choice! Try Again...")
 
 
 def create_auth(worksheet):
     """create new user in the spreadsheet"""
     while True:
-        username = input("Please enter A username: ").strip().lower()
+        username = input("\nPlease enter A username: ").strip().lower()
         if not username:
             print("\nEvery sailor has a name? Try again!")
             continue
@@ -87,15 +87,15 @@ def create_auth(worksheet):
             print("\nEvery sailor has a name? Not a number!")
             continue
 
-        password = input("Please select A password: ")
+        password = input("\nPlease select A password: ")
 
         if not user_exists(username, worksheet):
             ha_pw = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
             worksheet.append_row([username, ha_pw])
-            print("Sign up successful....")
+            print("\nSign up successful....")
             return username
         else:
-            print("Passwords do not match! try again...")
+            print("\nPasswords do not match! try again...")
 
 
 def user_exists(username, worksheet):
@@ -103,15 +103,14 @@ def user_exists(username, worksheet):
 
     column_values = worksheet.col_values(1)
     if username in column_values:
-        print(f"Found username '{username}'.")
         return username in column_values
 
 
 def login(worksheet):
     """ Checks if the username and password exists in "user_sheet" """
     while True:
-        username = input("Enter your username: ").strip().lower()
-        password = input("Enter your password: ")
+        username = input("\nEnter your username: ").strip().lower()
+        password = input("\nEnter your password: ")
 
         if user_exists(username, worksheet):
             try:
@@ -119,14 +118,14 @@ def login(worksheet):
                 ha_pw = worksheet.cell(cell.row, cell.col + 1).value.encode()
 
                 if bcrypt.checkpw(password.encode(), ha_pw):
-                    print(f"Welcome {username.upper()}! Login successful..")
+                    print("Login successful......")
                     return username
                 else:
-                    print("Incorrect password. Please try again.")
+                    print("\nIncorrect password. Please try again.")
             except ValueError:
-                print("An error occurred while processing your request.")
+                print("\nA error occurred during processing...")
         else:
-            print("Invalid username, try again")
+            print("\nInvalid username, try again")
 
 
 def game_loop():
