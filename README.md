@@ -318,6 +318,15 @@ requirements.txt file contains following libraries:
 
 ## Bugs & Fixed Bugs
 
+### Alot of good examples how to setup bccrypt in python.  
+https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
+https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
+https://www.youtube.com/watch?v=hNa05wr0DSA
+https://www.makeuseof.com/tag/encryption-terms/
+https://onebite.dev/snippet/python
+https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
+https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
+
 
 
 ![Alt text](assets/readme_images/bccrypt_password_check.png)
@@ -497,13 +506,15 @@ print_board(board_with_ships)
 
 ## Credits
 
-### Hashing Password 
+### Alot of good examples how to setup and use ***bccrypt*** in python.  
 
-https://www.youtube.com/watch?v=hNa05wr0DSA - good source of explaining what it is and how it works. 
-
-https://www.tutorialspoint.com/hashing-passwords-in-python-with-bcrypt
-
-https://www.youtube.com/watch?v=71EU8gnZqZQ&t=196s
+https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
+https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
+https://www.youtube.com/watch?v=hNa05wr0DSA
+https://www.makeuseof.com/tag/encryption-terms/
+https://onebite.dev/snippet/python
+https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
+https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
 
 
 

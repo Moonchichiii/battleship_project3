@@ -31,10 +31,10 @@ def welcome():
     """ Greetings message """
 
     print("        Ahoy, sailor! Ready to conquer the seas?\n")
-    print("\nInstructions....")
-    print("\nIf you have played before, then just press Y and login.")
-    print("New here? then create a user with a simple password to remember")
-    print("Or want to exit this is your chance, with 'E' to Exit the game")
+    print("\nInstructions....\n")
+    print("1. If you have played before, then just press Y to login.")
+    print("2. New here? then create a user and a simple password to remember")
+    print("3. Or want to Exit? this is your chance, press 'E' to Exit... \n")
 
 
 def clear_screen():
@@ -60,7 +60,7 @@ def logo():
 def main_menu():
     """ Main sign in prompt."""
     while True:
-        choices = input("\nHave you played before? (y/n)?:  ").upper()
+        choices = input("\n\nHave you played before? (y/n/e)?: ").upper()
         if choices == 'Y':
             username = login(user_sheet)
             if username:
@@ -262,9 +262,9 @@ def main():
     if not sailors_name:
         print("Thank for stopping by...")
         return
-    print(f"\nWelcome Sailor {sailors_name.upper()}! Sink 'em all!")
+    print(f"\nWelcome Sailor {sailors_name.upper()} ! Sink 'em all!")
 
-    time.sleep(3)
+    time.sleep(5)
     clear_screen()
 
     board_size = game_board_size()
