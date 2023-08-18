@@ -318,7 +318,8 @@ requirements.txt file contains following libraries:
 
 ## Bugs & Fixed Bugs
 
-### Fetching the password. 
+### Fetching the password. Didn't get it to work fully in the end so abandoned the use of Argon2. 
+
 
 https://inquiryum.com/modules/nodejs%20module/Hashing-Passwords-&-Argon2/
 
@@ -487,6 +488,15 @@ print_board(board_with_ships)
 
 
 ## Credits
+
+### Hashing Password 
+
+https://www.youtube.com/watch?v=hNa05wr0DSA - good source of explaining what it is and how it works. 
+
+https://www.tutorialspoint.com/hashing-passwords-in-python-with-bcrypt
+
+https://www.youtube.com/watch?v=71EU8gnZqZQ&t=196s
+
 
 
 ***Login / Registration prompt***

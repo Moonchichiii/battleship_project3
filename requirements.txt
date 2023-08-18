@@ -1,5 +1,6 @@
 # Your requirements go here
 gspread
 oauth2client
-passlib[argon2]
+bcrypt==3.2.0
+
 
