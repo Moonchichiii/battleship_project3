@@ -13,36 +13,6 @@
 
 ## Content
 
-* [Project Goals](#project-goals)
-
-* [User Experience](#user-experience)
-    - [User Stories](#user-stories)
-    - [User Manual](#user-manual)
-
-* [Design](#design)
-
-* [Flow Chart](#flowchart)
-
-* [Game Features](#game-features)
-    - [Game Settings](#game-settings)
-
-* [Technologies Used](#technologies-used)
-    - [Python Libraries used](#python-libraries-used)
-
-* [Testing](#testing)
-    - [Manual Testing](#manual-testing)
-    - [Validator Testing](#validator-testing)
-
-* [Bugs & Fixed Bugs](#bugs-fixed-bugs)
-
-* [Deployment](#Deployment)
-
-* [Bugs & Fixed Bugs](#bugs-fixed-bugs)
-
-* [Credits](#credits)
-
-* [Acknowledgments](#acknowledgments)
-
 
  ## Project Goals
 
