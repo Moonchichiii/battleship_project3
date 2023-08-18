@@ -63,7 +63,7 @@ requirements.txt file contains following libraries:
 
 - gspread
 - oauth2client
-- passlib[argon2]
+- bcrypt==3.2.0
 
 
 
@@ -103,15 +103,21 @@ requirements.txt file contains following libraries:
 4. Next, determine the number of turns (or tries) you want for hunting those hidden ships.
     You can choose anywhere between 5-10 turns per game.
 
-***Here's a hint:***
+    **Here's a hint:**
+    
     If you've chosen the 5x5 board with 6 ships and go for 10 turns,
     get ready for an exciting round filled with sunken ships.
-
+   
     Once your game has ended, the outcomes of your successful sinkings are 
-    displayed on the main game board, and ships left. 
+    displayed on the main game board, and ships left.
     
     Then, we'll ask: 
     Ready for another round on the seas?
+
+
+
+
+
 
 [Back to top](#)
 
