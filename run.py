@@ -4,22 +4,22 @@ import time
 from random import randint
 import gspread
 from google.oauth2.service_account import Credentials
-from argon2 import PasswordHasher
+import bcrypt
 
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
-    ]
+]
 
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.Client(auth=SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('battleship')
 user_sheet = SHEET.worksheet('users')
-# Using the Argon2 password hasher.
-ph = PasswordHasher()
+
+
 # Constants for Game Layout.
 BOARD_DESIGN = '*'
 HIT_SHIP = 'X'
@@ -27,23 +27,14 @@ MISS = 'M'
 SHIP = 'S'
 
 
-def main_menu():
-    """ New sign in prompt."""
-    while True:
-        choices = input("\nHave you played before? (y/n)?:  ").upper()
-        if choices == 'Y':
-            username = login()
-            if username:
-                return username
-        elif choices == 'N':
-            username = create_auth()
-            if username:
-                print(f"Welcome {username}! Let's Play!")
-                return username
-        elif choices == 'E':
-            print("\nThank you for stopping by! Exiting....")
-            exit()
-        print("nInvalid Choice! Try Again...")
+def welcome():
+    """ Greetings message """
+
+    print("        Ahoy, sailor! Ready to conquer the seas?\n")
+    print("\nInstructions....")
+    print("\nIf you have played before, then just press Y and login.")
+    print("New here? then create a user with a simple password to remember")
+    print("Or want to exit this is your chance, with 'E' to Exit the game")
 
 
 def clear_screen():
@@ -66,7 +57,26 @@ def logo():
 """)
 
 
-def create_auth():
+def main_menu():
+    """ Main sign in prompt."""
+    while True:
+        choices = input("\nHave you played before? (y/n)?:  ").upper()
+        if choices == 'Y':
+            username = login(user_sheet)
+            if username:
+                return username
+        elif choices == 'N':
+            username = create_auth(user_sheet)
+            if username:
+                print(f"Welcome {username}! Let's Play!")
+                return username
+        elif choices == 'E':
+            print("\nThank you for stopping by! Exiting....")
+            exit()
+        print("nInvalid Choice! Try Again...")
+
+
+def create_auth(worksheet):
     """create new user in the spreadsheet"""
     while True:
         username = input("Please enter A username: ").strip().lower()
@@ -78,19 +88,14 @@ def create_auth():
             continue
 
         password = input("Please select A password: ")
-        password_confirm = input("Please confirm your password: ")
 
-        if password == password_confirm:
-            if not user_exists(username, user_sheet):
-                hashed_pswd = ph.hash(password)
-                user_sheet.append_row([username, hashed_pswd])
-                print("Sign up successful.....Welcome ")
-                return username
-
-            else:
-                print("Username already exists! Try again...")
+        if not user_exists(username, worksheet):
+            ha_pw = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+            worksheet.append_row([username, ha_pw])
+            print("Sign up successful....")
+            return username
         else:
-            print("Passwords do not match! Try again...")
+            print("Passwords do not match! try again...")
 
 
 def user_exists(username, worksheet):
@@ -102,32 +107,30 @@ def user_exists(username, worksheet):
         return username in column_values
 
 
-def login():
+def login(worksheet):
     """ Checks if the username and password exists in "user_sheet" """
     while True:
         username = input("Enter your username: ").strip().lower()
-        password = input("Enter your password: ").strip()
+        password = input("Enter your password: ")
 
-        if user_exists(username, user_sheet):
-            cell = user_sheet.find(username)
-            hashed_pswd = user_sheet.cell(cell.row, cell.col + 1).value.strip()
-            if ph.verify(password, hashed_pswd):
-                print(f"Super Welcome {username.upper()}! Login successful..")
-                return username
-            else:
-                print("Invalid Password! Try again...")
+        if user_exists(username, worksheet):
+            try:
+                cell = worksheet.find(username)
+                ha_pw = worksheet.cell(cell.row, cell.col + 1).value.encode()
+
+                if bcrypt.checkpw(password.encode(), ha_pw):
+                    print(f"Welcome {username.upper()}! Login successful..")
+                    return username
+                else:
+                    print("Incorrect password. Please try again.")
+            except ValueError:
+                print("An error occurred while processing your request.")
         else:
-            print("Invalid username, try again, or create a new account....")
+            print("Invalid username, try again")
 
 
-def welcome():
-    """ Greetings message """
-
-    print("        Ahoy, sailor! Ready to conquer the seas?\n")
-    print("\nInstructions....")
-    print("\nIf you have played before, then just press Y and login.")
-    print("New here? then create a user with a simple password to remember")
-    print("Or want to exit this is your chance, with 'E' to Exit the game")
+def game_loop():
+    """ new game loop after successful login/sign up."""
 
 
 def game_settings():

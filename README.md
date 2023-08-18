@@ -318,6 +318,14 @@ requirements.txt file contains following libraries:
 
 ## Bugs & Fixed Bugs
 
+
+
+![Alt text](assets/readme_images/bccrypt_password_check.png)
+
+![Alt text](assets/readme_images/Password_check_bccrypt.png)
+
+https://saturncloud.io/blog/how-to-use-the-bcrypt-algorithm-within-the-encrypt-function-in-mysql-for-verifying-passwords/
+
 ### Fetching the password. Didn't get it to work fully in the end so abandoned the use of Argon2. 
 
 
