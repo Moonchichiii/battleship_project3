@@ -59,6 +59,7 @@ def logo():
 
 def main_menu():
     """ Main sign in prompt."""
+
     while True:
         choices = input("\n\nHave you played before? (y/n)?: ").upper()
         if choices == 'Y':
@@ -78,6 +79,9 @@ def main_menu():
 
 def create_auth(worksheet):
     """create new user in the spreadsheet"""
+    attempt = 0
+    attempt_limit = 3
+
     while True:
         username = input("\nPlease enter A username: ").strip().lower()
         if not username:
@@ -96,6 +100,11 @@ def create_auth(worksheet):
             return username
         else:
             print("\nPasswords do not match! try again...")
+            attempt += 1
+
+        if attempt >= attempt_limit:
+            print("\nMaximum attempts reached! try again...")
+            exit()
 
 
 def user_exists(username, worksheet):
@@ -108,6 +117,9 @@ def user_exists(username, worksheet):
 
 def login(worksheet):
     """ Checks if the username and password exists in "user_sheet" """
+    attempt = 0
+    attempt_limit = 3
+
     while True:
         username = input("\nEnter your username: ").strip().lower()
         password = input("\nEnter your password: ")
@@ -122,14 +134,18 @@ def login(worksheet):
                     return username
                 else:
                     print("\nIncorrect password. Please try again.")
+                    attempt += 1
+                if attempt >= attempt_limit:
+                    print("\nMaximum attempts reached! try again...")
+                    exit()
             except ValueError:
                 print("\nA error occurred during processing...")
         else:
             print("\nInvalid username, try again")
-
-
-def game_loop():
-    """ new game loop after successful login/sign up."""
+            attempt += 1
+            if attempt >= attempt_limit:
+                print("\nMaximum attempts reached! try again...")
+                exit()
 
 
 def game_settings():

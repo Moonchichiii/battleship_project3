@@ -107,7 +107,11 @@ requirements.txt file contains following libraries:
     If you've chosen the 5x5 board with 6 ships and go for 10 turns,
     get ready for an exciting round filled with sunken ships.
 
-    Once your game concludes, the outcomes of your successful sinkings are displayed on the main game board, and ships left. Then, we'll ask: Ready for another round on the seas?
+    Once your game has ended, the outcomes of your successful sinkings are 
+    displayed on the main game board, and ships left. 
+    
+    Then, we'll ask: 
+    Ready for another round on the seas?
 
 [Back to top](#)
 
@@ -317,6 +321,12 @@ requirements.txt file contains following libraries:
 
 
 ## Bugs & Fixed Bugs
+
+### Stuck in a login loop, Invalid username.
+
+![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
+
+https://bobbyhadz.com/blog/python-username-password-input-3-attempts
 
 ### Alot of good examples how to setup bccrypt in python.  
 https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
