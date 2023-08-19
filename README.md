@@ -310,7 +310,7 @@
 
 <details><summary>CI Python Linter - Result</summary>
 
-![Alt text](assets/readme_images/Ci_linter_last_check.png)
+![Alt text](assets/readme_images/new_check_pep8.png)
 
 [Back to top](#)
 
