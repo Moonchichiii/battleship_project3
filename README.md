@@ -13,88 +13,81 @@
 
 ## Content
 
-
- ## Project Goals
-
-
-
-
-
-## Installtion 
-
-Clone the repository:
-Go to the project folders:
-install the required libraries using this command:
-***"pip install -r requirements.txt"*** in the terminal. 
-
-
-## Dependencies 
-requirements.txt file contains following libraries: 
-
-- gspread
-- oauth2client
-- bcrypt==3.2.0
-
-
-
-
-[Back to top](#)
+## Table of Contents
+- [Project Goals](#project-goals)
+  - [Site Owner Goals](#site-owner-goals)
+ [User Experience](#user-experience)
+    * [User Stories](#user-stories)
+    * [User Manual](#user-manual)    
+- [Flow Chart](#flowchart)
+- [Design](#design)
+- [Game Features](#game-features)
+    * [Game Settings](#game-settings)
+- [Testing](#testing)
+    * [Manual Testing](#manual-testing)
+    * [Validator Testing](#validator-testing)
+- [Bugs & Fixes](#bugs-fixes)
+- [Technologies Used](#technologies-used)
+    * [Dependencies](#dependencies)
+    * [Installation (Cloning the Project)](#installation-cloning-the-project)
+    * [Python Libraries Used](#python-libraries-used)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
 
 
 
+## Project Goals
+
+- Battleships is a classic game of strategy and wit. Played on a ruled grid, whether on paper or board, 
+- the player must locate a concealed fleet of warships. By taking shots at specific grid coordinates,
+- the objective is to identify and sink the entire hidden fleet.
+
+
+## site-owner-goals
+
+* Create a Battleship game that is intuitive and engaging for the user.
+* Ensure that new users can effortlessly sign up.
+* Ensure that existing users can log in smoothly.
+* Handle and display errors in a clear manner to the user.
+* Allow users the option to restart the game.
 
 ## User Experience
-
-
-
-
-
-[Back to top](#)
 
 ### User Stories
 
 
 
-[Back to top](#)
-
 ### User Manual
 
 **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
 
-1. Start with a Sailor Sign in / registration for new Sailors, and simple Login for returning players,
+* Start with a Sailor Sign in / registration for new Sailors, and simple Login for returning players,
     I've kept it straightforward, ensuring you can dive right in.
 
-2. Once you've been greeted by the sailor prompt and you're all set,
+* Once you've been greeted by the sailor prompt and you're all set,
     it's time to decide on your game's layout. For a quick game, the 5x5 board is a perfect choice.
 
-3. After setting up the board prompt, decide how many ships you'd like
+* After setting up the board prompt, decide how many ships you'd like
     to hide on the game board. Remember: more ships on a smaller board means more chances to sink ships.
 
-4. Next, determine the number of turns (or tries) you want for hunting those hidden ships.
+* Next, determine the number of turns (or tries) you want for hunting those hidden ships.
     You can choose anywhere between 5-10 turns per game.
 
     **Here's a hint:**
     
-    If you've chosen the 5x5 board with 6 ships and go for 10 turns,
-    get ready for an exciting round filled with sunken ships.
+ -   If you've chosen the 5x5 board with 6 ships and go for 10 turns,
+ *   get ready for an exciting round filled with sunken ships.
    
-    Once your game has ended, the outcomes of your successful sinkings are 
-    displayed on the main game board, and ships left.
+ *   Once your game has ended, the outcomes of your successful sinkings are 
+ *   displayed on the main game board, and ships left.
     
-    Then, we'll ask: 
-    Ready for another round on the seas?
-
-
-
+   - Then, we'll ask: 
+   - Ready for another round on the seas?
 
 
 
 [Back to top](#)
-
-## Design
-
-- **Simplicity:** The design is straightforward,very simple and user-friendly.
-- **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
 
 
 ## Flowchart
@@ -108,18 +101,25 @@ requirements.txt file contains following libraries:
 </details>
 
 
+## Design
+
+- **Simplicity:** The design is straightforward,very simple and user-friendly.
+- **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
+
+
+
+
 
 ## Game Features
 
   * ***Sign in / registration for new Sailors, and simple Login for returning players.***  
 
   
-  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add more content hereee !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+![Alt text](assets/readme_images/signup_login_screen.png)
 
-  ## insert new image here!!!!!! !!!!!!!!!!!!!!!!!!!!!!!
+
 
 [Back to top](#)
-
 
 
 ### Game settings
@@ -136,23 +136,6 @@ requirements.txt file contains following libraries:
 
 [Back to top](#)
 
-
-
-
-## Technologies used
-
-[Python](https://www.python.org/)  -  The primary programming language for game development.
-
-[Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted within this editor.
-
-[Back to top](#)
-
-### Python Libraries used
-
-     Import os
-     Import time
-     from random import randint
-
 ## Testing 
 
 - Pythontutor excellent for visually understanding and verifying how your code executes.
@@ -162,8 +145,22 @@ requirements.txt file contains following libraries:
 
 ### Manual Testing
 
+<details><summary>New signup / login screen.</summary>
 
-<details><summary>Username prompt</summary>
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Game name    | Prompts user for name        | "Mats"                   | Returns the name "Mats"                 | Works as intended   |
+|              | Have you played before? (y/n):| Empty input             | Invalid choice! try again.              | Works as intended   |
+|              |                              | 12345678910              | Invalid choice! try again.              | Works as intended   | 
+
+![Alt text](assets/readme_images/login_test_attempt_password_max.png)
+![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
+
+</details><br>
+
+
+
+<details><summary>Username prompt old is removed from the project.</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -468,6 +465,42 @@ print_board(board_with_ships)
 [Back to top](#)
 
 
+
+
+
+
+## Technologies used
+
+[Python](https://www.python.org/)  -  The primary programming language for game development.
+
+[Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted within this editor.
+
+[Back to top](#)
+
+
+
+
+### Dependencies
+    
+   requirements.txt file contains following libraries: 
+
+- gspread
+- oauth2client
+- bcrypt==3.2.0
+
+
+## Installation (Cloning the Project)
+
+1. Clone the repository.
+2. Rename your repository, if desired.
+3. Navigate to the project directory.
+4. Run the command `pip install -r requirements.txt` in the terminal.
+
+
+### Python Libraries Used
+   Import os
+   Import time
+   from random import randint
 
 
 
