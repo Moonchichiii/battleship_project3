@@ -37,11 +37,16 @@
 
 
 
+
 ## Project Goals
 
 - Battleships is a classic game of strategy and wit. Played on a ruled grid, whether on paper or board, 
 - the player must locate a concealed fleet of warships. By taking shots at specific grid coordinates,
 - the objective is to identify and sink the entire hidden fleet.
+
+
+
+
 
 
 ## site-owner-goals
@@ -52,9 +57,12 @@
 * Handle and display errors in a clear manner to the user.
 * Allow users the option to restart the game.
 
+[Back to top](#)
 
 
 ## User Experience
+
+
 
 ### User Stories
 - Play the Battleship game solo and find the hidden ships.
@@ -62,6 +70,11 @@
 - Be able to login as an existing user.
 - Be able to restart the game at any point.
 - Experience the game seamlessly across different devices.
+
+[Back to top](#)
+
+
+
 
 
 ### User Manual
