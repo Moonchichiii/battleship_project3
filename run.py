@@ -30,7 +30,7 @@ SHIP = 'S'
 def welcome():
     """ Greetings message """
 
-    print("        Ahoy, sailor! Ready to conquer the seas?\n")
+    print("Ahoy, sailor! Ready to conquer the seas?\n")
     print("\nInstructions....\n")
     print("1. If you have played before, then just press Y to login.")
     print("2. New here? then create a user and a simple password to remember")
@@ -45,15 +45,27 @@ def clear_screen():
 def logo():
     """ Game Logo."""
 
-    print(r"""
-  ____          _    _    _             _      _
- |  _ \        | |  | |  | |           | |    (_)
- | |_) |  __ _ | |_ | |_ | |  ___  ___ | |__   _  _ __
- |  _ <  / _` || __|| __|| | / _ \/ __|| '_ \ | || '_ \
- | |_) || (_| || |_ | |_ | ||  __/\__ \| | | || || |_) |
- |____/  \__,_| \__| \__||_| \___||___/|_| |_||_|| .__/
-                                                 | |
-                                                 |_|
+
+print(r"""
+  ____        _   _   _
+ |  _ \      | | | | | |
+ | |_) | __ _| |_| |_| | ___
+ |  _ < / _` | __| __| |/ _ \
+ | |_) | (_| | |_| |_| |  __/
+ |____/ \__,_|\__|\__|_|\___|
+
+""")
+
+print(r"""
+       _____ _     _
+      / ____| |   (_)
+     | (___ | |__  _ _ __
+      \___ \| '_ \| | '_ \
+      ____) | | | | | |_) |
+     |_____/|_| |_|_| .__/
+                    | |
+                    |_|
+
 """)
 
 
