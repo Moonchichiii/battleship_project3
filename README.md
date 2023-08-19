@@ -337,6 +337,7 @@ https://www.programcreek.com/python/example/81834/bcrypt.hashpw
 
 
 <details><summary>Images of the change to bccrypt</summary>
+
 ![Alt text](assets/readme_images/bccrypt_password_check.png)
 
 ![Alt text](assets/readme_images/Password_check_bccrypt.png)
