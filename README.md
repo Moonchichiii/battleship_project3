@@ -326,7 +326,10 @@
 </details>
 https://bobbyhadz.com/blog/python-username-password-input-3-attempts
 
-### Alot of good examples how to setup bccrypt in python.  
+
+
+<details><summary>Very good examples how to setup bccrypt in python.</summary>
+  
 https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
 https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
 https://www.youtube.com/watch?v=hNa05wr0DSA
@@ -334,6 +337,7 @@ https://www.makeuseof.com/tag/encryption-terms/
 https://onebite.dev/snippet/python
 https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
 https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
+</details>
 
 
 <details><summary>Images of the change to bccrypt</summary>
@@ -347,14 +351,13 @@ https://saturncloud.io/blog/how-to-use-the-bcrypt-algorithm-within-the-encrypt-f
 
 </details>
 
-### Fetching the password. Didn't get it to work fully in the end so abandoned the use of Argon2. 
-
+<details><summary>Fetching the password. Didn't get it to work fully in the end so abandoned the use of Argon2. </summary>
 
 https://inquiryum.com/modules/nodejs%20module/Hashing-Passwords-&-Argon2/
 
 
 https://www.youtube.com/watch?v=eCBUuu7BPn4
-
+</details>
 
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
@@ -554,7 +557,7 @@ print_board(board_with_ships)
 
 ## Credits
 
-### Alot of good examples how to setup and use ***bccrypt*** in python.  
+<details><summary>Alot of good examples how to setup and use ***bccrypt*** in python</summary>  
 
 https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
 https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
@@ -564,7 +567,7 @@ https://onebite.dev/snippet/python
 https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
 https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
 
-
+</details>
 
 ***Login / Registration prompt***
 
