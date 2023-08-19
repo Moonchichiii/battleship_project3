@@ -321,8 +321,9 @@
 
 ### Stuck in a login loop, Invalid username.
 
+<details><summary>login_test_invalid_username_loop</summary>
 ![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
-
+</details>
 https://bobbyhadz.com/blog/python-username-password-input-3-attempts
 
 ### Alot of good examples how to setup bccrypt in python.  
@@ -335,12 +336,15 @@ https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
 https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
 
 
-
+<details><summary>Images of the change to bccrypt</summary>
 ![Alt text](assets/readme_images/bccrypt_password_check.png)
 
 ![Alt text](assets/readme_images/Password_check_bccrypt.png)
 
 https://saturncloud.io/blog/how-to-use-the-bcrypt-algorithm-within-the-encrypt-function-in-mysql-for-verifying-passwords/
+
+
+</details>
 
 ### Fetching the password. Didn't get it to work fully in the end so abandoned the use of Argon2. 
 
