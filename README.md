@@ -51,6 +51,7 @@
 
 ## site-owner-goals
 
+
 * Create a Battleship game that is intuitive and engaging for the user.
 * Ensure that new users can effortlessly sign up.
 * Ensure that existing users can log in smoothly.
@@ -65,6 +66,8 @@
 
 
 ### User Stories
+
+
 - Play the Battleship game solo and find the hidden ships.
 - Be able to sign up as a new user.
 - Be able to login as an existing user.
@@ -77,7 +80,10 @@
 
 
 
+
+
 ### User Manual
+
 
 **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
 
@@ -126,8 +132,7 @@
 - **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
 
 
-
-
+[Back to top](#)
 
 ## Game Features
 
