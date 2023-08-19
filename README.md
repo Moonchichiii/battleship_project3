@@ -52,10 +52,16 @@
 * Handle and display errors in a clear manner to the user.
 * Allow users the option to restart the game.
 
+
+
 ## User Experience
 
 ### User Stories
-
+- Play the Battleship game solo and find the hidden ships.
+- Be able to sign up as a new user.
+- Be able to login as an existing user.
+- Be able to restart the game at any point.
+- Experience the game seamlessly across different devices.
 
 
 ### User Manual
@@ -76,14 +82,14 @@
 
     **Here's a hint:**
     
- -   If you've chosen the 5x5 board with 6 ships and go for 10 turns,
- *   get ready for an exciting round filled with sunken ships.
+   *   If you've chosen the 5x5 board with 6 ships and go for 10 turns,
+   *   get ready for an exciting round filled with sunken ships.
    
- *   Once your game has ended, the outcomes of your successful sinkings are 
- *   displayed on the main game board, and ships left.
+   *   Once your game has ended, the outcomes of your successful sinkings are 
+   *   displayed on the main game board, and ships left.
     
-   - Then, we'll ask: 
-   - Ready for another round on the seas?
+       - Then, we'll ask: 
+       - Ready for another round on the seas?
 
 
 
