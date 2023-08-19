@@ -9,7 +9,7 @@
  
 
 
-![Alt text](assets/readme_images/crossplatforms.png)
+![Alt text](assets/readme_images/new_signin_prompt.png)
 
 ## Content
 
