@@ -126,17 +126,25 @@
 </details>
 
 
+<br><br>
+
+
 ## Design
+<br>
 
-- **Simplicity:** The design is straightforward,very simple and user-friendly.
-- **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
+ * **Simplicity:** The design is straightforward,very simple and user-friendly.
+ * **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
 
+<br><br>
 
 [Back to top](#)
+
+<br><br>
 
 ## Game Features
 
   * ***Sign in / registration for new Sailors, and simple Login for returning players.***  
+<br>
 
   
 ![Alt text](assets/readme_images/signup_login_screen.png)
@@ -147,6 +155,8 @@
 
 
 ### Game settings
+
+<br>
 
 1. **Prompted with the question if you ever sailed with us before?** 
 2. **If you have sailed with us before you will simply login again.**
