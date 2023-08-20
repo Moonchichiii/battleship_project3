@@ -5,7 +5,7 @@
 
 #### ****Visit the live project below.****
 
-  <a href="https://battleshipv2-ca91861604a5.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
+  <a href="https://battleshipv2-1cb73689a3df.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
  
 
 
@@ -71,7 +71,7 @@
 - Play the Battleship game solo and find the hidden ships.
 - Be able to sign up as a new user.
 - Be able to login as an existing user.
-- Be able to restart the game at any point.
+- Be able to restart the game at the end of each match.
 - Experience the game seamlessly across different devices.
 
 [Back to top](#)
@@ -88,7 +88,7 @@
 **If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
 
 * Start with a Sailor Sign in / registration for new Sailors, and simple Login for returning players,
-    I've kept it straightforward, ensuring you can dive right in.
+  I've kept it very simple, ensuring you can get back into the battle again.
 
 * Once you've been greeted by the sailor prompt and you're all set,
     it's time to decide on your game's layout. For a quick game, the 5x5 board is a perfect choice.

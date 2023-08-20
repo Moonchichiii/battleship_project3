@@ -180,7 +180,8 @@ def game_board_size():
     size = 0
     while size != 5 and size != 8:
         try:
-            print("This will create the size of your game board.\n")
+            print("Please select the size of your game grid.\n")
+            print("5 rows & columns or 8 rows & columns\n")
             size = int(input("Select board size (5 or 8): "))
             if size != 5 and size != 8:
                 print("Invalid size. Please choose between (5x5 or 8x8)?")
