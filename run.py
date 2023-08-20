@@ -92,7 +92,7 @@ def main_menu():
 def create_auth(worksheet):
     """create new user in the spreadsheet"""
     attempt = 0
-    attempt_limit = 3
+    attempt_limit = 2
 
     while True:
         username = input("\nPlease enter A username: ").strip().lower()
@@ -115,7 +115,7 @@ def create_auth(worksheet):
             attempt += 1
 
         if attempt >= attempt_limit:
-            print("\nMaximum attempts reached! try again...")
+            print("\nMaximum attempts reached! Exiting..")
             exit()
 
 
@@ -130,7 +130,7 @@ def user_exists(username, worksheet):
 def login(worksheet):
     """ Checks if the username and password exists in "user_sheet" """
     attempt = 0
-    attempt_limit = 3
+    attempt_limit = 2
 
     while True:
         username = input("\nEnter your username: ").strip().lower()
@@ -148,7 +148,7 @@ def login(worksheet):
                     print("\nIncorrect password. Please try again.")
                     attempt += 1
                 if attempt >= attempt_limit:
-                    print("\nMaximum attempts reached! try again...")
+                    print("\nMaximum password attempts reached! Exiting.")
                     exit()
             except ValueError:
                 print("\nA error occurred during processing...")
@@ -156,7 +156,7 @@ def login(worksheet):
             print("\nInvalid username, try again")
             attempt += 1
             if attempt >= attempt_limit:
-                print("\nMaximum attempts reached! try again...")
+                print("\nMaximum username attempts reached! Exiting.")
                 exit()
 
 
