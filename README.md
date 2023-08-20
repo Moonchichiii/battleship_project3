@@ -541,13 +541,14 @@ print_board(board_with_ships)
 3. Navigate to the project directory.
 4. Run the command `pip install -r requirements.txt` in the terminal.
 
+<br>
 
 ### Python Libraries Used
    Import os
    Import time
    from random import randint
 
-
+<br><br>
 
 ## Deployment
 
@@ -564,7 +565,7 @@ print_board(board_with_ships)
 
 [Back to top](#)
 
-
+<br>
 
 
 ## Credits
@@ -652,7 +653,6 @@ https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-password
 [Back to top](#)
 
 </details><br>
-
 
 
 ## Acknowledgments
