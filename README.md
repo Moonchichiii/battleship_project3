@@ -322,14 +322,16 @@
 ### Stuck in a login loop, Invalid username.
 
 <details><summary>login_test_invalid_username_loop</summary>
+
 ![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
-</details>
 https://bobbyhadz.com/blog/python-username-password-input-3-attempts
 
 
+[Back to top](#)
+</details>
 
 <details><summary>Very good examples how to setup bccrypt in python.</summary>
-  
+
 https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
 https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
 https://www.youtube.com/watch?v=hNa05wr0DSA
@@ -337,6 +339,7 @@ https://www.makeuseof.com/tag/encryption-terms/
 https://onebite.dev/snippet/python
 https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
 https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
+
 </details>
 
 
@@ -539,7 +542,6 @@ print_board(board_with_ships)
 ## Deployment
 
 
-
 [Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
 
 [Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
@@ -559,53 +561,88 @@ print_board(board_with_ships)
 
 <details><summary>Alot of good examples how to setup and use ***bccrypt*** in python</summary>  
 
-https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
-https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
-https://www.youtube.com/watch?v=hNa05wr0DSA
-https://www.makeuseof.com/tag/encryption-terms/
-https://onebite.dev/snippet/python
-https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
-https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
-
-</details>
-
-***Login / Registration prompt***
+* https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
+* https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
+* https://www.youtube.com/watch?v=hNa05wr0DSA
+* https://www.makeuseof.com/tag/encryption-terms/
+* https://onebite.dev/snippet/python
+* https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
+* https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
 
 
-The idea came from redoing the love sandwich walkthrough, the skimmed the internet until i came across this which was fit for what i have been thinking about to add to the project, to make it complete. 
+[Back to top](#)
 
-The idea originated from revisiting the 'love sandwich' walkthrough. I serached the internet until I found this, 
-which perfectly fitted with what I had in mind!
+</details><br>
 
-https://replit.com/talk/share/A-Simple-Login-System-using-Google-Sheets-API/20950
+<details><summary>Login / Registration prompt</summary>  
+<br>
 
-https://www.w3schools.com/python/trypython.asp?filename=demo_ref_string_strip
+- After revisiting the "love sandwich" project, I searched the internet until I found something 
+- that perfectly matched what I had in mind to enhance the project and make it complete.
+
+<br>
+
+* https://replit.com/talk/share/A-Simple-Login-System-using-Google-Sheets-API/20950
+* https://www.w3schools.com/python/trypython.asp?filename=demo_ref_string_strip
 
 
-***Password hashing***
+
+[Back to top](#)
+
+</details><br>
+
+
+<details><summary>Password hashing</summary>  
+
 
 https://pypi.org/project/argon2-cffi/
 
 https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-passwords-without-a-secret-and-with-a-random-salt-tha
 
 
-***Restart the game***
+
+[Back to top](#)
+
+</details><br>
+
+
+<details><summary>Restart the game</summary>  
+
 
 - https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
 
 - https://stackoverflow.com/questions/63973777/cant-forbid-numbers-from-a-username-that-includes-alphabetical-characters
   
-  ***Helped to construct the board***
+
+[Back to top](#)
+
+</details><br>
+
+<details><summary>To construct the board</summary>  
+  
 
 - https://www.programcreek.com/python/?CodeExample=print+board
 
 - https://stackoverflow.com/questions/63318514/how-output-of-printprint-boardboard-is-printed-like-a-matrix-but-not-like-a
 
-#### The turns 
+
+[Back to top](#)
+
+</details><br>
+
+
+<details><summary>The turns</summary>  
+
 
 - https://trinket.io/python/051179b6d3
 
 - https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
+
+
+[Back to top](#)
+
+</details><br>
+
 
 
 ## Acknowledgments
