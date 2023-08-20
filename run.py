@@ -31,7 +31,7 @@ def welcome():
     """ Greetings message """
 
     print("Ahoy, sailor! Ready to conquer the seas?\n")
-    print("\nInstructions....\n")
+    print("\n Signup / Login instructions....\n")
     print("1. If you have played before, then just press Y to login.")
     print("2. New here? then create a user and a simple password to remember")
     print("3. Or want to Exit? this is your chance, press 'E' to Exit... \n")
@@ -120,7 +120,7 @@ def create_auth(worksheet):
 
 
 def user_exists(username, worksheet):
-    """ Check f the user has already registered """
+    """ Check if the user has already registered """
 
     column_values = worksheet.col_values(1)
     if username in column_values:
@@ -180,7 +180,8 @@ def game_board_size():
     size = 0
     while size != 5 and size != 8:
         try:
-            size = int(input("Select board size (5x5 or 8x8): "))
+            print("This will create the size of your game board.\n")
+            size = int(input("Select board size (5 or 8): "))
             if size != 5 and size != 8:
                 print("Invalid size. Please choose between (5x5 or 8x8)?")
         except ValueError:
@@ -193,6 +194,7 @@ def number_of_ships():
     ships = 0
     while ships < 2 or ships > 6:
         try:
+            print("Number of ships to be hidden on your board.\n")
             ships = int(input("Choose the number of ships? (2-6): "))
             if ships < 2 or ships > 6:
                 print("Invalid number! Please choose between 2 and 6 ships?")
@@ -206,6 +208,7 @@ def number_of_turns():
     turns = 0
     while turns < 5 or turns > 10:
         try:
+            print("Select how many attempts you want to find all ships\n")
             turns = int(input("How many turns ? (5-10): "))
             if turns < 5 or turns > 10:
                 print("invalid turns! Select a number from (5 to 10)?")
@@ -279,7 +282,7 @@ def hit_or_miss(board_with_ships, row, col, sailors_name):
 
 
 def main():
-    """ Game loop """
+    """ Game loop calling all the functions. """
 
     logo()
     welcome()
