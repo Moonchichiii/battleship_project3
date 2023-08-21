@@ -72,7 +72,7 @@
 
 1. **First Prompt**: 
     <br> `Start screen, you're given an option to signup or login. If you have registered before, you can login.`    
-    [Manual Testing](#manual-testing-First-Prompt)
+    [Manual Testing](#first-prompt)
     
 2. **Board Size Selection**: 
      <br> `Choose between a 5x5 or 8x8 board size.`
@@ -228,10 +228,10 @@
 
 ###  User stories Manual Testing
 
-(#manual-testing-First-Prompt)
+[1. First Prompt](#first-prompt)
+<details>
+<summary id="first-prompt">1. First Prompt:</summary>
 
-
-<details><summary>1. **First Prompt**:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -242,8 +242,9 @@
 
 </details><br>
 
-(#manual-testing-board-size-selection)
-<details><summary>2. **Board Size Selection**:</summary>
+[Manual Testing](#manual-testing-board-size-selection)
+<details>
+<summary id="manual-testing-board-size-selection">2. Board Size Selection:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -256,9 +257,9 @@
 
 </details><br>
 
-(#manual-testing-ship-placement)
-
-<details><summary>3. **Ship Placement**:</summary>
+[Manual Testing](#manual-testing-ship-placement)
+<details>
+<summary id="manual-testing-ship-placement">3. Ship Placement:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -271,8 +272,9 @@
 
 </details><br>
 
-(#manual-testing-turn-selection)
-<details><summary>4. **Turn Selection**:</summary>
+[Manual Testing](#manual-testing-turn-selection)
+<details>
+<summary id="manual-testing-turn-selection">4. Turn Selection:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -283,8 +285,10 @@
 
 </details><br>
 
-(#manual-testing-ship-count-display)
-<details><summary>5. **Ship Count Display**:</summary>
+
+[Manual Testing](#manual-testing-ship-count-display)
+<details>
+<summary id="manual-testing-ship-count-display">5. Ship Count Display:</summary>
 
 | **Feature**  | **Expected Behavior**        | **Actual Result**      |   
 | :---         |    :----:                    |          ---:          |  
@@ -306,8 +310,9 @@
 
 </details><br>
 
-(#manual-testing-hit-count-display)
-<details><summary>6. **Hit Count Display**:</summary>
+[Manual Testing](#manual-testing-hit-count-display)
+<details>
+<summary id="manual-testing-hit-count-display">6. Hit Count Display:</summary>
 
 | **Feature**  | **Expected Behavior**        | **Actual Result**      |   
 | :---         |    :----:                    |          ---:          |  
@@ -320,8 +325,9 @@
 
 </details><br>
 
-
-<details><summary>7. **Turns Left Display**:</summary>
+[Manual Testing](#manual-testing-turns-left-display)
+<details>
+<summary id="">7. Turns Left Display:</summary>
 
 | **Feature**  | **Expected Behavior**        | **Actual Result**      |   
 | :---         |    :----:                    |          ---:          |  
@@ -347,8 +353,9 @@
 </details><br>
 
 
-(#manual-testing-board-display)
-<details><summary>8. **Board Display**:</summary>
+[Manual Testing](#manual-testing-board-display)
+<details>
+<summary id="manual-testing-board-display">8. Board Display:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -363,8 +370,9 @@
 
 </details><br>
 
-(#manual-testing-endgame)
-<details><summary>9. **Endgame**:</summary>
+[Manual Testing](#manual-testing-endgame)
+<details>
+<summary id="manual-testing-endgame">9. Endgame:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -380,9 +388,10 @@
 
 
 
-(#manual-testing-restarting)
 
-<details><summary>10. **Restarting the Game**:</summary>
+[Manual Testing](#manual-testing-restarting)
+<details>
+<summary id="manual-testing-restarting">10. Restarting the Game:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
