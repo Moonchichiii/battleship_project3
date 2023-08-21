@@ -120,25 +120,6 @@
      [Manual Testing](#manual-testing-restarting)
 
 
-###  User stories Manual Testing
-
-(#manual-testing-First-Prompt)
-
-(#manual-testing-board-size-selection)
-
-(#manual-testing-ship-placement)
-
-(#manual-testing-turn-selection)
-
-(#manual-testing-ship-count-display)
-
-(#manual-testing-hit-count-display)
-
-(#manual-testing-board-display)
-
-(#manual-testing-endgame)
-
-(#manual-testing-restarting)
 
 [Back to top](#)
 
@@ -245,7 +226,12 @@
 
 ### Manual Testing
 
-<details><summary>New signup / login screen.</summary>
+###  User stories Manual Testing
+
+(#manual-testing-First-Prompt)
+
+
+<details><summary>1. **First Prompt**:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -253,27 +239,11 @@
 |              | Have you played before? (y/n):| Empty input             | Invalid choice! try again.              | Works as intended   |
 |              |                              | 12345678910              | Invalid choice! try again.              | Works as intended   | 
 
-![Alt text](assets/readme_images/login_test_attempt_password_max.png)
-![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
 
 </details><br>
 
-
-
-<details><summary>Username prompt old is removed from the project.</summary>
-
-| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
-| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Game name    | Prompts user for name        | "Mats"                   | Returns the name "Mats"                 | Works as intended   |
-|              | Please enter your name:      | Empty input              | Every sailor has a name? Try again!     | Works as intended   |
-|              |                              | 12345678910              | Every sailor has a name? Not a number!  | Works as intended   | 
-
-![Alt text](assets/readme_images/Username_prompt.png)
-
-
-</details><br>
-
-<details><summary>Select board size (5x5 or 8x8)</summary>
+(#manual-testing-board-size-selection)
+<details><summary>2. **Board Size Selection**:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -281,12 +251,14 @@
 |              | Select board size (5x5 or 8x8): | Empty input           | Please select a valid! board size (5x5 or 8x8)     | Works as intended   |
 |              |                              | 1111              | invalid size. Please choose between (5x5 or 8x8)?  | Works as intended   | 
 
-![Alt text](assets/readme_images/select_board_size.png)
+
 
 
 </details><br>
 
-<details><summary>Number of ships</summary>
+(#manual-testing-ship-placement)
+
+<details><summary>3. **Ship Placement**:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -294,14 +266,13 @@
 |              |                              | Empty input              |  Please enter a valid number between 2 and 6   | Works as intended   |
 |              |                              | "8" "9"                  |  Invalid number! Please choose between 2 and 6 ships? | Works as intended   | 
 
-![Alt text](assets/readme_images/select_ships.png)
+
 
 
 </details><br>
 
-
-
-<details><summary>Number of turns ? </summary>
+(#manual-testing-turn-selection)
+<details><summary>4. **Turn Selection**:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -309,27 +280,11 @@
 |              |                              | Empty input             | Please enter a valid number between (5 and 10) | Works as intended   |
 |              |                              | 1                     | invalid turns! Select a number from (5 to 10)? | Works as intended   | 
 
-![Alt text](assets/readme_images/empty_line_turns.png)
-![Alt text](assets/readme_images/Invalid_number_turns.png)
 
 </details><br>
 
-<details><summary>Choose Row/Column (board size for test is 5x5)</summary>
-
-| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
-| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
-| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
-|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
-|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
-
-![Alt text](assets/readme_images/row_5_col_4.png)
-![Alt text](assets/readme_images/empty_row_col.png)
-![Alt text](assets/readme_images/incorrect_number_row_col.png)
-</details><br>
-
-
-<details><summary>Ships left, Hits, Turns left</summary>
+(#manual-testing-ship-count-display)
+<details><summary>5. **Ship Count Display**:</summary>
 
 | **Feature**  | **Expected Behavior**        | **Actual Result**      |   
 | :---         |    :----:                    |          ---:          |  
@@ -351,7 +306,83 @@
 
 </details><br>
 
-<details><summary>Restart.</summary>
+(#manual-testing-hit-count-display)
+<details><summary>6. **Hit Count Display**:</summary>
+
+| **Feature**  | **Expected Behavior**        | **Actual Result**      |   
+| :---         |    :----:                    |          ---:          |  
+| Ships left: 6|   Ships left: 5              | Not working as intended| 
+| Numbers of Hits: 1  | Numbers of Hits: 1    | Works as intended      | 
+| Turns left: 2|    Turns left: 2             | Works as intended      |
+|              |                              |                        | 
+
+
+
+</details><br>
+
+
+<details><summary>7. **Turns Left Display**:</summary>
+
+| **Feature**  | **Expected Behavior**        | **Actual Result**      |   
+| :---         |    :----:                    |          ---:          |  
+| Ships left: 6|   Ships left: 5              | Not working as intended| 
+| Numbers of Hits: 1  | Numbers of Hits: 1    | Works as intended      | 
+| Turns left: 2|    Turns left: 2             | Works as intended      |
+|              |                              |                        | 
+
+
+
+
+
+- **Issue with ships remaining** 
+- Plan of action: When a ship is hit,remove one ship from count. 
+
+![Alt text](assets/readme_images/ships_left_hits_turns.png)
+
+**Issue with ships remaining**
+- Resolved.
+
+![Alt text](assets/readme_images/resolved_ship_issue.png)
+
+</details><br>
+
+
+(#manual-testing-board-display)
+<details><summary>8. **Board Display**:</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
+| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
+|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
+|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
+
+
+
+
+
+</details><br>
+
+(#manual-testing-endgame)
+<details><summary>9. **Endgame**:</summary>
+
+| **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
+| :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
+| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
+| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
+|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
+|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
+
+
+
+
+</details><br>
+
+
+
+(#manual-testing-restarting)
+
+<details><summary>10. **Restarting the Game**:</summary>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
@@ -360,9 +391,9 @@
 |              | Ahoooy Sailor! try again? (y/n):| Empty input           | Please confirm with (y/n):           | Not working as intended! Works as intended |
 |              |                              |               |               | | 
 
-- ![Alt text](assets/readme_images/restart_no.png)
 
-- ![Alt text](assets/readme_images/restart_yes.png)
+
+
 
 - **Issue with restart prompt on Empty input.** 
 
@@ -375,6 +406,7 @@
 
 - ![Alt text](assets/readme_images/restart_linter.png)
 </details><br>
+
 
 [Back to top](#)
 
