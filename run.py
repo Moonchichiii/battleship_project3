@@ -1,7 +1,8 @@
-""" Imported libraries """
+""" Imported local libraries """
 import os
 import time
 from random import randint
+# //-------------------------  Third party libraries -------//
 import gspread
 from google.oauth2.service_account import Credentials
 import bcrypt
@@ -25,6 +26,7 @@ BOARD_DESIGN = '*'
 HIT_SHIP = 'X'
 MISS = 'M'
 SHIP = 'S'
+
 # //------------------------- Signup / login instructions  -------//
 
 

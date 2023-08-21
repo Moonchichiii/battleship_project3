@@ -493,7 +493,7 @@ print_board(board_with_ships)
 
 <details><summary>Restart loop</summary>
 
-- restart game loop i found. 
+- Restart game loop i found. 
 
 - ![Alt text](assets/readme_images/restart_copy.png)
  - https://stackoverflow.com/questions/41718538/how-do-i-insert-a-restart-game-option
@@ -521,7 +521,9 @@ print_board(board_with_ships)
 
 [Python](https://www.python.org/)  -  The primary programming language for game development.
 
-[Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted within this editor.
+[Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted with this editor.
+
+<br>
 
 [Back to top](#)
 
@@ -537,28 +539,62 @@ print_board(board_with_ships)
 - bcrypt==3.2.0
 
 
-## Installation (Cloning the Project)
+### Python Libraries Used
 
-1. Clone the repository.
-2. Rename your repository, if desired.
-3. Navigate to the project directory.
-4. Run the command `pip install -r requirements.txt` in the terminal.
+`Import os`
+ Used for clearing the terminal screen.
+
+`Import time` 
+ Adds pauses or delays in a program.
+ 
+`from random import randint`
+ Generates random integers, for random number tasks. 
+
+
+
+### Third party Libraries Used
+
+
+
+`import gspread` 
+ Store/retrieve/modify data in a google Sheet.
+
+
+`from google.oauth2.service_account import Credentials`
+ Permission to modify/access Google services.
+
+
+`import bcrypt`
+Securely hashes passwords, ensures password safety in storage.
+
+`"I have to mention"` using google Sheets to store user data isn't best practice.
+  It's due to my database setup limitations, it's utilized for this game.
 
 <br>
 
-### Python Libraries Used
- -  Import os
- -  Import time
- -  from random import randint
+## Installation (Cloning the Project)
+
+1. Clone the repository.
+
+2. Rename your repository, if desired.
+
+3. Navigate to the project directory.
+
+4. Run the command `pip install -r requirements.txt` in the terminal.
+
+
+[Back to top](#)
 
 <br><br>
 
 ## Deployment
 
 
-[Backend Framework - Node.JS](https://nodejs.org/en)  -  Provided backend support for the game.
+full detail with screenshots!!!!!! 
 
-[Final Hosting Platform - Heroku](https://id.heroku.com/login)  -  The game was ultimately deployed and hosted on this platform.
+
+
+
 
 
 
