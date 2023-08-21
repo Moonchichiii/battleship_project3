@@ -17,8 +17,9 @@
 - [Project Goals](#project-goals)
   - [Site Owner Goals](#site-owner-goals)
  [User Experience](#user-experience)
-    * [User Stories](#user-stories)
-    * [User Manual](#user-manual)    
+    - [User Stories](#user-stories)
+    - [User stories Manual Testing](#manual-testing)
+    - [User Manual](#user-manual)    
 - [Flow Chart](#flowchart)
 - [Design](#design)
 - [Game Features](#game-features)
@@ -69,12 +70,75 @@
 
 ### User Stories
 
+1. **First Prompt**: 
+    <br> `Start screen, you're given an option to signup or login. If you have registered before, you can login.`    
+    [Manual Testing](#manual-testing-First-Prompt)
+    
+2. **Board Size Selection**: 
+     <br> `Choose between a 5x5 or 8x8 board size.`
+     <br>
+    [Manual Testing](#manual-testing-board-size-selection)
 
-- Play the Battleship game solo and find the hidden ships.
-- Be able to sign up as a new user.
-- Be able to login as an existing user.
-- Be able to restart the game at the end of each match.
-- Experience the game seamlessly across different devices.
+3. **Ship Placement**:
+    <br> `Decide the number of ships you wish to randomly place on your board.`
+    <br>
+    [Manual Testing](#manual-testing-ship-placement)
+
+4. **Turn Selection**:
+    <br> `Decide the number of turns (tries) you'd like: 5 or 10 turns to locate the ships.`
+    <br>
+    [Manual Testing](#manual-testing-turn-selection)
+
+5. **Ship Count Display**:
+    <br> `Above the board, the number of remaining ships is shown.`
+    <br>
+    [Manual Testing](#manual-testing-ship-count-display)
+
+6. **Hit Count Display**:
+    <br> `View the number of successful hits above the board.`
+    <br>
+    [Manual Testing](#manual-testing-hit-count-display)
+
+7. **Turns Left Display**:
+    <br> `Monitor the number of turns you have left, displayed above the board.`
+    <br>
+    [Manual Testing](#manual-testing-turns-left-display)
+
+8. **Board Display**:
+    <br> `The board consist of "*" symbols. Hits are displayed by "X" and misses by "M".`
+    <br>
+    [Manual Testing](#manual-testing-board-display)
+
+9. **Endgame**:
+    <br> `Once all turns are used or all ships are hit, you're asked if you'd like to play again.`
+    <br> 
+    [Manual Testing](#manual-testing-endgame)
+
+10. **Restarting the Game**:
+    <br> `Return to the signup/login screen to either sign in again or register a new game user.`
+    <br>
+     [Manual Testing](#manual-testing-restarting)
+
+
+###  User stories Manual Testing
+
+(#manual-testing-First-Prompt)
+
+(#manual-testing-board-size-selection)
+
+(#manual-testing-ship-placement)
+
+(#manual-testing-turn-selection)
+
+(#manual-testing-ship-count-display)
+
+(#manual-testing-hit-count-display)
+
+(#manual-testing-board-display)
+
+(#manual-testing-endgame)
+
+(#manual-testing-restarting)
 
 [Back to top](#)
 
