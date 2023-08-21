@@ -75,9 +75,7 @@ Start screen, you're given an option to signup or login. If you have registered 
 [Manual Testing](#first-prompt)
     
 2. **Board Size Selection**: <br>
-Choose between a 5x5 or 8x8 board size.
-<br>
-
+Choose between a 5x5 or 8x8 board size.<br>
 [Manual Testing](#manual-testing-board-size-selection)
 
 3. **Ship Placement**:
