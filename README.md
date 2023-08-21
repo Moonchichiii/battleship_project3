@@ -70,9 +70,9 @@
 
 ### User Stories
 
-1. **First Prompt**: 
-    <br> `Start screen, you're given an option to signup or login. If you have registered before, you can login.`    
-    [Manual Testing](#first-prompt)
+1. **First Prompt**: <br>
+`Start screen, you're given an option to signup or login. If you have registered before then just login.`    
+[Manual Testing](#first-prompt)
     
 2. **Board Size Selection**: 
      <br> `Choose between a 5x5 or 8x8 board size.`
