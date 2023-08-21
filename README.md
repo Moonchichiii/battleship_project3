@@ -9,9 +9,9 @@
  
 
 
-![Alt text](assets/readme_images/new_signin_prompt.png)
+# ![Alt text](assets/readme_images/new_signin_prompt.png)
 
-## Content
+<br>
 
 ## Table of Contents
 - [Project Goals](#project-goals)
@@ -57,6 +57,8 @@
 * Ensure that existing users can log in smoothly.
 * Handle and display errors in a clear manner to the user.
 * Allow users the option to restart the game.
+
+<br>
 
 [Back to top](#)
 
@@ -147,7 +149,7 @@
 <br>
 
   
-![Alt text](assets/readme_images/signup_login_screen.png)
+![Alt text](assets/readme_images/new_greeting_prompt.png)
 
 
 
