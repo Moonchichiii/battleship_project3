@@ -314,6 +314,7 @@
 
 [Back to top](#)
 
+<br>
 
 ### Validator Testing
 
@@ -333,14 +334,14 @@
 
 ### Stuck in a login loop, Invalid username.
 
-<details><summary>login_test_invalid_username_loop</summary>
+<details><summary>login test invalid username loop</summary>
 
 ![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
 https://bobbyhadz.com/blog/python-username-password-input-3-attempts
 
 
 [Back to top](#)
-</details>
+</details><br>
 
 <details><summary>Very good examples how to setup bccrypt in python.</summary>
 
@@ -352,7 +353,7 @@ https://onebite.dev/snippet/python
 https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
 https://www.programcreek.com/python/example/81834/bcrypt.hashpw 
 
-</details>
+</details><br>
 
 
 <details><summary>Images of the change to bccrypt</summary>
@@ -364,7 +365,7 @@ https://www.programcreek.com/python/example/81834/bcrypt.hashpw
 https://saturncloud.io/blog/how-to-use-the-bcrypt-algorithm-within-the-encrypt-function-in-mysql-for-verifying-passwords/
 
 
-</details>
+</details><br>
 
 <details><summary>Fetching the password. Didn't get it to work fully in the end so abandoned the use of Argon2. </summary>
 
@@ -372,7 +373,7 @@ https://inquiryum.com/modules/nodejs%20module/Hashing-Passwords-&-Argon2/
 
 
 https://www.youtube.com/watch?v=eCBUuu7BPn4
-</details>
+</details><br>
 
 <details><summary>Wrong referenching in the turns_of_play = number_of_turns()</summary>
 
@@ -546,9 +547,9 @@ print_board(board_with_ships)
 <br>
 
 ### Python Libraries Used
-   Import os
-   Import time
-   from random import randint
+ -  Import os
+ -  Import time
+ -  from random import randint
 
 <br><br>
 
