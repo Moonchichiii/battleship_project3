@@ -20,15 +20,15 @@ SHEET = GSPREAD_CLIENT.open('battleship')
 user_sheet = SHEET.worksheet('users')
 
 
-# Constants for Game Layout.
+# //-------------------------  Constants for Game Layout -------//
 BOARD_DESIGN = '*'
 HIT_SHIP = 'X'
 MISS = 'M'
 SHIP = 'S'
 
-
+# //------------------------- Signup / login instructions  -------//
 def welcome():
-    """ Greetings message """
+    """ Signup / login instructions """
 
     print("Ahoy, sailor! Ready to conquer the seas?\n")
     print("\n Signup / Login instructions....\n")
@@ -43,7 +43,7 @@ def clear_screen():
 
 
 def logo():
-    """ Game Logo."""
+    """ Welcome Logo."""
 
 
 print(r"""
@@ -68,6 +68,7 @@ print(r"""
 
 """)
 
+# //-------------------------  Signup / login -------//
 
 def main_menu():
     """ Main sign in prompt."""
@@ -159,6 +160,7 @@ def login(worksheet):
                 print("\nMaximum username attempts reached! Exiting.")
                 exit()
 
+# //------------------------- Game Settings -------//
 
 def game_settings():
     """
@@ -281,9 +283,9 @@ def hit_or_miss(board_with_ships, row, col, sailors_name):
         print(f"\nSorry Sailor {sailors_name}! That's a MISS!..\n")
         return False
 
-
+# //---------------------------------------- Game logic  -------//
 def main():
-    """ Game loop calling all the functions. """
+    """ Game calling all the functions. """
 
     logo()
     welcome()
@@ -338,6 +340,7 @@ def main():
 
 
 if __name__ == '__main__':
+# //---------------------------------------- Restart   -------//
     while True:
         main()
         restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
