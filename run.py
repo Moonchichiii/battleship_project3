@@ -25,8 +25,9 @@ BOARD_DESIGN = '*'
 HIT_SHIP = 'X'
 MISS = 'M'
 SHIP = 'S'
-
 # //------------------------- Signup / login instructions  -------//
+
+
 def welcome():
     """ Signup / login instructions """
 
@@ -69,6 +70,7 @@ print(r"""
 """)
 
 # //-------------------------  Signup / login -------//
+
 
 def main_menu():
     """ Main sign in prompt."""
@@ -161,6 +163,7 @@ def login(worksheet):
                 exit()
 
 # //------------------------- Game Settings -------//
+
 
 def game_settings():
     """
@@ -284,6 +287,8 @@ def hit_or_miss(board_with_ships, row, col, sailors_name):
         return False
 
 # //---------------------------------------- Game logic  -------//
+
+
 def main():
     """ Game calling all the functions. """
 
@@ -340,8 +345,8 @@ def main():
 
 
 if __name__ == '__main__':
-# //---------------------------------------- Restart   -------//
     while True:
+        # //---------------------------------------- Restart   -------//
         main()
         restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
