@@ -1,19 +1,21 @@
-<h1 style="text-decoration: none; border-bottom: none;">Battleship Game</h1>
+<h1 style="text-decoration: none; border-bottom: none;"><b>Battleship Game</b></h1>
 <h3>Ahoooooy Sailors! Ready to navigate some rough waters?</h3>
 
 
+#
 
 #### ****Visit the live project below.****
 
-  <a href="https://battleshipv2-30e17c867991.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
+  <a href="https://battleshipv2-8b5e10507413.herokuapp.com/" style="text-decoration: none;">👉<b> Click Here.</b></a>
  
 
 
-# ![Alt text](assets/readme_images/new_signin_prompt.png)
+
+# ![Alt text](assets/features_images/ui_dev_responsive.png)
 
 <br>
 
-## Table of Contents
+# Table of Contents
 - [Project Goals](#project-goals)
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
@@ -21,36 +23,35 @@
     - [User stories Manual Testing](#manual-testing)
     - [User Manual](#user-manual)    
 - [Flow Chart](#flowchart)
-- [Design](#design)
+- [Game design](#Gamedesign)
 - [Game Features](#game-features)
-    * [Game Settings](#game-settings)
 - [Testing](#testing)
     * [User stories Manual Testing](#manual-testing)
     * [Validator Testing](#validator-testing)
 - [Bugs & Fixes](#bugs-fixes)
 - [Technologies Used](#technologies-used)
-    * [Dependencies](#dependencies)
     * [Installation (Cloning the Project)](#installation-cloning-the-project)
+    * [Dependencies](#dependencies)
     * [Python Libraries Used](#python-libraries-used)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgments)
 
 
+<br>
 
-
-## Project Goals
+# Project Goals
 
 - Battleships is a classic game of strategy and wit. Played on a ruled grid, whether on paper or board, 
 - the player must locate a concealed fleet of warships. By taking shots at specific grid coordinates,
 - the objective is to identify and sink the entire hidden fleet.
 
 
+<br>
 
 
 
-
-## site-owner-goals
+# site-owner-goals
 
 
 * Create a Battleship game that is intuitive and engaging for the user.
@@ -61,17 +62,13 @@
 
 <br>
 
-[Back to top](#)
-
 
 <br>
 
 
-## User Experience
+# User Experience
 
-
-
-### User Stories
+### User Stories:
 
 1. **First Prompt**: <br>
 Start screen, you're given an option to signup or login. If you have registered before then just login.    
@@ -125,48 +122,58 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 [Back to top](#)
 
+<br>
 
+# User Manual
 
+ **<b>If you're new to Battleship check out this link**</b>  👉 https://en.wikipedia.org/wiki/Battleship
+#
 
+## Opening Setup
+1. **Sign Up or Login**: Follow the on-screen instructions.
+    - **Returning Players**: If you've played before, press 'Y' to login.
+    - **New Players**: Create a username and a simple password to remember.
+    - **Exit**: At the first prompt, you have the option to exit the game by pressing 'E'. (This option is available only at this Opening prompt.)
 
+<br>
 
+## Game Configuration
+- **Overview**: Guide you through the game settings. (Additional instructions are provided in-game, but here's a more detailed breakdown.)
+    1. **Board Size**: Choose between a 5x5 or 8x8 game board. For example, selecting the 5x5 board results in 5 rows, 5 columns, and 25 '*' markers on the board.
+    2. **Number of Ships**: Decide how many ships you'd like hidden on the board. You can choose between 2 to 6 ships.
+    3. **Turns**: Select the number of attempts you'll get per game. Options are either 5 or 10 turns.
 
-### User Manual
+    ### Game Configuration Tip:
+    - If you choose the 5x5 board with 6 ships and pick to play 10 turns, and prepare for alot of hit's!
+<br>
 
+## Gameplay
 
-**If you're new to Battleship check out this link** 👉 https://en.wikipedia.org/wiki/Battleship
+1.  **Gameboard Display**: Once configuration is complete, the game board is displayed with `*` markers, hiding the ships beneath.
 
-* Start with a Sailor Sign in / registration for new Sailors, and simple Login for returning players,
-  I've kept it very simple, ensuring you can get back into the battle again.
+2.  **Coordinates**: You are prompted to input row and column numbers. The row starts from the side and goes from left to right starting with , while the column starts from the top and goes down, top to bottom.
+     Depending on your board choice, selections range from 1-5 for a 5x5 board and 1-8 for an 8x8 board.  5x5, 25 (`*`) 8x8, 64 (`*`) spots.
 
-* Once you've been greeted by the sailor prompt and you're all set,
-    it's time to decide on your game's layout. For a quick game, the 5x5 board is a perfect choice.
+3. **Hits & Misses**: After input, the game indicates whether you've hit a ship (`X`) or missed (`M`).
+-  Above the gameboard, you'll see the number of remaining hidden ships, your current hits, and the number of turns left.
 
-* After setting up the board prompt, decide how many ships you'd like
-    to hide on the game board. Remember: more ships on a smaller board means more chances to sink ships.
+## Once all turns are used or all ships are found, you'll have two options:
+- **Continue**: To play again, enter `Y` at the prompt. You'll return to the login/signup screen. If you're replaying, use your existing username or sign up with a new username.
+- **Quit**: To exit the game, type `N`.
 
-* Next, determine the number of turns (or tries) you want for hunting those hidden ships.
-    You can choose anywhere between 5-10 turns per game.
-
-    **Here's a hint:**
-    
-   *   If you've chosen the 5x5 board with 6 ships and go for 10 turns,
-   *   get ready for an exciting round filled with sunken ships.
-   
-   *   Once your game has ended, the outcomes of your successful sinkings are 
-   *   displayed on the main game board, and ships left.
-    
-       - Then, we'll ask: 
-       - Ready for another round on the seas?
+Good luck, and enjoy a round of the seas!
 
 
 
 [Back to top](#)
 
+<br>
 
-## Flowchart
+# Flowchart
 
-👇 CLICK TO EXPAND BELOW <details><summary>A graphical representation of the game process</summary> 
+👇 CLICK BELOW TO EXPAND
+<details>
+<summary>A graphical representation of the game process</summary> 
 
 ![FlowChart](assets/readme_images/new_flowchart.png)
 
@@ -175,118 +182,129 @@ Choose between a 5x5 or 8x8 board size.<br>
 </details>
 
 
-<br><br>
-
-
-## Design
 <br>
 
- * **Simplicity:** The design is straightforward,very simple and user-friendly.
- * **Clean interface:** Using the 'clear' function, the screen is tidy after each prompt.
 
-<br><br>
+# Game Design  
+<br>
+
+**Simplicity** 🖥️
+* The game's design thinking ease of use and simplicity.
+
+**Clean Interface** 🧹
+* After each player action or prompt, the screen refreshes using the 'clear' function. This ensures clear experience.
+
+<br>
+
+**Game Symbols:**
+  - `*`  : Represents the game board tiles.
+  - `X`  : Indicates a successful hit on a ship.
+  - `M`  : Marks a missed attempt.
+
+<br>
 
 [Back to top](#)
 
-<br><br>
+<br>
 
-## Game Features
+# Game Features
 
-  ## Welcome Screen
-  
-  ### **Logo**: 
+### Welcome Screen Logo: 
   
   <details>
-  
   <summary>Logo</summary>
+
+  ![Alt text](assets/features_images/LOGO.png)
   
   </details>
   
   ### Instructions
   
   <details>
-  
   <summary>Instructions</summary>
+
+  ![Alt text](assets/features_images/instructions.png)
   
   </details>
-  
-  
-  ## User handling
-  <details>
-  
-  <summary>Sign up</summary>
-  
-  </details>
-  
-  <details>
-  
-  <summary>Login</summary>
-  
-  </details>
-  
-  ## Gameplay Config
-  <details>
-  
-  <summary>Login</summary>
-  
-  </details>
-  <details>
-  
-  <summary>Login</summary>
-  
-  </details>
-  <details>
-  
-  <summary>Login</summary>
-  
-  </details>
+    
 
 
 
-  ## Gameplay Features
+
+### User handling
 
   <details>
+  <summary>Sign up:</summary>
   
-  <summary>Login</summary>
-  
+  ![Alt text](assets/features_images/SIGNUP.png)
+
   </details>
+  
   <details>
   
-  <summary>Login</summary>
+  <summary>Login:</summary>
+  
+  ![Alt text](assets/features_images/login.png)
   
   </details>
   
 
 
+
+### Gameplay Config
+
+
+  <details>
+  
+  <summary>Board Size:</summary>
+  
+  ![Alt text](assets/features_images/boardsize.png)
+  </details>
+  
+  <details>
+  
+  <summary>Numbers of ships:</summary>
+  
+  ![Alt text](assets/features_images/ships.png)
+  </details>
+
+  <details>
+  
+  <summary>Number of turns</summary>
+  
+  ![Alt text](assets/features_images/turns.png)
+  
+  </details>
+
+
+
+### Gameplay Features
+
+  <details>
+  
+  <summary>Ships left, Hits counter, Turns Left</summary>
+  
+  ![Alt text](assets/features_images/board_layout.png)
+
+  </details>
+  
+  <details>
+  
+  <summary>Game board Layout</summary>
+
+  ![Alt text](assets/features_images/board_layout.png)
+  
+  </details>
+  
 
 
 <br>
 
-  
-
-
-
-
 [Back to top](#)
 
 
-### Game settings
 
-<br>
-
-1. **Prompted with the question if you ever sailed with us before?** 
-2. **If you have sailed with us before you will simply login again.**
-3. **If not you will be asked to create your Sail account**
-
-### Then it's of to the internal Game settings you will be asked. 
-
-5. **Choose between a 5x5 or an 8x8 board** 
-6. **Decide on having between 2 to 6 ships**
-7. **Determine how many turns to play**
-
-[Back to top](#)
-
-## Testing 
+# Testing 
 
 - Pythontutor excellent for visually understanding and verifying how your code executes.
 
@@ -295,7 +313,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 ###  User stories Manual Testing
 ---
-
+<br>
 
 <details>
 <summary id="first-prompt">1. First Prompt:</summary>
@@ -490,7 +508,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 <details><summary>CI Python Linter - Result</summary>
 
-![Alt text](assets/readme_images/new_check_pep8.png)
+![Alt text](assets/readme_images/last_lint.png)
 
 [Back to top](#)
 
@@ -499,9 +517,8 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 ## Bugs & Fixed Bugs
 
-### Stuck in a login loop, Invalid username.
-
-<details><summary>login test invalid username loop</summary>
+<details>
+<summary>login test invalid username loop</summary>
 
 ![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
 https://bobbyhadz.com/blog/python-username-password-input-3-attempts
@@ -684,20 +701,70 @@ print_board(board_with_ships)
 
 
 
-## Technologies used
+# Technologies used
 
 [Python](https://www.python.org/)  -  The primary programming language for game development.
 
 [Editor - VScode](https://code.visualstudio.com/)  -  All coding was conducted with this editor.
 
+
+
+## Installation (Cloning the Project)
+
+1. On GitHub.com, navigate to the main page of the repository.
+
+2. Above the list of files, click <> Code.
+
+<details>
+<summary>Code Button <> </summary>
+
+![Alt text](assets/github_images/code-button.webp)
+
+</details>
+
+ <details>
+<summary>Cloning</summary>
+
+![Alt text](assets/github_images/https-url-clone-cli.webp)
+
+</details>
+
 <br>
+
+3. Rename your repository, if desired.
+ 
+4. Follow the on screen instructions. 
+
+5. Inside your newly cloned page you will find this button "Gitpod"
+ in top right corner.
+
+<details><summary>Looks like this</summary>
+
+![Alt text](assets/github_images/gitpod.png)
+
+
+</details>
+<br>
+
+6. Once inside, you will see all the files to your left, a welcome message in the center, and below that, you'll find a terminal window 
+    Within the terminal window, run the command in step 7 below to install the required files for the game.
+
+7. Run the command `pip install -r requirements.txt` in the terminal.
+
+<details>
+<summary>Pip install -r requirements.txt</summary>
+
+![Alt text](<assets/github_images/terminal window.png>)
+
+</details>
+<br>
+
 
 [Back to top](#)
 
+<br>
 
-
-
-### Dependencies
+# Dependencies
     
    requirements.txt file contains following libraries: 
 
@@ -739,34 +806,60 @@ Securely hashes passwords, ensures password safety in storage.
 
 <br>
 
-## Installation (Cloning the Project)
+# Deployment 
 
-1. Clone the repository.
+### Deployment using Heroku
 
-2. Rename your repository, if desired.
-
-3. Navigate to the project directory.
-
-4. Run the command `pip install -r requirements.txt` in the terminal.
+1. **Sign Up:** 
+   - Register for an account on Heroku.
 
 
-[Back to top](#)
+2. **Create New App:** 
+   - Navigate to your dashboard.
+   - Click on "New."
+<details>
+<summary>New - Create a new app</summary>
 
-<br><br>
+![Alt text](assets/Heroku_images/new_app.png)
 
-## Deployment
+</details>
+<br>
 
+3. **Name Your App:** 
+   - You'll be prompted to assign a unique name.
 
-full detail with screenshots!!!!!! 
+<details>
+<summary>App Name</summary>
 
+[Alt text](assets/Heroku_images/setting_your_name.png)
 
+</details>
+<br>
 
+4. **App Settings:** 
+   - Proceed to the dashboard menu.
+   - Select 'Settings'.
+   - Find documentation for further guidance.
 
+<details>
+<summary>Settings</summary>
+   
+[Alt text](assets/Heroku_images/settings1.png)
 
+</details>
+<br>  
 
+5. **Deployment:** 
+   - Once set up, go to 'Deploy'.
+   - Connect to GitHub.
+   - Search for your repository name.
+<details>
+<summary>Deploy</summary>
+   
+![Alt text](assets/Heroku_images/repo_name.png)
 
-
-
+</details>
+<br>
 
 
 [Back to top](#)
@@ -774,9 +867,24 @@ full detail with screenshots!!!!!!
 <br>
 
 
-## Credits
+# Credits
 
-<details><summary>Alot of good examples how to setup and use ***bccrypt*** in python</summary>  
+<details>
+<summary>Markdownguide</summary>
+ https://www.markdownguide.org/extended-syntax/
+</details>
+<br>
+ 
+<details>
+<summary>Github markdown emoji</summary>
+ 
+ Complete list of github markdown emoji markup
+ https://gist.github.com/rxaviers/7360908
+</details>
+<br>
+
+<details>
+<summary>Alot of good examples how to setup and use ***bccrypt*** in python</summary>  
 
 * https://python.hotexamples.com/examples/bcrypt/-/hashpw/python-hashpw-function-examples.html
 * https://stackabuse.com/hashing-passwords-in-python-with-bcrypt/
@@ -861,6 +969,6 @@ https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-password
 </details><br>
 
 
-## Acknowledgments
+# Acknowledgments
 
 I would like to acknowledge my mentor Mo Shami, for staring me in right direction.
