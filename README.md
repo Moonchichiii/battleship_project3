@@ -43,8 +43,8 @@
 # Project Goals
 
 - Battleships is a classic game of strategy and wit. Played on a ruled grid, whether on paper or board.
-- the player must locate a concealed fleet of warships. By taking shots at specific grid coordinates.
-- the objective is to identify and sink the entire hidden fleet.
+- The player must locate a concealed fleet of warships. By taking shots at specific grid coordinates.
+- The objective is to identify and sink the entire hidden fleet.
 
 
 <br>
@@ -161,7 +161,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 - **Continue**: To play again, enter `Y` at the prompt. You'll return to the login/signup screen. If you're replaying, use your existing username or sign up with a new username.
 - **Quit**: To exit the game, type `N`.
 
-Good luck, and enjoy a round of the seas!
+***Good luck, and enjoy a round of the seas!***
 
 
 
