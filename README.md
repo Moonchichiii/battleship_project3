@@ -64,6 +64,9 @@
 [Back to top](#)
 
 
+<br>
+
+
 ## User Experience
 
 
@@ -234,11 +237,14 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Game name    | Prompts user for name        | "Mats"                   | Returns the name "Mats"                 | Works as intended   |
-|              | Have you played before? (y/n):| Empty input             | Invalid choice! try again.              | Works as intended   |
-|              |                              | 12345678910              | Invalid choice! try again.              | Works as intended   | 
+| First Prompt | Have you played before? (y/n):|        N / Y            | N = signup  / Y = Login                 | Works as intended   |
+| signup/login | Please enter A username:     |       Empty input        | Every sailor has a name? Try again!     | Works as intended   |
+| signup/login | Please enter A username:     |         "12"             | Every sailor has a name? Not a number!  | Works as intended   |
+| signup + login|Please enter A username:/Please select a password:     |                          | Sign up successful / Login  successful  | Works as intended   | 
 
-
+![Alt text](assets/manual_testing_images/Empty_number_input.png)
+![Alt text](assets/manual_testing_images/signup_successful.png)
+![Alt text](assets/manual_testing_images/Login_successful.png)
 </details><br>
 
 [Manual Testing](#manual-testing-board-size-selection)

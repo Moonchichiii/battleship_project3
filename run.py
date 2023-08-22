@@ -86,7 +86,6 @@ def main_menu():
         elif choices == 'N':
             username = create_auth(user_sheet)
             if username:
-                print(f"Welcome {username}! Let's Play!")
                 return username
         elif choices == 'E':
             print("\nThank you for stopping by! Exiting....")
@@ -135,7 +134,7 @@ def user_exists(username, worksheet):
 def login(worksheet):
     """ Checks if the username and password exists in "user_sheet" """
     attempt = 0
-    attempt_limit = 2
+    attempt_limit = 3
 
     while True:
         username = input("\nEnter your username: ").strip().lower()
