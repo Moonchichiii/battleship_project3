@@ -20,7 +20,7 @@
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
     - [User Stories](#user-stories)
-    - [User stories Manual Testing](User-stories-Manual-Testing)
+    - [User Stories Manual Testing](#testing)
     - [User Manual](#user-manual)    
 - [Flow Chart](#flowchart)
 - [Game design](#Gamedesign)
@@ -311,7 +311,7 @@ Good luck, and enjoy a round of the seas!
 [Execution Visualization Tool](https://pythontutor.com/cp/composingprograms.html#mode=edit)
 
 
-###  User stories Manual Testing
+###  User Stories Manual Testing
 ---
 <br>
 
