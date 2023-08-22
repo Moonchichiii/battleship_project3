@@ -230,7 +230,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 ###  User stories Manual Testing
 
-[1. First Prompt](#first-prompt)
+
 <details>
 <summary id="first-prompt">1. First Prompt:</summary>
 
@@ -247,7 +247,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 ![Alt text](assets/manual_testing_images/Login_successful.png)
 </details><br>
 
-[Manual Testing](#manual-testing-board-size-selection)
+
 <details>
 <summary id="manual-testing-board-size-selection">2. Board Size Selection:</summary>
 
@@ -262,7 +262,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 </details><br>
 
-[Manual Testing](#manual-testing-ship-placement)
+
 <details>
 <summary id="manual-testing-ship-placement">3. Ship Placement:</summary>
 
@@ -277,7 +277,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 </details><br>
 
-[Manual Testing](#manual-testing-turn-selection)
+
 <details>
 <summary id="manual-testing-turn-selection">4. Turn Selection:</summary>
 
@@ -292,7 +292,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 </details><br>
 
 
-[Manual Testing](#manual-testing-ship-count-display)
+
 <details>
 <summary id="manual-testing-ship-count-display">5. Ship Count Display:</summary>
 
@@ -318,7 +318,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 </details><br>
 
-[Manual Testing](#manual-testing-hit-count-display)
+
 <details>
 <summary id="manual-testing-hit-count-display">6. Hit Count Display:</summary>
 
@@ -332,7 +332,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 </details><br>
 
-[Manual Testing](#manual-testing-turns-left-display)
+
 <details>
 <summary id="">7. Turns Left Display:</summary>
 
@@ -348,7 +348,6 @@ Choose between a 5x5 or 8x8 board size.<br>
 </details><br>
 
 
-[Manual Testing](#manual-testing-board-display)
 <details>
 <summary id="manual-testing-board-display">8. Board Display:</summary>
 
@@ -365,7 +364,6 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 </details><br>
 
-[Manual Testing](#manual-testing-endgame)
 <details>
 <summary id="manual-testing-endgame">9. Endgame:</summary>
 
