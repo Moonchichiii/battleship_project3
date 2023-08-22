@@ -345,14 +345,21 @@ def main():
         print(f"\nAhoy! {sailors_name}! Out of ships! victorious!")
 
 
+RESTART_ATTEMPTS = 3
+
+
 if __name__ == '__main__':
     while True:
         # //---------------------------------------- Restart   -------//
         main()
-        restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
+        for restart_attempt in range(RESTART_ATTEMPTS):
+            restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
-        if not restart:
-            print("\nPlease confirm with (y/n) ? Try again!")
+        if not restart or restart.isnumeric():
+            print("\nPlease confirm with (y/n) ? not a number!")
+            if restart_attempt == RESTART_ATTEMPTS - 1:
+                print("\nMaximum attempts reached! exiting game..")
+                exit()
 
         elif restart == 'N':
             print("\nThank you for playing!")
@@ -367,3 +374,6 @@ if __name__ == '__main__':
 
         else:
             print("\nInvalid input! Please confirm with (y/n) ?")
+            if restart_attempt == RESTART_ATTEMPTS - 1:
+                print("\nMaximum attempts reached! exiting game..")
+                exit()

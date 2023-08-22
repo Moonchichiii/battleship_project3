@@ -254,10 +254,10 @@ Choose between a 5x5 or 8x8 board size.<br>
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
 | Board size   | Prompts user for 5x5 or 8x8 board| "5" or "8"           | Returns correct size                    | Works as intended   |
-|              | Select board size (5x5 or 8x8): | Empty input           | Please select a valid! board size (5x5 or 8x8)     | Works as intended   |
-|              |                              | 1111              | invalid size. Please choose between (5x5 or 8x8)?  | Works as intended   | 
+|              | Select board size (5 or 8):  | Empty input              | Please select a valid! board size (5x5 or 8x8)     | Works as intended   |
+|              |                              | 1111                     | invalid size. Please choose between (5x5 or 8x8)?  | Works as intended   | 
 
-
+![Alt text](assets/manual_testing_images/Boardsize_empty_wrong_number.png)
 
 
 </details><br>
@@ -268,12 +268,12 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Number of ships | Choose the number of ships? (2-6):| "2","3","4" "6"      |  Returns correct number (5 or 10)       | Works as intended   |
+| Number of ships | Choose the number of ships? (2-6):| "2","3","4" "6"      |  Returns correct number (2 or 6)       | Works as intended   |
 |              |                              | Empty input              |  Please enter a valid number between 2 and 6   | Works as intended   |
 |              |                              | "8" "9"                  |  Invalid number! Please choose between 2 and 6 ships? | Works as intended   | 
 
 
-
+![Alt text](assets/manual_testing_images/ships_placement_empty_wrong_number.png)
 
 </details><br>
 
@@ -287,6 +287,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 |              |                              | Empty input             | Please enter a valid number between (5 and 10) | Works as intended   |
 |              |                              | 1                     | invalid turns! Select a number from (5 to 10)? | Works as intended   | 
 
+![Alt text](assets/manual_testing_images/turns_empty_wrong_number.png)
 
 </details><br>
 
@@ -299,8 +300,10 @@ Choose between a 5x5 or 8x8 board size.<br>
 | :---         |    :----:                    |          ---:          |  
 | Ships left: 6|   Ships left: 5              | Not working as intended| 
 | Numbers of Hits: 1  | Numbers of Hits: 1    | Works as intended      | 
-| Turns left: 2|    Turns left: 2             | Works as intended      |
+| Turns left: 1|    Turns left: 1             | Works as intended      |
 |              |                              |                        | 
+
+![Alt text](assets/manual_testing_images/ships_count_going_down.png)
 
 
 - **Issue with ships remaining** 
@@ -321,12 +324,11 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Expected Behavior**        | **Actual Result**      |   
 | :---         |    :----:                    |          ---:          |  
-| Ships left: 6|   Ships left: 5              | Not working as intended| 
 | Numbers of Hits: 1  | Numbers of Hits: 1    | Works as intended      | 
-| Turns left: 2|    Turns left: 2             | Works as intended      |
 |              |                              |                        | 
 
-
+![Alt text](assets/manual_testing_images/hit_count_display_empty.png)
+![Alt text](assets/manual_testing_images/hit_count_number_of_hits.png)
 
 </details><br>
 
@@ -336,24 +338,12 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Expected Behavior**        | **Actual Result**      |   
 | :---         |    :----:                    |          ---:          |  
-| Ships left: 6|   Ships left: 5              | Not working as intended| 
-| Numbers of Hits: 1  | Numbers of Hits: 1    | Works as intended      | 
-| Turns left: 2|    Turns left: 2             | Works as intended      |
-|              |                              |                        | 
+| Turns left: |    Turns left: 9             | Works as intended      |
+| Turns left: |    Turns left: 7             | Works as intended      |
 
+![Alt text](assets/manual_testing_images/hit_count_display_empty.png)
 
-
-
-
-- **Issue with ships remaining** 
-- Plan of action: When a ship is hit,remove one ship from count. 
-
-![Alt text](assets/readme_images/ships_left_hits_turns.png)
-
-**Issue with ships remaining**
-- Resolved.
-
-![Alt text](assets/readme_images/resolved_ship_issue.png)
+![Alt text](assets/manual_testing_images/hit_count_number_of_hits.png)
 
 </details><br>
 
@@ -364,12 +354,12 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
-| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
+| Choose a row | Choose a row (0-5):          | "1"                      | Returns correct row                     | Works as intended   |
+| Choose a col | Choose a col (0-5):          | "1"                      | Returns correct col                     | Works as intended   |
 |              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
 |              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
 
-
+![Alt text](assets/manual_testing_images/row_col_empty_wrong_number.png)
 
 
 
@@ -381,10 +371,10 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Choose a row | Choose a row (0-5):          | "5"                      | Returns correct row                     | Works as intended   |
-| Choose a col | Choose a col (0-5):          | "4"                      | Returns correct col                     | Works as intended   |
-|              |                              | Empty input              | Please enter a valid number             | Works as intended   | 
-|              |                              | "9"  "10"                | Please pick a valid number (1-5)        | Works as intended   | 
+| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| "5"        | Not a valid choice (y/n)                | Works as intended   |
+| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| Empty      | Not a valid choice (y/n)                | Works as intended   |
+
+
 
 
 
