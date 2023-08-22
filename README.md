@@ -371,13 +371,9 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| "5"        |                                         | Works as intended   |
-| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| Empty      | )                                       | Works as intended   |
+| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):|            | Out of Turns! Game over!                | Works as intended   |
 
-
-
-
-
+![Alt text](assets/manual_testing_images/endgame.png)
 
 </details><br>
 
@@ -390,14 +386,21 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Restart the game| Ahoooy Sailor! try again? (y/n):| "n"                | Thank you for playing!                  | Works as intended   |
-|              | Ahoooy Sailor! try again? (y/n):| "y"                   |                                         | Works as intended   |
-|              | Ahoooy Sailor! try again? (y/n):| Empty input           | Please confirm with (y/n):           | Not working as intended! Works as intended |
-|              |                              |               |               | | 
+| Ahooy Sailor! try again? | Ahooy Sailor! try again? (y/n):| "12"       | Please confirm with (y or n) Not a number!| Works as intended   |
+| Ahooy Sailor! try again? | Ahooy Sailor! try again? (y/n):| Empty      | Please confirm with (y or n) Not empty space!| Works as intended   |
+| Ahooy Sailor! try again? | Ahooy Sailor! try again? (y/n):| y          | clears screen back to Login.            | Works as intended   |
+| Ahooy Sailor! try again?| Ahooy Sailor! try again? (y/n):| n          | Thank you for playing! Exiting...       | Works as intended   |
 
 
 
+![Alt text](assets/manual_testing_images/restart_fixed_empty_number.png)
 
+![Alt text](assets/manual_testing_images/y_restart.png)
+
+![Alt text](assets/manual_testing_images/n_restart.png)
+
+
+- Older restart loop:
 
 - **Issue with restart prompt on Empty input.** 
 
