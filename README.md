@@ -5,7 +5,7 @@
 
 #### ****Visit the live project below.****
 
-  <a href="https://battleshipv2-eec8c05bc6a6.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
+  <a href="https://battleshipv2-b3441908efbc.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
  
 
 
@@ -371,8 +371,8 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 | **Feature**  | **Instruction**              | **User Input**           | **Expected Behavior**                   | **Actual Behavior** |
 | :---         |    :----:                    |          :---:           |   :---:                                 |        ---:         |
-| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| "5"        | Not a valid choice (y/n)                | Works as intended   |
-| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| Empty      | Not a valid choice (y/n)                | Works as intended   |
+| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| "5"        |                                         | Works as intended   |
+| Out of Turns! Game over! | Ahooy Sailor! try again? (y/n):| Empty      | )                                       | Works as intended   |
 
 
 
