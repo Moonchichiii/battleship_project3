@@ -42,8 +42,8 @@
 
 # Project Goals
 
-- Battleships is a classic game of strategy and wit. Played on a ruled grid, whether on paper or board, 
-- the player must locate a concealed fleet of warships. By taking shots at specific grid coordinates,
+- Battleships is a classic game of strategy and wit. Played on a ruled grid, whether on paper or board.
+- the player must locate a concealed fleet of warships. By taking shots at specific grid coordinates.
 - the objective is to identify and sink the entire hidden fleet.
 
 
@@ -51,7 +51,7 @@
 
 
 
-# site-owner-goals
+# Site-owner-goals
 
 
 * Create a Battleship game that is intuitive and engaging for the user.
@@ -501,7 +501,7 @@ Good luck, and enjoy a round of the seas!
 
 <br>
 
-### Validator Testing
+## Validator Testing
 
 ***keep your Python code neat and PEP 8 friendly.***
 [Code Linter](https://pep8ci.herokuapp.com/)
@@ -518,7 +518,7 @@ Good luck, and enjoy a round of the seas!
 ## Bugs & Fixed Bugs
 
 <details>
-<summary>login test invalid username loop</summary>
+<summary>Login test invalid username loop</summary>
 
 ![Alt text](assets/readme_images/login_test_invalid_username_loop.png)
 https://bobbyhadz.com/blog/python-username-password-input-3-attempts
