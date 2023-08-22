@@ -25,7 +25,7 @@
 - [Game Features](#game-features)
     * [Game Settings](#game-settings)
 - [Testing](#testing)
-    * [Manual Testing](#manual-testing)
+    * [User stories Manual Testing](#manual-testing)
     * [Validator Testing](#validator-testing)
 - [Bugs & Fixes](#bugs-fixes)
 - [Technologies Used](#technologies-used)
@@ -226,9 +226,8 @@ Choose between a 5x5 or 8x8 board size.<br>
 [Execution Visualization Tool](https://pythontutor.com/cp/composingprograms.html#mode=edit)
 
 
-### Manual Testing
-
 ###  User stories Manual Testing
+---
 
 
 <details>
