@@ -345,37 +345,34 @@ def main():
         print(f"\nAhoy! {sailors_name}! Out of ships! victorious!")
 
 
-RESTART_ATTEMPTS = 3
-
-
 if __name__ == '__main__':
     while True:
         # //---------------------------------------- Restart   -------//
         main()
-        for restart_attempt in range(RESTART_ATTEMPTS):
+        RESTART_ATTEMPTS = 3
+        ATTEMPTED_RESTARTS = 0
+
+        while ATTEMPTED_RESTARTS < RESTART_ATTEMPTS:
             restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
-        if not restart:
-            print("\nPlease confirm with (y or n) Not empty space!")
-            if restart_attempt == RESTART_ATTEMPTS - 1:
-                print("\nMaximum attempts reached! exiting game..")
+            if restart == 'N':
+                print("\nThank you for playing! Exiting...")
                 exit()
 
-        elif restart.isnumeric():
-            print("\nPlease confirm with (y/n) ? not a number!")
-            if restart_attempt == RESTART_ATTEMPTS - 1:
-                print("\nMaximum attempts reached! exiting game..")
-                exit()
+            elif restart == 'Y':
+                clear_screen()
+                main()
 
-        elif restart == 'N':
-            print("\nThank you for playing!")
-            exit()
+            else:
+                if not restart:
+                    print("\nPlease confirm with (y or n) Not empty space!")
+                elif restart.isnumeric():
+                    print("\nPlease confirm with (y or n) Not a number!")
+                else:
+                    print("\nInvalid input! Please confirm with (y or n)")
 
-        elif restart == 'Y':
-            clear_screen()
-            break
-        else:
-            print("\nInvalid input! Please confirm with (y/n) ?")
-            if restart_attempt == RESTART_ATTEMPTS - 1:
-                print("\nMaximum attempts reached! exiting game..")
-                exit()
+                ATTEMPTED_RESTARTS += 1
+
+                if ATTEMPTED_RESTARTS == RESTART_ATTEMPTS:
+                    print("\nMaximum attempts reached! Exiting game...")
+                    exit()
