@@ -192,11 +192,78 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 ## Game Features
 
-  * ***Sign in / registration for new Sailors, and simple Login for returning players.***  
+  ## Welcome Screen
+  
+  ### **Logo**: 
+  
+  <details>
+  
+  <summary>Logo</summary>
+  
+  </details>
+  
+  ### Instructions
+  
+  <details>
+  
+  <summary>Instructions</summary>
+  
+  </details>
+  
+  
+  ## User handling
+  <details>
+  
+  <summary>Sign up</summary>
+  
+  </details>
+  
+  <details>
+  
+  <summary>Login</summary>
+  
+  </details>
+  
+  ## Gameplay Config
+  <details>
+  
+  <summary>Login</summary>
+  
+  </details>
+  <details>
+  
+  <summary>Login</summary>
+  
+  </details>
+  <details>
+  
+  <summary>Login</summary>
+  
+  </details>
+
+
+
+  ## Gameplay Features
+
+  <details>
+  
+  <summary>Login</summary>
+  
+  </details>
+  <details>
+  
+  <summary>Login</summary>
+  
+  </details>
+  
+
+
+
+
 <br>
 
   
-![Alt text](assets/readme_images/new_greeting_prompt.png)
+
 
 
 
