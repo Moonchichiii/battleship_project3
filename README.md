@@ -380,7 +380,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 
 
-[Manual Testing - restarting](#manual-testing-restarting)
+
 <details>
 <summary id="manual-testing-restarting">10. Restarting the Game:</summary>
 
