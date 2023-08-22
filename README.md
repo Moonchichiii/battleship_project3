@@ -15,8 +15,8 @@
 
 ## Table of Contents
 - [Project Goals](#project-goals)
-  - [Site Owner Goals](#site-owner-goals)
- [User Experience](#user-experience)
+- [Site Owner Goals](#site-owner-goals)
+- [User Experience](#user-experience)
     - [User Stories](#user-stories)
     - [User stories Manual Testing](#manual-testing)
     - [User Manual](#user-manual)    
