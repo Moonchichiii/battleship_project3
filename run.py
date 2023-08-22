@@ -355,7 +355,13 @@ if __name__ == '__main__':
         for restart_attempt in range(RESTART_ATTEMPTS):
             restart = input("\nAhoooy Sailor! try again? (y/n): ").upper()
 
-        if not restart or restart.isnumeric():
+        if not restart:
+            print("\nPlease confirm with (y or n) Not empty space!")
+            if restart_attempt == RESTART_ATTEMPTS - 1:
+                print("\nMaximum attempts reached! exiting game..")
+                exit()
+
+        elif restart.isnumeric():
             print("\nPlease confirm with (y/n) ? not a number!")
             if restart_attempt == RESTART_ATTEMPTS - 1:
                 print("\nMaximum attempts reached! exiting game..")
@@ -367,11 +373,7 @@ if __name__ == '__main__':
 
         elif restart == 'Y':
             clear_screen()
-            continue
-
-        elif restart.isnumeric():
-            print("\nPlease confirm with (y/n) ? Not a number!")
-
+            break
         else:
             print("\nInvalid input! Please confirm with (y/n) ?")
             if restart_attempt == RESTART_ATTEMPTS - 1:
