@@ -20,7 +20,7 @@
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
     - [User Stories](#user-stories)
-    - [User stories Manual Testing](#manual-testing)
+    - [User stories Manual Testing](User-stories-Manual-Testing)
     - [User Manual](#user-manual)    
 - [Flow Chart](#flowchart)
 - [Game design](#Gamedesign)
