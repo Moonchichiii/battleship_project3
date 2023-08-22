@@ -5,7 +5,7 @@
 
 #### ****Visit the live project below.****
 
-  <a href="https://battleshipv2-b3441908efbc.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
+  <a href="https://battleshipv2-30e17c867991.herokuapp.com/" style="text-decoration: none;">👉 Click Here.</a>
  
 
 
@@ -380,7 +380,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 
 
-[Manual Testing](#manual-testing-restarting)
+[Manual Testing - restarting](#manual-testing-restarting)
 <details>
 <summary id="manual-testing-restarting">10. Restarting the Game:</summary>
 
