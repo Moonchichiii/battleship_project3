@@ -81,6 +81,18 @@ def main_menu():
             exit()
         print("\nInvalid Choice! Try Again...")
 
+# //-------------------------  login and hashing codes  -------//
+
+
+"""
+login code from:
+https://replit.com/talk/share/A-Simple-Login-System-using-Google-Sheets-API/20950
+
+bc code found here:
+https://onebite.dev/how-to-make-bcrypt-checkpw-function-work/
+
+"""
+
 
 def create_auth(worksheet):
     """create new user in the spreadsheet"""
