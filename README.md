@@ -322,7 +322,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 
   ### input Y and back to login screen. 
   <summary>Back to login</summary>
-  
+
   ![Alt text](assets/features_images/back_to_login_feature.png)
   </details>
   
@@ -1000,6 +1000,6 @@ https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-password
 
 # Acknowledgments
 
-I would like to acknowledge my mentor Mo Shami, for staring me in right direction.
+I would like to acknowledge my mentor Mo Shami, for pushing me in the right direction.
 
 [Back to top](#)
