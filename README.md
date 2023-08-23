@@ -72,50 +72,61 @@
 
 1. **First Prompt**: <br>
 Start screen, you're given an option to signup or login. If you have registered before then just login.    
-[Manual Testing](#first-prompt)
+1.1 View game feature visuals here: [Game Features First prompt](#welcome-screen-logo)<br>
+[Manual Testing](#first-prompt) 
+
     
 2. **Board Size Selection**: <br>
 Choose between a 5x5 or 8x8 board size.<br>
+2.1 View game feature visuals here: [Game Features Board Size Selection](#gameplay-config)<br>
 [Manual Testing](#manual-testing-board-size-selection)
 
 3. **Ship Placement**:
     <br>Decide the number of ships you wish to randomly place on your board.
     <br>
+    3.1 View game feature visuals here: [Game Features Ship Placement](#gameplay-config)<br>
     [Manual Testing](#manual-testing-ship-placement)
 
 4. **Turn Selection**:
     <br>Decide the number of turns (tries) you'd like: 5 or 10 turns to locate the ships.
     <br>
+    4.1 View game feature visuals here: [Game Features Turn Selection](#gameplay-config)<br>
     [Manual Testing](#manual-testing-turn-selection)
 
 5. **Ship Count Display**:
     <br>Above the board, the number of remaining ships is shown.
     <br>
+    5.1 View game feature visuals here: [Game Features Ship Count Display](#gameplay-config)<br>
     [Manual Testing](#manual-testing-ship-count-display)
 
 6. **Hit Count Display**:
     <br>View the number of successful hits above the board.
     <br>
+    6.1 View game feature visuals here: [Game Features Hit Count Display](#gameplay-config)<br>
     [Manual Testing](#manual-testing-hit-count-display)
 
 7. **Turns Left Display**:
     <br>Monitor the number of turns you have left, displayed above the board.
     <br>
+    7.1 View game feature visuals here: [Game Features Turns Left Display](#gameplay-config)<br>
     [Manual Testing](#manual-testing-turns-left-display)
 
 8. **Board Display**:
     <br>The board consist of "*" symbols. Hits are displayed by "X" and misses by "M".
     <br>
+    8.1 View game feature visuals here: [Game Features Board Display](#gameplay-config)<br>
     [Manual Testing](#manual-testing-board-display)
 
 9. **Endgame**:
     <br>Once all turns are used or all ships are hit, you're asked if you'd like to play again.
     <br> 
+    9.1 View game feature visuals here: [Game Features Endgame](#gameplay-config)<br>
     [Manual Testing](#manual-testing-endgame)
 
 10. **Restarting the Game**:
     <br>Return to the signup/login screen to either sign in again or register a new game user.
     <br>
+    10.1 View game feature visuals here: [Game Features Restarting the Game](#gameplay-config)<br>
      [Manual Testing](#manual-testing-restarting)
 
 
@@ -212,7 +223,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 ### Welcome Screen Logo: 
   
   <details>
-  <summary>Logo</summary>
+  <summary>Welcome Screen</summary>
 
   ![Alt text](assets/features_images/LOGO.png)
   
@@ -227,8 +238,6 @@ Choose between a 5x5 or 8x8 board size.<br>
   
   </details>
     
-
-
 
 
 ### User handling
@@ -296,7 +305,27 @@ Choose between a 5x5 or 8x8 board size.<br>
   
   </details>
   
+  <details>
+  <summary>End game</summary>
+  
+  ![Alt text](assets/features_images/endgame_feature.png)
 
+  </details>
+  
+  <details>
+  
+  <summary>Restarting</summary>
+  
+  ### Out of Turns, Game Over!
+
+  ![Alt text](assets/features_images/endgame_feature.png)
+
+  ### input Y and back to login screen. 
+  <summary>Back to login</summary>
+  
+  ![Alt text](assets/features_images/back_to_login_feature.png)
+  </details>
+  
 
 <br>
 
