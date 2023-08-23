@@ -23,12 +23,12 @@
     - [User Stories Manual Testing](#testing)
     - [User Manual](#user-manual)    
 - [Flow Chart](#flowchart)
-- [Game design](#Gamedesign)
+- [Game design](#game-design)
 - [Game Features](#game-features)
 - [Testing](#testing)
-    * [User stories Manual Testing](#manual-testing)
+    * [User stories Manual Testing](#testing)
     * [Validator Testing](#validator-testing)
-- [Bugs & Fixes](#bugs-fixes)
+- [Bugs & Fixes](#bugs--fixed-bugs)
 - [Technologies Used](#technologies-used)
     * [Installation (Cloning the Project)](#installation-cloning-the-project)
     * [Dependencies](#dependencies)
@@ -184,8 +184,8 @@ Choose between a 5x5 or 8x8 board size.<br>
 
 <br>
 
+# Game Design
 
-# Game Design  
 <br>
 
 **Simplicity** 🖥️
@@ -515,7 +515,7 @@ Choose between a 5x5 or 8x8 board size.<br>
 </details><br>
 
 
-## Bugs & Fixed Bugs
+# Bugs & Fixed Bugs
 
 <details>
 <summary>Login test invalid username loop</summary>
@@ -972,3 +972,5 @@ https://stackoverflow.com/questions/58431973/argon2-library-that-hashes-password
 # Acknowledgments
 
 I would like to acknowledge my mentor Mo Shami, for staring me in right direction.
+
+[Back to top](#)
